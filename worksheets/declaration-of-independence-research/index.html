@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Declaration of Independence Research</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="badge">AMERICAN<br>GOVERNMENT</div>
+    <div class="hero-text">
+      <h1>Declaration of Independence Research</h1>
+      <p>Content Statement 4 • Research the document, use the provided sources, answer in your own words, and save your progress with your school email.</p>
+    </div>
+  </header>
+
+  <section class="panel">
+    <div class="panel-heading">Student Information</div>
+    <div class="identity">
+      <div><label for="studentName">Student Name</label><input id="studentName" autocomplete="name"></div>
+      <div><label for="period">Period</label><input id="period"></div>
+      <div><label for="email">School Email</label><input id="email" type="email" autocomplete="email"></div>
+    </div>
+    <div class="actions">
+      <button id="saveBtn" type="button">Save Progress</button>
+      <button id="retrieveBtn" class="secondary" type="button">Retrieve Previous Work</button>
+    </div>
+    <div id="saveStatus" class="status"></div>
+    <div class="notice"><b>Spelling does not have to be perfect.</b> Answer in your own words. The checker is intentionally liberal and looks for the main idea rather than exact wording. Your GitHub version also keeps a local browser copy as a backup.</div>
+  </section>
+
+  <div class="progress">
+    <span id="progressText">Loading assignment…</span>
+    <span id="cloudText">Cloud save not configured yet</span>
+  </div>
+
+  <main id="assignment"></main>
+
+  <section class="panel footer">
+    <button id="finishBtn" class="finish" type="button">Finish / Submit Assignment</button>
+    <div id="finalResult"></div>
+  </section>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
