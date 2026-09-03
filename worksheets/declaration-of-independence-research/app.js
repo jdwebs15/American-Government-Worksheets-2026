@@ -4,7 +4,7 @@
    ========================================================= */
 
 /* Paste the deployed Apps Script /exec URL between the quotes later. */
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx_5OGAlYAWDEHZyRGGT71dBwd-C8PPfIMOOOPghs2W0pBtfFy8eG5kSU63f4fecLuk/exec";
+const SCRIPT_URL = "PASTE_APPS_SCRIPT_WEB_APP_URL_HERE";
 
 const META = {
   "title": "Declaration of Independence Research",
@@ -19,10 +19,10 @@ const SECTIONS = [
         "id": "d01",
         "display": "1",
         "prompt": "Who primarily authored the Declaration of Independence?",
-        "hint": "Look for the main drafter.",
+        "hint": "Use the National Archives history page. Read the first section and identify the delegate chosen to write the first draft.",
         "sources": [
           {
-            "label": "National Archives — History",
+            "label": "Use this source: National Archives — Who wrote the Declaration?",
             "url": "https://www.archives.gov/founding-docs/declaration-history"
           }
         ]
@@ -31,10 +31,10 @@ const SECTIONS = [
         "id": "d02",
         "display": "2",
         "prompt": "What committee helped draft the document alongside him?",
-        "hint": "It was a five-person committee.",
+        "hint": "Use the National Archives history page. Find the five-person drafting committee and give its name.",
         "sources": [
           {
-            "label": "National Archives — History",
+            "label": "Use this source: National Archives — The five-member drafting committee",
             "url": "https://www.archives.gov/founding-docs/declaration-history"
           }
         ]
@@ -43,11 +43,11 @@ const SECTIONS = [
         "id": "d03",
         "display": "3",
         "prompt": "Why did the Continental Congress feel it was necessary to write a formal declaration in 1776?",
-        "hint": "Explain why the colonies wanted to formally separate and justify that decision.",
+        "hint": "Use the short Office of the Historian overview. Explain both the break from Britain and why announcing it to other nations mattered.",
         "sources": [
           {
-            "label": "National Archives — Declaration",
-            "url": "https://www.archives.gov/milestone-documents/declaration-of-independence"
+            "label": "Use this source: U.S. Office of the Historian — Why declare independence?",
+            "url": "https://history.state.gov/milestones/1776-1783/declaration"
           }
         ]
       },
@@ -55,11 +55,11 @@ const SECTIONS = [
         "id": "d04",
         "display": "4",
         "prompt": "How did the Enlightenment influence the writing of the Declaration?",
-        "hint": "Think natural rights, government by consent, and John Locke.",
+        "hint": "Use the Khan Academy background article. Look for natural rights, consent of the governed, and John Locke.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Khan Academy — Ideas behind the Declaration",
+            "url": "https://www.khanacademy.org/humanities/us-history/road-to-revolution/x71a94f19%3Agrowing-discontent/a/philosophical-foundations-of-the-american-revolution"
           }
         ]
       },
@@ -67,11 +67,11 @@ const SECTIONS = [
         "id": "d05",
         "display": "5",
         "prompt": "What earlier colonial experiences or events (for example taxes or protests) influenced the decision to separate?",
-        "hint": "Name and explain at least one relevant colonial grievance/event.",
+        "hint": "Use the Office of the Historian overview. Choose at least one tax, protest, or British response and explain how it increased conflict.",
         "sources": [
           {
-            "label": "National Archives — Declaration",
-            "url": "https://www.archives.gov/milestone-documents/declaration-of-independence"
+            "label": "Use this source: U.S. Office of the Historian — Taxes and colonial protests",
+            "url": "https://history.state.gov/milestones/1750-1775/parliamentary-taxation"
           }
         ]
       }
@@ -84,11 +84,11 @@ const SECTIONS = [
         "id": "d06",
         "display": "6",
         "prompt": "According to the Preamble, what is the purpose of government?",
-        "hint": "What are governments supposed to protect or secure?",
+        "hint": "Use the guided Khan Academy excerpt. In the second paragraph, identify what governments are created to secure.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Khan Academy — Guided opening paragraphs",
+            "url": "https://www.khanacademy.org/humanities/constitution-101/x7a03a96a83aa80ff%3Aprinciples-of-the-american-revolution-the-ideas-and-events-that-led-to-change/x7a03a96a83aa80ff%3Aprinciples-of-the-american-revolution-equality-liberty-and-the-pursuit-of-happiness/a/primary-source-the-declaration-of-independence-opening-paragraphs"
           }
         ]
       },
@@ -96,11 +96,11 @@ const SECTIONS = [
         "id": "d07",
         "display": "7",
         "prompt": "What does the Declaration say people can do if their government becomes destructive of their rights?",
-        "hint": "Look for the verbs describing what people may do to government.",
+        "hint": "Use the guided Khan Academy excerpt. Find the sentence beginning “whenever any Form of Government” and explain the two actions people may take.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Khan Academy — What people may do to a destructive government",
+            "url": "https://www.khanacademy.org/humanities/constitution-101/x7a03a96a83aa80ff%3Aprinciples-of-the-american-revolution-the-ideas-and-events-that-led-to-change/x7a03a96a83aa80ff%3Aprinciples-of-the-american-revolution-equality-liberty-and-the-pursuit-of-happiness/a/primary-source-the-declaration-of-independence-opening-paragraphs"
           }
         ]
       },
@@ -108,11 +108,11 @@ const SECTIONS = [
         "id": "d08",
         "display": "8",
         "prompt": "What does “all men are created equal” mean in the context of 1776?",
-        "hint": "Explain the political ideal, while recognizing the limits of how it was applied at the time.",
+        "hint": "Use the Khan Academy background article. Explain the equality ideal and then identify who did not receive equal rights in 1776.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Khan Academy — Equality and its limits in 1776",
+            "url": "https://www.khanacademy.org/humanities/constitution-101/x7a03a96a83aa80ff%3Aprinciples-of-the-american-revolution-the-ideas-and-events-that-led-to-change/x7a03a96a83aa80ff%3Athe-declaration-of-independence/a/background-the-declaration-of-independence"
           }
         ]
       },
@@ -120,11 +120,11 @@ const SECTIONS = [
         "id": "d09",
         "display": "9",
         "prompt": "How does Jefferson describe the “unalienable rights”? List them.",
-        "hint": "There are three listed together.",
+        "hint": "Use the guided Khan Academy excerpt. Find “unalienable Rights” and list the three examples that follow.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Khan Academy — Guided natural-rights passage",
+            "url": "https://www.khanacademy.org/humanities/constitution-101/x7a03a96a83aa80ff%3Aprinciples-of-the-american-revolution-the-ideas-and-events-that-led-to-change/x7a03a96a83aa80ff%3Aprinciples-of-the-american-revolution-equality-liberty-and-the-pursuit-of-happiness/a/primary-source-the-declaration-of-independence-opening-paragraphs"
           }
         ]
       },
@@ -132,11 +132,11 @@ const SECTIONS = [
         "id": "d10",
         "display": "10",
         "prompt": "How does the Declaration connect consent of the governed to legitimate government power?",
-        "hint": "Where does government get its just power?",
+        "hint": "Use the guided Khan Academy excerpt. Find the phrase explaining where governments get their “just powers.”",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Khan Academy — Consent of the governed explained",
+            "url": "https://www.khanacademy.org/humanities/constitution-101/x7a03a96a83aa80ff%3Aprinciples-of-the-american-revolution-the-ideas-and-events-that-led-to-change/x7a03a96a83aa80ff%3Aprinciples-of-the-american-revolution-equality-liberty-and-the-pursuit-of-happiness/a/primary-source-the-declaration-of-independence-opening-paragraphs"
           }
         ]
       }
@@ -149,11 +149,11 @@ const SECTIONS = [
         "id": "d11",
         "display": "11",
         "prompt": "Who is the primary target of the grievances listed in the Declaration?",
-        "hint": "Name the British ruler.",
+        "hint": "Use the Constitution Center’s short introduction. It directly names the ruler against whom the grievances were written.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Constitution Center — Who the grievances were against",
+            "url": "https://constitutioncenter.org/education/classroom-resource-library/classroom/primary-source-declaration-of-independence"
           }
         ]
       },
@@ -161,11 +161,11 @@ const SECTIONS = [
         "id": "d12",
         "display": "12",
         "prompt": "Name three taxes or laws that colonists were protesting.",
-        "hint": "Examples include major taxes and Parliamentary acts from the pre-Revolutionary period.",
+        "hint": "Use the Office of the Historian explainer. Name three measures discussed there, such as the Sugar, Currency, Stamp, Townshend, Tea, or Intolerable Acts.",
         "sources": [
           {
-            "label": "National Archives — Declaration",
-            "url": "https://www.archives.gov/milestone-documents/declaration-of-independence"
+            "label": "Use this source: U.S. Office of the Historian — Taxes and Parliamentary acts",
+            "url": "https://history.state.gov/milestones/1750-1775/parliamentary-taxation"
           }
         ]
       },
@@ -173,11 +173,11 @@ const SECTIONS = [
         "id": "d13",
         "display": "13",
         "prompt": "How does Jefferson describe King George III’s treatment of colonial legislatures?",
-        "hint": "Look for dissolved legislatures, refused laws, or interference with representation.",
+        "hint": "Use the Khan Academy guided grievance page. Look for examples involving refused laws, dissolved representative houses, or blocked representation.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Khan Academy — Guided list of grievances",
+            "url": "https://www.khanacademy.org/humanities/constitution-101/x7a03a96a83aa80ff%3Aprinciples-of-the-american-revolution-the-ideas-and-events-that-led-to-change/x7a03a96a83aa80ff%3Athe-reasons-for-the-revolution/a/primary-source-the-declaration-of-independence-list-of-grievances"
           }
         ]
       },
@@ -185,11 +185,11 @@ const SECTIONS = [
         "id": "d14",
         "display": "14",
         "prompt": "What does the Declaration say about the King and the administration of justice?",
-        "hint": "Look for the grievance beginning with “He has obstructed…”",
+        "hint": "Use the Khan Academy guided grievance page. Find the grievance about obstructing justice and explain how judges were affected.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Khan Academy — Justice and judges grievances explained",
+            "url": "https://www.khanacademy.org/humanities/constitution-101/x7a03a96a83aa80ff%3Aprinciples-of-the-american-revolution-the-ideas-and-events-that-led-to-change/x7a03a96a83aa80ff%3Athe-reasons-for-the-revolution/a/primary-source-the-declaration-of-independence-list-of-grievances"
           }
         ]
       },
@@ -197,11 +197,11 @@ const SECTIONS = [
         "id": "d15",
         "display": "15",
         "prompt": "Which grievance deals with the presence of British troops in the colonies?",
-        "hint": "Look for standing armies and/or quartering troops.",
+        "hint": "Use the Khan Academy guided grievance page. Find the complaints about standing armies or quartering armed troops.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Khan Academy — Standing armies and quartering grievances",
+            "url": "https://www.khanacademy.org/humanities/constitution-101/x7a03a96a83aa80ff%3Aprinciples-of-the-american-revolution-the-ideas-and-events-that-led-to-change/x7a03a96a83aa80ff%3Athe-reasons-for-the-revolution/a/primary-source-the-declaration-of-independence-list-of-grievances"
           }
         ]
       },
@@ -209,11 +209,11 @@ const SECTIONS = [
         "id": "d16",
         "display": "16",
         "prompt": "How does the Declaration describe the King’s role in waging war against the colonies?",
-        "hint": "Summarize one or more of the wartime grievances.",
+        "hint": "Use the Khan Academy guided grievance page. Summarize one complaint involving violence, foreign mercenaries, captured colonists, or attacks on towns.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Khan Academy — Wartime grievances in student-friendly sections",
+            "url": "https://www.khanacademy.org/humanities/constitution-101/x7a03a96a83aa80ff%3Aprinciples-of-the-american-revolution-the-ideas-and-events-that-led-to-change/x7a03a96a83aa80ff%3Athe-reasons-for-the-revolution/a/primary-source-the-declaration-of-independence-list-of-grievances"
           }
         ]
       }
@@ -226,10 +226,10 @@ const SECTIONS = [
         "id": "d17",
         "display": "17",
         "prompt": "On what date was the Declaration officially adopted?",
-        "hint": "Month, day, and year.",
+        "hint": "Use the National Archives overview. Find the date Congress adopted the Declaration—not the later date when most delegates signed it.",
         "sources": [
           {
-            "label": "National Archives — Declaration",
+            "label": "Use this source: National Archives — Adoption date and background",
             "url": "https://www.archives.gov/milestone-documents/declaration-of-independence"
           }
         ]
@@ -238,11 +238,11 @@ const SECTIONS = [
         "id": "d18",
         "display": "18",
         "prompt": "What colonies were represented in signing the Declaration?",
-        "hint": "How many colonies/states were represented?",
+        "hint": "Use the Constitution Center list. Count or name the colonies shown as represented by the signers.",
         "sources": [
           {
-            "label": "House — Signers List",
-            "url": "https://history.house.gov/People/Continental-Congress/Signers_Declaration_Independence/"
+            "label": "Use this source: Constitution Center — Signers organized by colony",
+            "url": "https://constitutioncenter.org/education/classroom-resource-library/classroom/declaration-of-independence"
           }
         ]
       },
@@ -250,11 +250,11 @@ const SECTIONS = [
         "id": "d19",
         "display": "19",
         "prompt": "How many delegates signed the document?",
-        "hint": "Use the signers list.",
+        "hint": "Use the Constitution Center overview. It states the total number of delegates who eventually signed.",
         "sources": [
           {
-            "label": "House — Signers List",
-            "url": "https://history.house.gov/People/Continental-Congress/Signers_Declaration_Independence/"
+            "label": "Use this source: Constitution Center — How many delegates signed?",
+            "url": "https://constitutioncenter.org/declaration/about-the-declaration-of-independence"
           }
         ]
       },
@@ -262,10 +262,10 @@ const SECTIONS = [
         "id": "d20",
         "display": "20",
         "prompt": "What risks did the signers face by endorsing the Declaration?",
-        "hint": "Think about what Britain could consider their action to be.",
+        "hint": "Use the National Archives history page. Explain why publicly supporting independence could be treated as treason and what the signers pledged to risk.",
         "sources": [
           {
-            "label": "National Archives — History",
+            "label": "Use this source: National Archives — The signers’ pledge and risks",
             "url": "https://www.archives.gov/founding-docs/declaration-history"
           }
         ]
@@ -274,11 +274,11 @@ const SECTIONS = [
         "id": "d21",
         "display": "21",
         "prompt": "Who was the first to sign, and why is his signature the most famous?",
-        "hint": "Identify the signer and explain what makes the signature stand out.",
+        "hint": "Use the Constitution Center overview. Identify the president of Congress whose large, centered signature became the most recognizable.",
         "sources": [
           {
-            "label": "National Archives — History",
-            "url": "https://www.archives.gov/founding-docs/declaration-history"
+            "label": "Use this source: Constitution Center — John Hancock’s famous signature",
+            "url": "https://constitutioncenter.org/declaration/about-the-declaration-of-independence"
           }
         ]
       }
@@ -291,11 +291,11 @@ const SECTIONS = [
         "id": "d22",
         "display": "22",
         "prompt": "How did the Declaration influence other nations or independence movements?",
-        "hint": "Give a reasonable example or explain the broader influence of its ideals.",
+        "hint": "Use Monticello’s visual timeline. Choose one country or movement and explain how it repeated or applied the Declaration’s equality and rights language.",
         "sources": [
           {
-            "label": "National Archives — Declaration",
-            "url": "https://www.archives.gov/milestone-documents/declaration-of-independence"
+            "label": "Use this source: Monticello — The Declaration around the world",
+            "url": "https://www.monticello.org/declaration/"
           }
         ]
       },
@@ -303,11 +303,11 @@ const SECTIONS = [
         "id": "d23",
         "display": "23",
         "prompt": "What role did the Declaration play in shaping the new U.S. Constitution?",
-        "hint": "Connect popular government/rights ideals to the later constitutional system.",
+        "hint": "Use the Khan Academy comparison. Connect the Declaration’s ideals—equality, rights, and consent—to the government created by the Constitution.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Khan Academy — Declaration ideals and the Constitution",
+            "url": "https://www.khanacademy.org/humanities/us-government-and-civics/us-gov-foundations/us-gov-ideals-of-democracy/a/democratic-ideals-in-the-declaration-of-independence-and-the-constitution"
           }
         ]
       },
@@ -315,11 +315,11 @@ const SECTIONS = [
         "id": "d24",
         "display": "24",
         "prompt": "How does the Declaration reflect Enlightenment ideas from thinkers like John Locke?",
-        "hint": "Natural rights, consent, social contract, right to alter government.",
+        "hint": "Use the Khan Academy philosophy explainer. Compare Locke’s natural rights and social contract ideas with the Declaration’s language.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Khan Academy — John Locke and revolutionary ideas",
+            "url": "https://www.khanacademy.org/humanities/us-history/road-to-revolution/x71a94f19%3Agrowing-discontent/a/philosophical-foundations-of-the-american-revolution"
           }
         ]
       },
@@ -327,11 +327,11 @@ const SECTIONS = [
         "id": "d25",
         "display": "25",
         "prompt": "In what ways did the Declaration fall short of its ideals in 1776 (for example slavery, women, or Native Americans)?",
-        "hint": "Explain at least one group excluded from the equality it proclaimed.",
+        "hint": "Use Monticello’s short article. Identify at least one group denied the liberty proclaimed in the Declaration and explain the contradiction.",
         "sources": [
           {
-            "label": "National Archives — Declaration",
-            "url": "https://www.archives.gov/milestone-documents/declaration-of-independence"
+            "label": "Use this source: Monticello — Liberty, slavery, and excluded groups",
+            "url": "https://www.monticello.org/slavery/jefferson-slavery/thomas-jefferson-liberty-slavery"
           }
         ]
       },
@@ -339,11 +339,11 @@ const SECTIONS = [
         "id": "d26",
         "display": "26",
         "prompt": "How did abolitionists later use the Declaration in their arguments?",
-        "hint": "How could “all men are created equal” be used against slavery?",
+        "hint": "Use the Constitution Center article. Look for how Black Americans and antislavery writers treated equality as a promise the nation had to fulfill.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Constitution Center — Equality and early antislavery arguments",
+            "url": "https://constitutioncenter.org/blog/constitutional-voices-african-americans-early-responses-to-the-declaration-of-independence"
           }
         ]
       },
@@ -351,11 +351,11 @@ const SECTIONS = [
         "id": "d27",
         "display": "27",
         "prompt": "How has the phrase “all men are created equal” been reinterpreted over time?",
-        "hint": "Connect the ideal to later expansions of civil/equal rights.",
+        "hint": "Use Monticello’s visual timeline. Compare the 1776 meaning with one later use by abolitionists, women’s-rights advocates, or civil-rights leaders.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Monticello — How equality expanded over time",
+            "url": "https://www.monticello.org/declaration/"
           }
         ]
       },
@@ -363,11 +363,11 @@ const SECTIONS = [
         "id": "d28",
         "display": "28",
         "prompt": "Which civil rights leader famously referenced the Declaration in a major speech?",
-        "hint": "Think “I Have a Dream.”",
+        "hint": "Use Stanford’s King Institute page. Find the leader who called the Declaration’s equality statement the nation’s creed in “I Have a Dream.”",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Stanford King Institute — “I Have a Dream” and the Declaration",
+            "url": "https://kinginstitute.stanford.edu/publications/autobiography-martin-luther-king-jr/chapter-20-march-washington"
           }
         ]
       },
@@ -375,11 +375,11 @@ const SECTIONS = [
         "id": "d29",
         "display": "29",
         "prompt": "Where is the original Declaration kept today?",
-        "hint": "Name the institution/building in Washington, D.C.",
+        "hint": "Use the National Archives Museum page. Give the institution and the room/building where the original is displayed.",
         "sources": [
           {
-            "label": "National Archives — Declaration",
-            "url": "https://www.archives.gov/milestone-documents/declaration-of-independence"
+            "label": "Use this source: National Archives Museum — Where the original is displayed",
+            "url": "https://visit.archives.gov/"
           }
         ]
       },
@@ -387,11 +387,11 @@ const SECTIONS = [
         "id": "d30",
         "display": "30",
         "prompt": "Why do you think the Declaration remains a powerful symbol of democracy and freedom?",
-        "hint": "This is your judgment. Support it with a clear reason.",
+        "hint": "Use Monticello’s visual timeline for examples, then give your own judgment. Explain why its ideas still matter and support your answer with one example.",
         "sources": [
           {
-            "label": "Declaration Transcript",
-            "url": "https://www.archives.gov/founding-docs/declaration-transcript"
+            "label": "Use this source: Monticello — The Declaration’s continuing influence",
+            "url": "https://www.monticello.org/declaration/"
           }
         ]
       }
