@@ -4,7 +4,7 @@
    ========================================================= */
 
 /* Paste the deployed Apps Script /exec URL between the quotes later. */
-const SCRIPT_URL = "PASTE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyAkahbkT3Tn7wVxAap3EqF1uhnB2iJF9hm6pnuUueHkBibHUgZg2R8ZVEHE-Gky6y7/exec";
 
 const META = {
   "title": "Declaration of Independence Research",
