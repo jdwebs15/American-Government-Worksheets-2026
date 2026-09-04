@@ -606,23 +606,23 @@ const RULES = {
     "open": true,
     "minChars": 18
   },
-  "d21": {
+ "d21": {
   "concepts": [
     [
       "John Hancock",
-      "Hancock",
-      "President of Congress",
-      "President of the Continental Congress"
+      "Hancock"
     ],
     [
-      "large signature",
-      "big signature",
-      "bold signature",
-      "largest signature",
-      "prominent signature",
-      "centered signature",
-      "large and centered",
-      "most recognizable signature"
+      "President of Congress",
+      "President of the Congress",
+      "President of Continental Congress",
+      "President of the Continental Congress",
+      "President of Congress status",
+      "because he was president",
+      "status as president",
+      "in the middle",
+      "placed in the middle",
+      "signature was in the middle"
     ]
   ],
   "minConcepts": 2
