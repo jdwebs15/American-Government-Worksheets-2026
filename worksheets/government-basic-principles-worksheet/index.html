@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Basic Principles: Building Depth of Understanding</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="course-badge">AMERICAN GOVERNMENT • 2026</span>
+      <h1>Basic Principles: Building Depth of Understanding</h1>
+      <p>Principles, ratification debates, and constitutional change</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="card student-card" aria-labelledby="student-heading">
+      <h2 id="student-heading">Student Information</h2>
+      <div class="student-grid">
+        <label>First and last name<input id="studentName" autocomplete="name" required></label>
+        <label>Class period<select id="period" required><option value="">Choose…</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></label>
+        <label>School email<input id="email" type="email" autocomplete="email" required></label>
+      </div>
+      <div class="toolbar">
+        <button class="secondary" id="retrieveBtn" type="button">Retrieve Saved Work</button>
+        <span id="saveStatus" class="status" role="status">Work saves on this device as you type.</span>
+      </div>
+    </section>
+
+    <section class="card intro">
+      <h2>Purpose</h2>
+      <p>Explore how the U.S. Constitution was shaped, debated, and changed over time. Your explanations should connect evidence to the principles behind American government—the same kind of thinking used on the Ohio Government OST.</p>
+      <div class="directions"><strong>Accessibility:</strong> Chromebook Select-to-Speak can read any highlighted text. Voice typing works in the response boxes.</div>
+    </section>
+
+    <form id="worksheet" novalidate>
+      <section class="card part" data-part="1">
+        <div class="part-heading"><span>Part I • CS 5</span><h2>Basic Principles</h2></div>
+        <p>Choose <strong>three different principles</strong>. For each one, answer all four prompts in your own words.</p>
+        <div class="source-row"><a href="https://www.archives.gov/legislative/resources/education/constitution" target="_blank" rel="noopener">National Archives: Six Big Ideas ↗</a><a href="https://www.archives.gov/founding-docs/constitution-transcript" target="_blank" rel="noopener">Constitution transcript ↗</a></div>
+        <div id="principleSlots"></div>
+      </section>
+
+      <section class="card part" data-part="2">
+        <div class="part-heading"><span>Part II • CS 6</span><h2>Federalists vs. Anti-Federalists</h2></div>
+        <p>Read both excerpts, then compare the competing viewpoints.</p>
+        <div class="quotes">
+          <blockquote><h3>Federalist No. 51 — James Madison</h3><p>“If men were angels, no government would be necessary… You must first enable the government to control the governed; and in the next place oblige it to control itself.”</p></blockquote>
+          <blockquote><h3>Brutus I — Anti-Federalist</h3><p>“This government is to possess absolute and uncontrollable power, legislative, executive, and judicial, with respect to every object to which it extends… It is as complete a system of despotism as ever was framed.”</p></blockquote>
+        </div>
+        <div class="source-row"><a href="https://guides.loc.gov/federalist-papers/text-51-60" target="_blank" rel="noopener">Library of Congress: Federalist 51 ↗</a><a href="https://teachingamericanhistory.org/document/brutus-i/" target="_blank" rel="noopener">Brutus I full text ↗</a><a href="https://www.archives.gov/founding-docs/bill-of-rights-transcript" target="_blank" rel="noopener">Bill of Rights ↗</a></div>
+        <div id="debateQuestions"></div>
+      </section>
+
+      <section class="card part" data-part="3">
+        <div class="part-heading"><span>Part III • CS 7</span><h2>Constitutional Change Over Time</h2></div>
+        <p>Research <strong>two different changes</strong>. You may use amendments, Supreme Court cases, legislation, or informal practices. For each, explain its effect—not just what happened.</p>
+        <div class="source-row"><a href="https://constitutioncenter.org/the-constitution/amendments" target="_blank" rel="noopener">Constitution Center: Amendments ↗</a><a href="https://www.oyez.org/cases/1789-1850/5us137" target="_blank" rel="noopener">Oyez: Marbury v. Madison ↗</a><a href="https://www.oyez.org/cases/1940-1955/1" target="_blank" rel="noopener">Oyez: Brown v. Board ↗</a><a href="https://www.archives.gov/milestone-documents/civil-rights-act" target="_blank" rel="noopener">Civil Rights Act ↗</a><a href="https://www.archives.gov/milestone-documents/voting-rights-act" target="_blank" rel="noopener">Voting Rights Act ↗</a></div>
+        <div id="changeSlots"></div>
+      </section>
+
+      <section class="card submit-card">
+        <label class="honesty"><input id="honesty" type="checkbox"> I reviewed my responses and used my own words.</label>
+        <button id="submitBtn" class="primary" type="submit">Submit Assignment</button>
+        <p id="submitMessage" class="status" role="status"></p>
+      </section>
+    </form>
+  </main>
+  <footer>American Government • Basic Principles • 2026</footer>
+  <script src="app.js"></script>
+</body>
+</html>
