@@ -617,7 +617,6 @@ const RULES = {
       "President of the Congress",
       "President of Continental Congress",
       "President of the Continental Congress",
-      "President of Congress status",
       "because he was president",
       "status as president",
       "in the middle",
@@ -626,6 +625,7 @@ const RULES = {
     ]
   ],
   "minConcepts": 2
+},
 },
   "d22": {
     "open": true,
