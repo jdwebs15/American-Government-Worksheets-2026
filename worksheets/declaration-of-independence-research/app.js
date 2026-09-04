@@ -613,6 +613,9 @@ const RULES = {
         "Hancock"
       ],
       [
+         "President of Congress"
+         "President"
+         "Congress"
         "large signature",
         "big signature",
         "bold signature",
