@@ -1,15 +1,17 @@
 /* Paste the Government Hub's existing Apps Script /exec URL here. */
-const SCRIPT_URL="https://script.google.com/macros/s/AKfycbz_N40FGUxCgJBfpIUtR3CgC0nRfKFI1KdqalcKRtj_zK2rZcIIGReS9MEwDSODnsAn_Q/exec";
+const SCRIPT_URL="https://script.google.com/macros/s/AKfycbyAkahbkT3Tn7wVxAap3EqF1uhnB2iJF9hm6pnuUueHkBibHUgZg2R8ZVEHE-Gky6y7/exec";
 const META={title:"Basic Principles of the Constitution",subtitle:"Introductory Short-Answer Worksheet",assignmentKey:"basic-principles-constitution-2026-v1"};
 
 const URL={
- principles:"https://constitution.congress.gov/browse/essay/intro.7-1/ALDE_00000028/",
+ consent:"https://billofrightsinstitute.org/videos/constitutional-principles-consent-of-the-governed-video/",
+ constitutionOverview:"https://billofrightsinstitute.org/videos/u-s-constitution-primary-source-essentials/",
+ ruleOfLaw:"https://billofrightsinstitute.org/videos/constitutional-principles-the-rule-of-law-video/",
  constitution:"https://www.archives.gov/founding-docs/constitution-transcript",
- federalism:"https://constitution.congress.gov/browse/essay/intro.7-3/ALDE_00000032/",
- tenth:"https://constitution.congress.gov/constitution/amendment-10/",
- separation:"https://constitution.congress.gov/browse/essay/intro.7-2/ALDE_00000031/",
- branches:"https://constitution.congress.gov/constitution/",
- ratification:"https://constitutioncenter.org/education/constitution-101-curriculum/middle-school-curriculum/module-4",
+ federalism:"https://billofrightsinstitute.org/videos/introduction-to-federalism-government-and-politics-civics-for-the-american-experiment/",
+ tenth:"https://www.archives.gov/founding-docs/bill-of-rights-transcript#toc-amendment-x-2",
+ separation:"https://billofrightsinstitute.org/videos/constitutional-principles-separation-of-powers-video/",
+ branches:"https://www.usa.gov/branches-of-government",
+ ratification:"https://www.archives.gov/founding-docs/more-perfect-union",
  antifederalists:"https://constitutioncenter.org/education/classroom-resource-library/classroom/5.3-info-brief-the-anti-federalists",
  federalistPapers:"https://guides.loc.gov/federalist-papers/full-text",
  constitutionHistory:"https://www.archives.gov/founding-docs/more-perfect-union",
@@ -18,56 +20,56 @@ const URL={
  necessary:"https://constitution.congress.gov/browse/essay/artI-S8-C18-1/ALDE_00001242/",
  supremacy:"https://constitution.congress.gov/browse/essay/artVI-C2-1/ALDE_00013395/",
  amendments:"https://www.archives.gov/founding-docs/amendments-11-27",
- marbury:"https://www.oyez.org/cases/1789-1850/5us137",
+ marbury:"https://billofrightsinstitute.org/videos/marbury-v-madison-homework-help/",
  brown:"https://www.oyez.org/cases/1940-1955/347us483",
  civilRights:"https://www.archives.gov/milestone-documents/civil-rights-act",
  votingRights:"https://www.archives.gov/milestone-documents/voting-rights-act",
  oversight:"https://history.house.gov/Institution/Origins-Development/Investigations-Oversight/",
  legislation:"https://www.house.gov/the-house-explained/the-legislative-process",
- living:"https://www.archives.gov/publications/prologue/2015/winter/amending-america"
+ living:"https://billofrightsinstitute.org/videos/constitutional-amendments-primary-source-essentials/"
 };
 const src=(label,url)=>[{label,url}];
 const SECTIONS=[
  {title:"Content Statement 5 - Basic Principles of the U.S. Constitution",questions:[
-  {id:"p01",display:"1",prompt:"What does the principle of popular sovereignty mean in your own words?",hint:"Look for the idea that political authority begins with the people.",sources:src("Constitution Annotated - Basic Principles",URL.principles)},
-  {id:"p02",display:"2",prompt:"Give one historical example that illustrates popular sovereignty in action.",hint:"Choose an example in which citizens approved, rejected, elected, or changed government.",sources:src("Constitution Annotated - Basic Principles",URL.principles)},
-  {id:"p03",display:"3",prompt:"What does the phrase “consent of the governed” mean?",hint:"Look for who gives government permission to rule. A short answer such as “the people give permission” is enough.",sources:src("Constitution Annotated - Basic Principles",URL.principles)},
-  {id:"p04",display:"4",prompt:"Define limited government in one sentence.",hint:"Focus on constitutional restrictions placed on public officials and institutions.",sources:src("Constitution Annotated - Basic Principles",URL.principles)},
-  {id:"p05",display:"5",prompt:"What parts or features of the Constitution help limit government power?",hint:"Identify at least one structural limit, written power, prohibition, or protected right.",sources:src("National Archives - Constitution",URL.constitution)},
-  {id:"p06",display:"6",prompt:"Explain the difference between rule of law and limited government.",hint:"One requires everyone to follow established law; the other restricts what government may do.",sources:src("Constitution Annotated - Basic Principles",URL.principles)},
-  {id:"p07",display:"7",prompt:"What is federalism?",hint:"Look for the division and sharing of authority between two levels of government.",sources:src("Constitution Annotated - Federalism",URL.federalism)},
-  {id:"p08",display:"8",prompt:"Give one example of a power generally reserved to the states under federalism.",hint:"Only one example is needed: schools and education, licenses, state elections, police powers, marriage rules, or local government.",sources:src("Constitution Annotated - Tenth Amendment",URL.tenth)},
-  {id:"p09",display:"9",prompt:"Which amendment emphasizes powers reserved to the states or the people?",hint:"Read the amendment’s one-sentence text.",sources:src("Constitution Annotated - Tenth Amendment",URL.tenth)},
-  {id:"p10",display:"10",prompt:"Define separation of powers.",hint:"Explain why legislative, executive, and judicial authority are assigned to different branches.",sources:src("Constitution Annotated - Separation of Powers",URL.separation)},
-  {id:"p11",display:"11",prompt:"What is the main role of each of the three branches of government?",hint:"Match each branch to its job: legislative makes laws, executive carries out laws, and judicial interprets laws.",sources:src("Constitution Annotated - Articles I-III",URL.branches)},
-  {id:"p12",display:"12",prompt:"How do checks and balances prevent one branch from becoming too powerful?",hint:"Explain the system and include one example of a branch checking another.",sources:src("Constitution Annotated - Checks and Balances",URL.separation)}
+  {id:"p01",display:"1",prompt:"What does the principle of popular sovereignty mean in your own words?",hint:"Open the transcript and go to about 3:37. It states plainly that popular sovereignty means government gets its power from the people.",sources:src("Bill of Rights Institute - Consent of the Governed",URL.consent)},
+  {id:"p02",display:"2",prompt:"Give one historical example that illustrates popular sovereignty in action.",hint:"Read the transcript from 0:01. It gives elections as an example and later explains that the people approved new governments and the Constitution.",sources:src("Bill of Rights Institute - Consent of the Governed",URL.consent)},
+  {id:"p03",display:"3",prompt:"What does the phrase “consent of the governed” mean?",hint:"Read the transcript from 0:01–0:23. It explains that government receives its power from the people. “The people give permission” is enough.",sources:src("Bill of Rights Institute - Consent of the Governed",URL.consent)},
+  {id:"p04",display:"4",prompt:"Define limited government in one sentence.",hint:"Read the transcript near 0:43 and the final sentence near 1:46. The Constitution places limits on government power to protect liberty.",sources:src("Bill of Rights Institute - U.S. Constitution Overview",URL.constitutionOverview)},
+  {id:"p05",display:"5",prompt:"What parts or features of the Constitution help limit government power?",hint:"Read the transcript from 1:04–1:46. Choose one: separation of powers, checks and balances, federalism, or the Bill of Rights.",sources:src("Bill of Rights Institute - U.S. Constitution Overview",URL.constitutionOverview)},
+  {id:"p06",display:"6",prompt:"Explain the difference between rule of law and limited government.",hint:"Use the Rule of Law transcript near 1:05 and 7:11: laws apply through established rules, including to rulers. Limited government means the Constitution restricts what officials may do.",sources:[{label:"Bill of Rights Institute - Rule of Law",url:URL.ruleOfLaw},{label:"U.S. Constitution Overview",url:URL.constitutionOverview}]},
+  {id:"p07",display:"7",prompt:"What is federalism?",hint:"Read the About section or opening transcript. It says power is shared among the national, state, and local governments.",sources:src("Bill of Rights Institute - Introduction to Federalism",URL.federalism)},
+  {id:"p08",display:"8",prompt:"Give one example of a power generally reserved to the states under federalism.",hint:"The About section uses schools as an example. Only one example is needed: education, licenses, state elections, police powers, marriage rules, or local government.",sources:src("Bill of Rights Institute - Introduction to Federalism",URL.federalism)},
+  {id:"p09",display:"9",prompt:"Which amendment emphasizes powers reserved to the states or the people?",hint:"The link goes to Amendment X. Read its one sentence; the Roman numeral X means 10.",sources:src("National Archives - Tenth Amendment",URL.tenth)},
+  {id:"p10",display:"10",prompt:"Define separation of powers.",hint:"Read the transcript from 0:01–0:21. Government powers are divided among different branches so no one person or institution holds all power.",sources:src("Bill of Rights Institute - Separation of Powers",URL.separation)},
+  {id:"p11",display:"11",prompt:"What is the main role of each of the three branches of government?",hint:"Use the three branch headings: legislative drafts laws, executive carries out laws, and judicial interprets laws and decides whether they violate the Constitution.",sources:src("USA.gov - Three Branches",URL.branches)},
+  {id:"p12",display:"12",prompt:"How do checks and balances prevent one branch from becoming too powerful?",hint:"Go to “How each branch provides checks and balances.” Choose one listed example, such as a veto, Senate confirmation, impeachment, or overturning an unconstitutional law.",sources:src("USA.gov - Checks and Balances",URL.branches)}
  ]},
  {title:"Content Statement 6 - Federalists vs. Anti-Federalists",questions:[
-  {id:"p13",display:"13",prompt:"Who were the Federalists?",hint:"Identify their position during the ratification debate.",sources:src("Constitution Center - Ratification",URL.ratification)},
+  {id:"p13",display:"13",prompt:"Who were the Federalists?",hint:"Use Ctrl+F for “The Federalists and the Anti-Federalists.” The first paragraph defines Federalists as those who supported the Constitution.",sources:src("National Archives - Federalists and Anti-Federalists",URL.ratification)},
   {id:"p14",display:"14",prompt:"Who were the Anti-Federalists?",hint:"Identify their position and their central concerns.",sources:src("Constitution Center - Anti-Federalists",URL.antifederalists)},
-  {id:"p15",display:"15",prompt:"What did the Federalists argue in favor of ratifying the Constitution?",hint:"Focus on the need for a more effective national government and the Constitution’s safeguards.",sources:src("Constitution Center - Ratification",URL.ratification)},
+  {id:"p15",display:"15",prompt:"What did the Federalists argue in favor of ratifying the Constitution?",hint:"Use Ctrl+F for “energetic national government.” The page explains that Federalists wanted a stronger national government to correct the Articles’ weaknesses.",sources:src("National Archives - Federalists and Anti-Federalists",URL.ratification)},
   {id:"p16",display:"16",prompt:"What weaknesses of the Articles of Confederation concerned the Federalists most?",hint:"Give one weakness. Search for Congress being unable to tax, regulate trade, or enforce its decisions—or the lack of national courts or an executive.",sources:src("National Archives - Constitution History",URL.constitutionHistory)},
-  {id:"p17",display:"17",prompt:"Which constitutional clauses or powers did Federalists support as necessary for an effective national government?",hint:"Identify at least one, such as taxation, commerce, supremacy, or necessary and proper authority.",sources:[{label:"Necessary and Proper Clause",url:URL.necessary},{label:"Supremacy Clause",url:URL.supremacy}]},
+  {id:"p17",display:"17",prompt:"Which constitutional clauses or powers did Federalists support as necessary for an effective national government?",hint:"One example is enough. Use Ctrl+F for “Taxes,” “Commerce,” “necessary and proper,” or “supreme Law of the Land.”",sources:src("National Archives - Constitution Transcript",URL.constitution)},
   {id:"p18",display:"18",prompt:"What arguments did the Anti-Federalists make against ratification?",hint:"Look for concerns about centralized power, the presidency, the courts, the states, and individual rights.",sources:src("Constitution Center - Anti-Federalists",URL.antifederalists)},
   {id:"p19",display:"19",prompt:"Why did Anti-Federalists want a Bill of Rights?",hint:"Explain why they believed written protections were necessary.",sources:src("Constitution Center - Bill of Rights",URL.billOfRights)},
-  {id:"p20",display:"20",prompt:"Which constitutional clauses or powers did Anti-Federalists oppose, and why?",hint:"Choose at least one broad national power and connect it to their fear of consolidated government.",sources:src("Constitution Center - Anti-Federalists",URL.antifederalists)},
+  {id:"p20",display:"20",prompt:"Which constitutional clauses or powers did Anti-Federalists oppose, and why?",hint:"First read “main reasons for opposing” on the Anti-Federalist page. Then use the Constitution link to find one broad power—taxation, commerce, necessary and proper, or supremacy—and explain that they feared too much national power.",sources:[{label:"Constitution Center - Anti-Federalist Concerns",url:URL.antifederalists},{label:"National Archives - Constitution Clauses",url:URL.constitution}]},
   {id:"p21",display:"21",prompt:"What was the outcome of the debate between Federalists and Anti-Federalists?",hint:"Explain what happened to the Constitution and what protection was promised afterward.",sources:src("National Archives - Constitution History",URL.constitutionHistory)},
-  {id:"p22",display:"22",prompt:"Who wrote many of the Federalist Papers?",hint:"At the top of the guide, find the three authors who used the name Publius: Hamilton, Madison, and Jay.",sources:src("Library of Congress - Federalist Papers",URL.federalistPapers)},
-  {id:"p23",display:"23",prompt:"What was the purpose of the Anti-Federalist essays and arguments?",hint:"Explain what their authors wanted readers and state ratifying conventions to do.",sources:src("Constitution Center - Anti-Federalists",URL.antifederalists)},
+  {id:"p22",display:"22",prompt:"Who wrote many of the Federalist Papers?",hint:"Use Ctrl+F for “Mounting a counterattack.” That paragraph names Alexander Hamilton, John Jay, and James Madison.",sources:src("National Archives - Constitution History",URL.constitutionHistory)},
+  {id:"p23",display:"23",prompt:"What was the purpose of the Anti-Federalist essays and arguments?",hint:"Use Ctrl+F for “Centinel essays.” The surrounding paragraphs show that the essays attacked the Constitution’s broad central power and missing Bill of Rights to persuade people to oppose ratification or demand changes.",sources:src("National Archives - Constitution History",URL.constitutionHistory)},
   {id:"p24",display:"24",prompt:"Which compromise helped secure ratification of the Constitution?",hint:"Look for the promise made to states concerned about individual liberties.",sources:src("Constitution Center - Bill of Rights",URL.billOfRights)}
  ]},
  {title:"Content Statement 7 - Constitutional Change",questions:[
   {id:"p25",display:"25",prompt:"What is one formal way the U.S. Constitution can be changed?",hint:"Use Ctrl+F for “Article V.” One part is enough: an amendment may be proposed by two-thirds of Congress or ratified by three-fourths of the states.",sources:src("National Archives - Constitution, Article V",URL.constitution)},
   {id:"p26",display:"26",prompt:"Give one example of an amendment that expanded rights and explain what it changed.",hint:"Possible choices include the 13th, 14th, 15th, 19th, 24th, or 26th Amendments.",sources:src("National Archives - Amendments 11-27",URL.amendments)},
   {id:"p27",display:"27",prompt:"Which amendment lowered the voting age to 18?",hint:"Use Ctrl+F and search for “eighteen years of age.” The amendment number beside that phrase is the answer.",sources:src("National Archives - Amendments 11-27",URL.amendments)},
-  {id:"p28",display:"28",prompt:"What role does the Supreme Court play in interpreting the Constitution?",hint:"Explain what happens when the Court decides whether a law or government action conflicts with the Constitution.",sources:src("Oyez - Marbury v. Madison",URL.marbury)},
-  {id:"p29",display:"29",prompt:"Which Supreme Court case established judicial review?",hint:"The case name is at the top of the linked page; its conclusion explains judicial review.",sources:src("Oyez - Marbury v. Madison",URL.marbury)},
+  {id:"p28",display:"28",prompt:"What role does the Supreme Court play in interpreting the Constitution?",hint:"The About section and opening transcript define judicial review: courts decide whether laws or government actions are constitutional.",sources:src("Bill of Rights Institute - Marbury v. Madison",URL.marbury)},
+  {id:"p29",display:"29",prompt:"Which Supreme Court case established judicial review?",hint:"The About section’s first sentence names the case and states that it established judicial review.",sources:src("Bill of Rights Institute - Marbury v. Madison",URL.marbury)},
   {id:"p30",display:"30",prompt:"Give one example of a Supreme Court case that expanded or protected individual rights. Explain the right involved.",hint:"The linked example concerns equal protection and segregated public schools.",sources:src("Oyez - Brown v. Board of Education",URL.brown)},
-  {id:"p31",display:"31",prompt:"What is the purpose of the Civil Rights Act of 1964?",hint:"Identify the kinds of discrimination the law prohibited and the settings it addressed.",sources:src("National Archives - Civil Rights Act",URL.civilRights)},
-  {id:"p32",display:"32",prompt:"What is the purpose of the Voting Rights Act of 1965?",hint:"Look for the discriminatory voting practices the law prohibited or restricted.",sources:src("National Archives - Voting Rights Act",URL.votingRights)},
-  {id:"p33",display:"33",prompt:"What is legislative oversight, and why is it important?",hint:"Explain how Congress monitors the executive branch and the implementation of laws.",sources:src("U.S. House History - Oversight",URL.oversight)},
-  {id:"p34",display:"34",prompt:"How does Congress add details to the constitutional framework through legislation?",hint:"Explain how broad constitutional powers become specific bills and laws.",sources:src("U.S. House - Legislative Process",URL.legislation)},
-  {id:"p35",display:"35",prompt:"Why is the Constitution sometimes called a “living document”?",hint:"Explain that it can adjust over time through amendments, laws, court interpretations, or application to new circumstances. One clear method is enough.",sources:src("National Archives - Amending America",URL.living)}
+  {id:"p31",display:"31",prompt:"What is the purpose of the Civil Rights Act of 1964?",hint:"Read the short paragraph immediately below “View Transcript.” It says the law prohibited discrimination in public places, integrated schools and public facilities, and made employment discrimination illegal.",sources:src("National Archives - Civil Rights Act",URL.civilRights)},
+  {id:"p32",display:"32",prompt:"What is the purpose of the Voting Rights Act of 1965?",hint:"Read the first paragraph below “View Transcript.” It says the law outlawed discriminatory voting practices, including literacy tests.",sources:src("National Archives - Voting Rights Act",URL.votingRights)},
+  {id:"p33",display:"33",prompt:"What is legislative oversight, and why is it important?",hint:"Read the paragraph immediately below the Article I quotation. Congress investigates and inspects public offices so it can write or review laws and hold officials accountable.",sources:src("U.S. House History - Oversight",URL.oversight)},
+  {id:"p34",display:"34",prompt:"How does Congress add details to the constitutional framework through legislation?",hint:"Read the first two paragraphs under “The Legislative Process.” Congress turns ideas into specific bills, studies and amends them, votes, and sends passed bills to the President.",sources:src("U.S. House - Legislative Process",URL.legislation)},
+  {id:"p35",display:"35",prompt:"Why is the Constitution sometimes called a “living document”?",hint:"Read the transcript from 1:03–3:16. It explains that Article V lets the people change the Constitution as new needs arise. One clear adaptation method is enough.",sources:src("Bill of Rights Institute - Constitutional Amendments",URL.living)}
  ]}
 ];
 
