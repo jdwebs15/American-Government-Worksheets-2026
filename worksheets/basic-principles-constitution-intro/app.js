@@ -1,5 +1,5 @@
 /* Paste the Government Hub's existing Apps Script /exec URL here. */
-const SCRIPT_URL="https://script.google.com/macros/s/AKfycbxOHGJjzKdU-p8EZQeylAZg18k9V-jF7uTV_eZI-YeAdP_W-U53umVb73_aNVoJv83ImA/exec";
+const SCRIPT_URL="https://script.google.com/macros/s/AKfycbx7A9pyMXnW9Zk9Ek-A05-mYdQrJB973hQTPpcfV2TLUlbJv1ZH5WEIoh9qCv8CnYTm/exec";
 const META={title:"Basic Principles of the Constitution",subtitle:"Introductory Short-Answer Worksheet",assignmentKey:"basic-principles-constitution-2026-v1"};
 
 const URL={
