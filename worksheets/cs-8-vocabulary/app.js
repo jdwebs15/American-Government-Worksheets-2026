@@ -1,31 +1,64 @@
-const Q=(term,definition,wrong,hint,explain,area='CS 8 • Bill of Rights')=>({area,stem:`Which definition best matches ${term}?`,answer:definition,choices:[definition,...wrong],hint,explain});
-const W=['a power held only by Congress','a procedure for amending the Constitution','a rule for electing the president'];
-const questions=[
-Q('Bill of Rights','the first ten amendments protecting liberties and limiting federal power',W,'Think Amendments 1–10.','The Bill of Rights lists important protections against government action.'),
-Q('civil liberties','fundamental freedoms protected from government interference',W,'Think protected freedom.','Civil liberties limit government interference with individual freedom.'),
-Q('freedom of speech','the right to express ideas and opinions',['the right to own any property','the right to avoid every law','the right to vote in every election'],'Think expression.','The First Amendment protects speech from improper government restriction.'),
-Q('freedom of religion','protection for religious belief and practice and against government establishment',['a guarantee that government funds every religion','a ban on private religious practice','a right to ignore neutral laws'],'Think establishment and free exercise.','The First Amendment contains both religion clauses.'),
-Q('establishment clause','the First Amendment rule against government establishment of religion',W,'Government may not establish an official religion.','The Establishment Clause limits government sponsorship of religion.'),
-Q('free exercise clause','the First Amendment protection for practicing religion',W,'Think freedom to exercise belief.','The Free Exercise Clause protects religious practice, subject to lawful limits.'),
-Q('freedom of the press','the right to publish news and opinions without improper government censorship',W,'Think newspapers and journalists.','The First Amendment protects press freedom.'),
-Q('freedom of assembly','the right to gather peacefully for a common purpose',W,'Think peaceful gathering.','The First Amendment protects peaceful assembly.'),
-Q('right to petition','the right to ask government to correct a problem or change policy',W,'Think requests to government.','Petition allows people to seek a redress of grievances.'),
-Q('right to bear arms','the Second Amendment protection involving keeping and carrying arms',W,'Think Amendment 2.','The Second Amendment protects the right to keep and bear arms.'),
-Q('unreasonable search and seizure','a government search or taking that lacks adequate legal justification',W,'Think privacy and police searches.','The Fourth Amendment bars unreasonable searches and seizures.'),
-Q('search warrant','a court order authorizing a particular search',W,'A judge issues it.','A warrant must rest on probable cause and describe the search.'),
-Q('probable cause','reasonable grounds supporting a search, arrest, or warrant',W,'More than a mere guess.','The Fourth Amendment requires probable cause for warrants.'),
-Q('self-incrimination','giving testimony or evidence that could expose oneself to criminal guilt',W,'Think being a witness against yourself.','The Fifth Amendment protects against compelled self-incrimination.'),
-Q('double jeopardy','being tried twice for the same offense after jeopardy has ended',W,'Same offense, second prosecution.','The Fifth Amendment protects against double jeopardy.'),
-Q('due process','fair legal procedures before government deprives life liberty or property',W,'Think fair process.','The Fifth Amendment guarantees due process by the federal government.'),
-Q('speedy trial','a criminal trial without unreasonable government delay',W,'Delay is the clue.','The Sixth Amendment protects a speedy trial.'),
-Q('public trial','a criminal trial generally open to public observation',W,'Think openness.','The Sixth Amendment protects a public trial.'),
-Q('impartial jury','jurors who are fair and unbiased',W,'Impartial means unbiased.','The Sixth Amendment requires an impartial jury.'),
-Q('notice of charges','the right of an accused person to know the accusation',W,'A defendant must know what to defend against.','The Sixth Amendment requires information about the charges.'),
-Q('confrontation right','the right to face and challenge opposing witnesses',W,'Think cross-examining an accuser.','The Sixth Amendment protects confrontation of witnesses.'),
-Q('right to counsel','the right to assistance from a lawyer in a criminal defense',W,'Counsel means attorney.','The Sixth Amendment protects legal assistance for the accused.'),
-Q('cruel and unusual punishment','punishment forbidden by the Eighth Amendment because of its unconstitutional severity or character',W,'Think Amendment 8.','The Eighth Amendment prohibits cruel and unusual punishment.'),
-Q('delegated powers','powers granted to the federal government by the Constitution',W,'Delegated means given.','The Constitution delegates specified powers to the federal government.'),
-Q('reserved powers','undelegated powers kept by the states or the people',['powers held only by federal courts','powers created by executive order','powers denied to every government'],'Think Tenth Amendment.','The Tenth Amendment reserves undelegated powers to states or the people.'),
-Q('Tenth Amendment','the amendment reserving undelegated powers to states or the people',W,'Think federalism.','The Tenth Amendment reinforces the constitutional division of power.')
-];
-launchMasteryGame({title:'CS 8 Bill of Rights Vocabulary',subtitle:'Master the essential language of civil liberties and the First, Second, Fourth, Fifth, Sixth, Eighth, and Tenth Amendments.',assignmentKey:'gov-cs8-vocabulary-2026-v1',questions,linger:3200});
+// ================================================================
+// PASTE THIS WORKSHEET'S GOOGLE APPS SCRIPT /exec WEB ADDRESS BELOW
+// ================================================================
+const APPS_SCRIPT_URL="https://script.google.com/macros/s/AKfycbyAkahbkT3Tn7wVxAap3EqF1uhnB2iJF9hm6pnuUueHkBibHUgZg2R8ZVEHE-Gky6y7/exec";
+const questions=window.BLOCK_QUESTIONS;
+const C=window.BLOCK_CONFIG;
+const $=id=>document.getElementById(id);
+const state={answers:{},mastered:{},attempts:{},wrongTotal:0,correctChecks:0,currentIndex:0,firstStart:new Date().toISOString(),sessions:1,activeSeconds:0,awaySeconds:0,tabLeaves:0,events:[],questionSeconds:{},lastTick:Date.now(),status:"in progress"};
+let saveTimer=null,advanceTimer=null,started=false;
+
+function init(){
+  $("pageTitle").textContent=C.title;$("pageDescription").textContent=C.description;$("practiceText").textContent=C.practice;
+  $("startBtn").onclick=start;$("loadBtn").onclick=loadCloud;$("saveBtn").onclick=()=>cloudSave(true);$("resetBtn").onclick=resetAssignment;$("workspaceResetBtn").onclick=resetAssignment;$("submitBtn").onclick=submit;$("completionResetBtn").onclick=resetAssignment;
+  ["studentName","email"].forEach(id=>$(id).addEventListener("change",restoreLocal));$("period").addEventListener("change",saveLocal);
+  document.addEventListener("visibilitychange",()=>{tick();if(document.hidden)state.tabLeaves++;state.events.push({type:document.hidden?"leave":"return",at:new Date().toISOString()})});
+  document.addEventListener("copy",()=>state.events.push({type:"copy",question:currentQuestion()?.id||"",at:new Date().toISOString()}));
+  document.addEventListener("paste",()=>state.events.push({type:"paste",question:currentQuestion()?.id||"",at:new Date().toISOString()}));
+  setInterval(()=>{tick();updateStats();if(started)saveLocal()},1000);
+}
+function student(){return{name:$("studentName").value.trim(),period:$("period").value,email:$("email").value.trim().toLowerCase()}}
+function valid(show=true){const s=student(),ok=s.name&&s.period&&/^\S+@\S+\.\S+$/.test(s.email);if(!ok&&show)$("saveStatus").textContent="Enter full name, period, and a valid school email first.";return ok}
+function storageKey(){return `${C.assignmentKey}|${student().email}`}
+function resetAssignment(){
+  if(!student().email){$("saveStatus").textContent="Enter the same school email used for this assignment, then select Reset Assignment.";return}
+  if(!confirm("Restart this assignment at Question 1 on this device? Earlier teacher records will remain in the spreadsheet."))return;
+  localStorage.removeItem(storageKey());
+  location.reload();
+}
+function start(){if(!valid(true))return;restoreLocal();started=true;state.sessions=Math.max(1,state.sessions||1);$("studentPanel").classList.add("hidden");$("workspace").classList.remove("hidden");goToFirstUnmastered();renderQuestion();updateStats();queueCloudSave()}
+function currentQuestion(){return questions[state.currentIndex]}
+function goToFirstUnmastered(){const i=questions.findIndex(q=>!state.mastered[q.id]);state.currentIndex=i<0?questions.length:i}
+function renderQuestion(){
+  if(state.currentIndex>=questions.length){showCompletion();return}
+  const q=currentQuestion(),n=state.currentIndex+1,letters=["A","B","C","D"];
+  $("questionCard").innerHTML=`<h2>${escapeHtml(q.topic||q.cs)}</h2><p class="prompt">${escapeHtml(q.prompt)}</p><div class="choices">${q.choices.map((choice,i)=>`<button class="choice" data-choice="${i}"><span class="choice-letter">${letters[i]}.</span><span>${escapeHtml(choice)}</span></button>`).join("")}</div><div id="feedback" class="feedback" role="status"></div>${q.source?`<div class="source-box"><a href="${q.source}" target="_blank" rel="noopener">Open supporting source ↗</a><p><strong>Where to look:</strong> ${escapeHtml(q.where)}</p></div>`:""}`;
+  document.querySelectorAll("[data-choice]").forEach(b=>b.onclick=()=>answer(Number(b.dataset.choice),b));
+  updateStats();window.scrollTo({top:Math.max(0,$("workspace").offsetTop-12),behavior:"smooth"});
+}
+function answer(choice,button){
+  if(advanceTimer)return;const q=currentQuestion(),f=$("feedback");state.answers[q.id]=choice;state.attempts[q.id]=(state.attempts[q.id]||0)+1;
+  if(choice===q.answer){
+    state.correctChecks++;state.mastered[q.id]=true;button.classList.add("correct");document.querySelectorAll("[data-choice]").forEach(b=>b.disabled=true);
+    f.className="feedback good";f.innerHTML=`<strong>Correct.</strong> ${escapeHtml(q.explanation)}<span class="advance-note">Advancing to the next question…</span>`;
+    state.events.push({type:"correct",question:q.id,attempt:state.attempts[q.id],at:new Date().toISOString()});saveLocal();updateStats();queueCloudSave();
+    advanceTimer=setTimeout(()=>{advanceTimer=null;state.currentIndex++;while(state.currentIndex<questions.length&&state.mastered[questions[state.currentIndex].id])state.currentIndex++;renderQuestion()},4000);
+  }else{
+    state.wrongTotal++;button.classList.add("wrong");setTimeout(()=>button.classList.remove("wrong"),550);f.className="feedback bad";f.innerHTML=`<strong>Not yet.</strong> ${escapeHtml(q.hint)}`;
+    state.events.push({type:"wrong",question:q.id,choice,at:new Date().toISOString()});saveLocal();updateStats();queueCloudSave();
+  }
+}
+function updateStats(){const mastered=questions.filter(q=>state.mastered[q.id]).length,attempts=Object.values(state.attempts).reduce((a,b)=>a+(Number(b)||0),0),accuracy=attempts?Math.round(mastered/attempts*100):100;$("progressStat").textContent=`${Math.min(mastered+1,questions.length)} / ${questions.length}`;$("accuracyStat").textContent=`${accuracy}%`;$("runtimeStat").textContent=formatTime(state.activeSeconds)}
+function formatTime(s){s=Math.max(0,Math.floor(s||0));const h=Math.floor(s/3600),m=Math.floor(s%3600/60),sec=s%60;return h?`${h}:${String(m).padStart(2,"0")}:${String(sec).padStart(2,"0")}`:`${m}:${String(sec).padStart(2,"0")}`}
+function tick(){const now=Date.now(),sec=Math.min(15,Math.max(0,(now-state.lastTick)/1000));if(started){if(document.hidden)state.awaySeconds+=sec;else state.activeSeconds+=sec;const q=currentQuestion();if(q)state.questionSeconds[q.id]=(state.questionSeconds[q.id]||0)+sec}state.lastTick=now}
+function showCompletion(){started=false;state.status="completed";state.completedAt=state.completedAt||new Date().toISOString();$("workspace").classList.add("hidden");$("completion").classList.remove("hidden");const attempts=Object.values(state.attempts).reduce((a,b)=>a+(Number(b)||0),0),accuracy=attempts?Math.round(questions.length/attempts*100):100,s=student();let nameLine=$("completionStudent");if(!nameLine){nameLine=document.createElement("h3");nameLine.id="completionStudent";nameLine.style.cssText="margin:.8rem auto;color:#fff;font-size:1.55rem;padding:10px 14px;border:1px solid #4b6fa8;border-radius:12px;background:#172c4d;max-width:620px";$("completion").insertBefore(nameLine,$("completionSummary"))}nameLine.textContent=`Completed by: ${s.name} • Period ${s.period}`;$("completionSummary").textContent=`${questions.length} of ${questions.length} mastered • ${attempts} attempts • ${accuracy}% accuracy • ${formatTime(state.activeSeconds)} active time.`;saveLocal();queueCloudSave()}
+function payload(){tick();const mastered=questions.filter(q=>state.mastered[q.id]).length,totalAttempts=Object.values(state.attempts).reduce((a,b)=>a+(Number(b)||0),0),accuracy=totalAttempts?Math.round(mastered/totalAttempts*100):100;return{assignmentKey:C.assignmentKey,assignmentTitle:C.title,course:"Government",assignmentType:"vocabulary",student:student(),state:{...state},answers:{...state.answers},mastered:{...state.mastered},score:mastered,total:questions.length,percent:Math.round(mastered/questions.length*100),masteryScore:mastered,masteryPercent:Math.round(mastered/questions.length*100),totalAttempts,accuracyPercent:accuracy,answerCount:Object.keys(state.answers).length,wrongAttempts:state.wrongTotal,updatedAt:new Date().toISOString()}}
+function saveLocal(){if(!student().email)return;localStorage.setItem(storageKey(),JSON.stringify(payload()))}
+function restoreLocal(){if(!student().email)return;const raw=localStorage.getItem(storageKey());if(!raw)return;try{mergeDraft(JSON.parse(raw));$("saveStatus").textContent="Saved work restored on this device."}catch{}}
+function mergeDraft(d){if(!d)return;const s=d.state||d;Object.assign(state.answers,d.answers||s.answers||{});Object.assign(state.mastered,d.mastered||s.mastered||{});for(const[k,v]of Object.entries(s.attempts||{}))state.attempts[k]=Math.max(state.attempts[k]||0,Number(v)||0);state.wrongTotal=Math.max(state.wrongTotal||0,s.wrongTotal||d.wrongAttempts||0);state.correctChecks=Math.max(state.correctChecks||0,s.correctChecks||0);state.activeSeconds=Math.max(state.activeSeconds||0,s.activeSeconds||0);state.awaySeconds=Math.max(state.awaySeconds||0,s.awaySeconds||0);state.tabLeaves=Math.max(state.tabLeaves||0,s.tabLeaves||0);state.firstStart=s.firstStart||state.firstStart;state.events=[...(state.events||[]),...(s.events||[])].slice(-500);state.questionSeconds=Object.assign({},s.questionSeconds||{},state.questionSeconds||{});goToFirstUnmastered()}
+function queueCloudSave(){clearTimeout(saveTimer);saveTimer=setTimeout(()=>cloudSave(false),750)}
+async function cloudSave(manual){if(!valid(false)||APPS_SCRIPT_URL.startsWith("PASTE_")){if(manual)$("saveStatus").textContent=APPS_SCRIPT_URL.startsWith("PASTE_")?"Saved on this device. Add the Apps Script web-app URL for teacher saving.":"Enter complete student information first.";return}saveLocal();try{await fetch(APPS_SCRIPT_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams({action:"save",payload:JSON.stringify(payload())})});$("saveStatus").textContent="Saved on this device and sent to your teacher draft."}catch{$("saveStatus").textContent="Saved on this device. Teacher save could not be confirmed."}}
+function loadCloud(){if(!valid(true)||APPS_SCRIPT_URL.startsWith("PASTE_")){if(APPS_SCRIPT_URL.startsWith("PASTE_"))$("saveStatus").textContent="Add the Apps Script web-app URL before loading teacher drafts.";return}const cb=`load_${Date.now()}`,script=document.createElement("script");window[cb]=r=>{try{if(r&&r.found)mergeDraft(r.payload);saveLocal();$("saveStatus").textContent=r&&r.found?"Previous work merged safely.":"No teacher draft was found."}finally{delete window[cb];script.remove()}};script.src=`${APPS_SCRIPT_URL}?action=load&assignmentKey=${encodeURIComponent(C.assignmentKey)}&email=${encodeURIComponent(student().email)}&callback=${cb}`;script.onerror=()=>{$("saveStatus").textContent="Could not load the teacher draft.";delete window[cb];script.remove()};document.body.appendChild(script)}
+async function submit(){if(!valid(true))return;state.status="submitted";state.submittedAt=new Date().toISOString();await cloudSave(true);$("submitStatus").textContent="Submitted successfully at 100% mastery.";$("submitBtn").disabled=true}
+function escapeHtml(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+init();
