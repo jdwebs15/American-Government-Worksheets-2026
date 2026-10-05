@@ -1,5 +1,5 @@
 // Phase II engine shared by vocabulary and review worksheets.
-const GOV_SCRIPT_URL='https://script.google.com/macros/s/AKfycbyAkahbkT3Tn7wVxAap3EqF1uhnB2iJF9hm6pnuUueHkBibHUgZg2R8ZVEHE-Gky6y7/exec';
+const GOV_SCRIPT_URL='https://script.google.com/macros/s/AKfycbx7A9pyMXnW9Zk9Ek-A05-mYdQrJB973hQTPpcfV2TLUlbJv1ZH5WEIoh9qCv8CnYTm/exec';
 function launchMasteryGame(config){
  const app=document.getElementById('app'),key=config.assignmentKey+'::v1',review=/review/.test(config.assignmentKey);
  const S={started:false,index:0,attempts:0,items:[],start:null,end:null,timer:null,name:'',period:'',email:'',events:[],completed:false};
