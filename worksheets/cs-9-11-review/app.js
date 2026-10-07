@@ -1,4 +1,11 @@
-const Q=(area,stem,answer,wrong,hint,explain)=>({area,stem,answer,choices:[answer,...wrong],hint,explain});
+const ARCHIVES_AMENDMENTS='https://www.archives.gov/founding-docs/amendments-11-27';
+const ARCHIVES_14='https://www.archives.gov/milestone-documents/14th-amendment';
+const ARCHIVES_EC='https://www.archives.gov/electoral-college/about';
+const Q=(area,stem,answer,wrong,hint,explain)=>{
+  const source=area.includes('Electoral College')||area.includes('Federalism')?ARCHIVES_EC:
+    area.includes('Fourteenth')||area.includes('Incorporation')?ARCHIVES_14:ARCHIVES_AMENDMENTS;
+  return {area,stem,answer,choices:[answer,...wrong],hint,explain,source,where:hint};
+};
 const questions=[
 Q('CS 9 • Thirteenth Amendment','A state attempts to legally restore slavery. Which amendment most directly prohibits this action?','Thirteenth Amendment',['Fourteenth Amendment','Nineteenth Amendment','Twenty-second Amendment'],'Think abolition.','The Thirteenth Amendment abolished slavery and involuntary servitude, except as criminal punishment.'),
 Q('CS 9 • Fourteenth Amendment','A child is born in Ohio to parents who are not U.S. citizens. Which amendment establishes the child’s U.S. citizenship?','Fourteenth Amendment',['Thirteenth Amendment','Fifteenth Amendment','Twenty-sixth Amendment'],'Think birthright citizenship.','The Citizenship Clause recognizes persons born in the United States as citizens.'),
