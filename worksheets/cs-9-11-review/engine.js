@@ -1,4 +1,4 @@
-const GOV_SCRIPT_URL='https://script.google.com/macros/s/AKfycbyAkahbkT3Tn7wVxAap3EqF1uhnB2iJF9hm6pnuUueHkBibHUgZg2R8ZVEHE-Gky6y7/exec';
+const GOV_SCRIPT_URL='https://script.google.com/macros/s/AKfycbxENUBm5pd966tRn1g9R7HH0zSXcEI10LGLivzQzN0pn6b0ytZHJdV8HU9i0ihYtHJW/exec';
 function launchMasteryGame(config){
  const app=document.getElementById('app'),key=config.assignmentKey+'::v1';
  const S={started:false,index:0,attempts:0,items:[],start:null,end:null,timer:null,name:'',period:'',email:'',events:[],completed:false};
