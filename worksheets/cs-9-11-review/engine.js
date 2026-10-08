@@ -29,7 +29,27 @@ function launchMasteryGame(config){
  function persist(){if(S.email)try{localStorage.setItem(key+'|'+S.email,JSON.stringify(saved()))}catch(e){console.warn('Local save unavailable',e)}}
  function restore(email){try{const d=JSON.parse(localStorage.getItem(key+'|'+email)||'null');if(!d||d.email!==email||!Array.isArray(d.items)||d.items.length!==config.questions.length)return false;Object.assign(S,d,{start:d.start?new Date(d.start):null,end:d.end?new Date(d.end):null,awayStart:d.awayStart?new Date(d.awayStart):null,submitting:false});return true}catch{return false}}
  function log(type,extra={}){S.events.push({type,at:new Date().toISOString(),index:S.index,...extra});S.events=S.events.slice(-500);persist()}
- function fresh(){Object.assign(S,{index:0,attempts:0,items:shuffle(config.questions).map(q=>({...q,choices:shuffle(q.choices),missed:false,mastered:false})),start:new Date(),end:null,events:[],completed:false,submitting:false,submissionMessage:'',tabLeaves:0,copies:0,pastes:0,awayMs:0,awayStart:null})}
+ function balancedPositions(n){
+  const slots=shuffle(Array.from({length:n},(_,i)=>i%4));
+  // Avoid three consecutive identical correct-answer letters.
+  for(let i=2;i<n;i++){
+   if(slots[i]===slots[i-1]&&slots[i]===slots[i-2]){
+    const candidates=[];
+    for(let j=i+1;j<n;j++)if(slots[j]!==slots[i]&&(i+2>=n||slots[i+1]!==slots[j]||slots[i+2]!==slots[j]))candidates.push(j);
+    if(candidates.length){const j=candidates[Math.floor(Math.random()*candidates.length)];[slots[i],slots[j]]=[slots[j],slots[i]]}
+   }
+  }
+  return slots;
+ }
+ function fresh(){
+  const qs=shuffle(config.questions),positions=balancedPositions(qs.length);
+  const items=qs.map((q,i)=>{
+   const wrong=shuffle(q.choices.filter(c=>c!==q.answer));
+   const choices=[...wrong];
+   choices.splice(positions[i],0,q.answer);
+   return {...q,choices,missed:false,mastered:false};
+  });
+  Object.assign(S,{index:0,attempts:0,items,start:new Date(),end:null,events:[],completed:false,submitting:false,submissionMessage:'',tabLeaves:0,copies:0,pastes:0,awayMs:0,awayStart:null})}
  function payload(status){return {action:'save',status,assignmentKey:config.assignmentKey,assignmentTitle:config.title,course:'Government',name:S.name,period:S.period,email:S.email,score:S.items.filter(q=>q.mastered).length,total:S.items.length,percent:Math.round(firstScore()/S.items.length*100),firstAttemptScore:firstScore(),attempts:S.attempts,startedAt:S.start?.toISOString()||'',completedAt:S.end?.toISOString()||'',elapsed:elapsed(),tabLeaves:S.tabLeaves,copies:S.copies,pastes:S.pastes,awaySeconds:Math.floor((S.awayMs+(S.awayStart?Date.now()-S.awayStart:0))/1000),events:S.events,gameState:saved()}}
  async function post(status){if(!GOV_SCRIPT_URL||!S.email)return false;try{await fetch(GOV_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload(status))});return true}catch(e){console.warn('Backend request failed',e);return false}}
  function tick(){clearInterval(interval);interval=setInterval(()=>{const x=document.getElementById('runtimeStat');if(x)x.textContent=elapsed()},1000)}
