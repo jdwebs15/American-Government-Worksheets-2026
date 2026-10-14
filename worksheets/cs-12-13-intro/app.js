@@ -1,4 +1,4 @@
-const APPS_SCRIPT_URL="https://script.google.com/macros/s/AKfycbxENUBm5pd966tRn1g9R7HH0zSXcEI10LGLivzQzN0pn6b0ytZHJdV8HU9i0ihYtHJW/exec";
+const APPS_SCRIPT_URL="https://script.google.com/macros/s/AKfycbyAkahbkT3Tn7wVxAap3EqF1uhnB2iJF9hm6pnuUueHkBibHUgZg2R8ZVEHE-Gky6y7/exec";
 const Q=window.BLOCK_QUESTIONS,C=window.BLOCK_CONFIG,$=id=>document.getElementById(id);
 const stamp=()=>new Date().toISOString(),fresh=()=>({answers:{},mastered:{},attempts:{},firstAttempt:{},order:[],choiceOrder:{},currentIndex:0,firstStart:null,completedAt:null,submittedAt:null,sessions:0,activeSeconds:0,awaySeconds:0,tabLeaves:0,events:[],questionSeconds:{},status:'in progress'});
 let state=fresh(),running=false,lastTick=Date.now(),advanceTimer=null,saveTimer=null,cloudPending=false;
@@ -27,6 +27,20 @@ function queueSave(){clearTimeout(saveTimer);saveTimer=setTimeout(()=>cloudSave(
 async function cloudSave(manual){if(!valid())return;saveLocal();if(cloudPending){if(manual)status('Saved locally; teacher transmission is already pending.');return false}cloudPending=true;try{await fetch(APPS_SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams({action:'save',payload:JSON.stringify(payload())})});status('Saved on this device; sent to teacher endpoint (receipt cannot be verified).');return true}catch(e){status('Saved on this device; teacher transmission failed. Try again later.');return false}finally{cloudPending=false}}
 function loadCloud(){if(!valid()){status('Enter full student details before loading.');return}let cb='load_'+Date.now(),script=document.createElement('script'),timeout=setTimeout(()=>cleanup('Teacher load timed out.'),12000);function cleanup(message){clearTimeout(timeout);delete window[cb];script.remove();if(message)status(message)}window[cb]=r=>{try{if(r?.found&&r.payload){restore(r.payload);saveLocal();status('Teacher draft loaded. Select Start / Resume.')}else status('No teacher draft was found.')}finally{cleanup()}};script.onerror=()=>cleanup('Could not load the teacher draft.');script.src=`${APPS_SCRIPT_URL}?action=load&assignmentKey=${encodeURIComponent(C.assignmentKey)}&email=${encodeURIComponent(student().email)}&callback=${cb}`;document.body.appendChild(script);}
 async function submit(){if(Q.some(q=>!state.mastered[q.id]))return;state.submittedAt=stamp();state.status='submitted';saveLocal();finish();$('submitStatus').textContent='Submission saved locally and sent to teacher endpoint. Confirm teacher receipt in the spreadsheet.';await cloudSave(true);}
-function reset(){if(!student().email){status('Enter your school email before restarting.');return}if(!confirm('Restart this worksheet on this device? Earlier teacher records will remain in the spreadsheet.'))return;localStorage.removeItem(key());location.reload()}
+function reset(){
+  if(!student().email){status('Enter your school email before restarting.');return}
+  if(!confirm('Restart this worksheet from question 1? Earlier teacher records will remain in the spreadsheet.'))return;
+  // Reset in place. Reloading previously triggered pagehide, which re-saved the old answers.
+  clearTimeout(saveTimer);saveTimer=null;
+  if(advanceTimer!==null){clearTimeout(advanceTimer);advanceTimer=null}
+  running=false;
+  try{localStorage.removeItem(key())}catch(e){status('Could not clear local storage.');return}
+  state=fresh();prepare();next();lastTick=Date.now();
+  $('completion').classList.add('hidden');
+  $('workspace').classList.add('hidden');
+  $('studentPanel').classList.remove('hidden');
+  $('submitStatus').textContent='';
+  status('Restart complete. Previous answers cleared. Select Start / Resume for a new attempt.');
+}
 function init(){$('pageTitle').textContent=C.title;$('pageDescription').textContent=C.description;$('practiceText').textContent=C.practice;$('startBtn').onclick=begin;$('loadBtn').onclick=loadCloud;$('saveBtn').onclick=()=>cloudSave(true);$('resetBtn').onclick=reset;$('completionResetBtn').onclick=reset;$('submitBtn').onclick=submit;$('email').addEventListener('change',localRestore);document.addEventListener('visibilitychange',()=>{tick();if(running){if(document.hidden)state.tabLeaves++;state.events.push({type:document.hidden?'leave':'return',question:current()?.id||'',at:stamp()});saveLocal()}lastTick=Date.now()});for(let type of ['copy','paste'])document.addEventListener(type,()=>{if(!running)return;state.events.push({type,question:current()?.id||'',at:stamp()});saveLocal()});setInterval(()=>{tick();if(running){stats();saveLocal()}},1000);window.addEventListener('pagehide',()=>{tick();saveLocal()});}
 init();
