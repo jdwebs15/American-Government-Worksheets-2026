@@ -1,2 +1,100 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CS 12–13 Comprehensive Review</title><link rel="stylesheet" href="styles.css"></head><body><main class="shell" id="app"></main><script src="app.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CS 12–13 Comprehensive Review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell" id="app"></main>
+  <script src="app.js"></script>
+  <script>
+/* CS 12–13 Review screenshot-ready ticket enhancement.
+   Keeps the existing question engine, saves, and reset functionality intact. */
+(() => {
+  'use strict';
+  const ASSIGNMENT_KEY='gov-cs12-13-review-2026-v1::v1';
+  const ENDPOINT='https://script.google.com/macros/s/AKfycbxENUBm5pd966tRn1g9R7HH0zSXcEI10LGLivzQzN0pn6b0ytZHJdV8HU9i0ihYtHJW/exec';
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+  const dt=x=>{if(!x)return 'Not recorded';const d=new Date(x);return Number.isNaN(d.getTime())?'Not recorded':d.toLocaleString()};
+  const elapsed=(a,b)=>{if(!a)return 'Not recorded';const n=Math.max(0,Math.floor(((b?new Date(b):new Date())-new Date(a))/1000));return `${Math.floor(n/60)}:${String(n%60).padStart(2,'0')}`};
+  const getSaved=()=>{
+    let latest=null;
+    try{
+      for(let i=0;i<localStorage.length;i++){
+        const k=localStorage.key(i);
+        if(!k||!k.startsWith(ASSIGNMENT_KEY+'|'))continue;
+        const d=JSON.parse(localStorage.getItem(k));
+        if(!d?.completed||!Array.isArray(d.items))continue;
+        if(!latest||new Date(d.end)>new Date(latest.end))latest=d;
+      }
+    }catch(e){}
+    return latest;
+  };
+  const style=document.createElement('style');
+  style.textContent=`
+    .review-ticket{max-width:670px;margin:0 auto;padding:24px 22px;border:1px solid #34465f;border-radius:16px;background:linear-gradient(145deg,#141f36,#0f182b);color:#edf3ff;text-align:center}
+    .review-ticket .ticket-eyebrow{font-size:.73rem;font-weight:800;letter-spacing:.12em;color:#aebdd8}
+    .review-ticket h2{margin:9px 0 12px;font-size:1.42rem}
+    .review-ticket .ticket-title{color:#a9caff;font-weight:800;line-height:1.45}
+    .review-ticket .ticket-line{margin:10px 0;color:#e4ebfa;line-height:1.55;overflow-wrap:anywhere}
+    .review-ticket .ticket-meta{color:#b9c9e2;font-size:.91rem}
+    .review-ticket .ticket-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:17px}
+    .review-ticket .ticket-note{font-size:.8rem;color:#e7d491;margin:13px 0 0}
+    .review-ticket .ticket-status{min-height:1.3em;font-size:.86rem;color:#c7e7ce}
+    @media print{.review-ticket{background:#fff!important;color:#000!important}.review-ticket *{color:#000!important}}
+  `;
+  document.head.appendChild(style);
+  let changing=false;
+  function enhance(){
+    const container=document.querySelector('#app > .completion');
+    if(!container||container.dataset.ticketUpgraded||changing)return;
+    const d=getSaved();
+    if(!d)return;
+    changing=true;
+    try{
+      const originalRestart=container.querySelector('#restart');
+      const total=d.items.length,first=d.items.filter(q=>q.mastered&&!q.missed).length;
+      const mastered=d.items.filter(q=>q.mastered).length;
+      const pct=total?Math.round(first/total*100):0;
+      const name=d.name||'Not recorded',period=d.period||'Not recorded',email=d.email||'Not recorded';
+      const title='CS 12–13 Branches and Public Policy Comprehensive Review';
+      container.innerHTML=`<div class="review-ticket">
+        <div class="ticket-eyebrow">AMERICAN GOVERNMENT • PHASE I</div>
+        <h2>Assignment Completion Ticket</h2>
+        <p class="ticket-title">${esc(title)}</p>
+        <p class="ticket-line">Student: <strong>${esc(name)}</strong> • Period: <strong>${esc(period)}</strong><br>${esc(email)}</p>
+        <p class="ticket-line">Score: ${mastered}/${total} (${total?Math.round(mastered/total*100):0}% mastery) • First-attempt correct: ${first}/${total} (${pct}%)</p>
+        <p class="ticket-line">Total attempts: ${Number(d.attempts||0)} • Elapsed time: ${elapsed(d.start,d.end)}</p>
+        <p class="ticket-line ticket-meta">Started: ${esc(dt(d.start))}<br>Completed: ${esc(dt(d.end))}</p>
+        <div class="ticket-actions"><button type="button" id="ticketSubmit">Submit Assignment</button><span id="ticketRestartSlot"></span></div>
+        <p class="ticket-status" id="ticketStatus" role="status">Mastery completed. Submit your assignment, then screenshot this ticket.</p>
+        <p class="ticket-note">Teacher endpoint delivery cannot be confirmed from this screen.</p>
+      </div>`;
+      if(originalRestart){
+        document.getElementById('ticketRestartSlot').replaceWith(originalRestart);
+        originalRestart.classList.add('secondary');
+      }
+      document.getElementById('ticketSubmit').onclick=async()=>{
+        const b=document.getElementById('ticketSubmit'),status=document.getElementById('ticketStatus');
+        b.disabled=true;
+        const payload={action:'save',status:'submitted',assignmentKey:'gov-cs12-13-review-2026-v1',assignmentTitle:title,course:'Government',name,period,email,score:mastered,total,percent:pct,masteryPercent:100,firstAttemptPercent:pct,firstAttemptScore:first,attempts:d.attempts,startedAt:d.start,completedAt:d.end,elapsed:elapsed(d.start,d.end),totalElapsed:elapsed(d.start,d.end),tabLeaves:(d.events||[]).filter(e=>e.type==='tab_leave').length,copies:(d.events||[]).filter(e=>e.type==='copy').length,pastes:(d.events||[]).filter(e=>e.type==='paste').length,events:d.events||[],gameState:{started:true,index:d.index,attempts:d.attempts,items:d.items,start:d.start,end:d.end,events:d.events,completed:true}};
+        try{
+          await fetch(ENDPOINT,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});
+          status.textContent='Submission sent to teacher endpoint (receipt unverified). Screenshot this completion ticket.';
+        }catch(e){
+          b.disabled=false;
+          status.textContent='Could not send submission. Your saved work remains on this device. Please try again.';
+        }
+      };
+      container.dataset.ticketUpgraded='true';
+    }finally{changing=false}
+  }
+  new MutationObserver(enhance).observe(document.getElementById('app'),{childList:true,subtree:true});
+  enhance();
+})();
+
+  </script>
+</body>
+</html>
