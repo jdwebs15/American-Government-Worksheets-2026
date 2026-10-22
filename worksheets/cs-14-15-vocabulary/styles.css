@@ -1,1 +1,39 @@
-*{box-sizing:border-box}body{margin:0;background:#07101f;color:#e8edf8;font:17px system-ui,Arial}#app{max-width:1060px;margin:20px auto;padding:18px}.hero,.panel,.ticket{background:#111e33;border:1px solid #40506a;border-radius:18px;padding:26px;margin:15px 0;box-shadow:0 12px 30px #0002}.hero{background:linear-gradient(115deg,#142d51,#111827)}.eyebrow{color:#8dbaff;font-weight:800;letter-spacing:.1em}h1{font-size:clamp(27px,4vw,42px);margin:12px 0}h2{line-height:1.3}.muted,.small{color:#bac9df}.small{font-size:14px}.fields{display:grid;grid-template-columns:2fr 1fr 2fr;gap:12px}label{display:block;font-weight:700}input,select{display:block;width:100%;padding:12px;margin-top:6px;border-radius:9px;border:1px solid #7790b0;font-size:16px}.btn,.choice{padding:14px 17px;border:1px solid #6c91c2;border-radius:10px;background:#24476e;color:white;font-size:17px;cursor:pointer}.btn{margin:12px 8px 0 0;background:#206cb5;font-weight:700}.choice{width:100%;text-align:left;margin:7px 0;background:#192c49}.choice:hover:not(:disabled){background:#345783}.choice:disabled{opacity:.8;cursor:default}.wrong{border-color:#ff9c9c!important;background:#542c36!important}.correct{border-color:#82e4aa!important;background:#235843!important}.feedback{margin:14px 0;color:#ffe0a0;min-height:24px}.progress{height:12px;background:#31435b;border-radius:20px;overflow:hidden}.progress div{height:100%;background:#59c4ee}.meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.back,a{color:#a5d7ff}.ticket{border:2px solid #70c6e8;background:#f5faff;color:#15233a}.ticket p{line-height:1.8}.pill{display:inline-block;padding:7px 11px;border-radius:20px;background:#25476c;margin:5px 5px 0 0}.source{margin-top:18px;padding-top:12px;border-top:1px solid #40506a}.status{color:#a9dbff}@media(max-width:650px){.fields{grid-template-columns:1fr}.hero,.panel,.ticket{padding:18px}}
+/* CS 14–15 Vocabulary — matched to CS 14–15 Intro dark mastery layout */
+:root{color-scheme:dark;--bg:#080e1d;--panel:#121b32;--line:#38466b;--text:#f0f3ff;--muted:#bdc9e3;--accent:#8caaff;--good:#7cdbad;--bad:#ffaaa9}
+*{box-sizing:border-box}
+html{min-height:100%;background:var(--bg)}
+body{margin:0;min-height:100vh;background:linear-gradient(180deg,#0a1021 0,#0a1021 65%,#090e1b 65%);color:var(--text);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+#app{width:min(100% - 32px,980px);margin:28px auto 70px;padding:0}
+.back{display:inline-block;margin:0 0 15px;color:#a9bfff;text-decoration:none;font-size:13px}
+.back:hover{text-decoration:underline}
+.hero,.panel,.ticket{background:#121a30;border:1px solid var(--line);border-radius:15px;padding:27px;margin:0 0 16px;box-shadow:none}
+.hero{background:#11192e;min-height:156px}
+.eyebrow{font-size:11px;font-weight:850;letter-spacing:.16em;text-transform:uppercase;color:#b7c5ff}
+h1{font-size:clamp(25px,2.5vw,34px);line-height:1.22;letter-spacing:-.025em;margin:12px 0 15px;font-weight:800;max-width:780px}
+h2{font-size:21px;line-height:1.35;margin:0 0 13px}
+p{margin:8px 0 13px}
+.muted,.small{color:var(--muted)}
+.small{font-size:12px}
+.panel{padding:26px}
+.fields{display:grid;grid-template-columns:1.45fr .75fr 1.45fr;gap:13px;margin:16px 0 10px}
+label{display:block;font-size:13px;font-weight:750;color:#eef2ff}
+input,select{display:block;width:100%;min-height:42px;margin-top:6px;padding:9px 12px;border-radius:7px;border:1px solid #53638b;background:#202b49;color:#f5f6ff;font:inherit;outline-offset:2px}
+input:focus,select:focus{outline:2px solid #a6baff}
+.btn,.choice{border:1px solid #6176ad;border-radius:7px;background:#26385e;color:#f3f5ff;font:inherit;cursor:pointer;transition:background .15s,border-color .15s}
+.btn{padding:10px 14px;margin:8px 7px 0 0;font-size:13px;font-weight:750}
+.btn:hover,.choice:hover:not(:disabled){background:#344a79;border-color:#9bb4ed}
+.choice{display:block;width:100%;text-align:left;margin:9px 0;padding:13px 16px;font-size:15px}
+.choice:disabled{opacity:.82;cursor:default}
+.wrong{border-color:#e68d98!important;background:#4b283c!important}
+.correct{border-color:#7cdbad!important;background:#1b4b42!important}
+.feedback{min-height:24px;margin:15px 0;color:#f7dca2}
+.meta{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;font-size:13px}
+.progress{height:9px;overflow:hidden;border-radius:12px;background:#2a3551;margin:15px 0 20px}
+.progress>div{height:100%;background:#86a9f5;transition:width .2s}
+.pill{display:inline-block;padding:4px 10px;margin:4px 5px 3px 0;border:1px solid #4d5e88;border-radius:999px;background:#17233e;color:#d4ddf8;font-size:11px;font-weight:700}
+.source{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:13px}
+.status{color:#b8d3ff}
+.ticket{background:#121a30;color:var(--text);border:1px solid #7389c0}
+.ticket p{line-height:1.9}
+a{color:#adc7ff}
+@media(max-width:650px){#app{width:min(100% - 20px,980px);margin:12px auto 40px}.hero,.panel,.ticket{padding:19px}.fields{grid-template-columns:1fr}.btn{margin-top:8px}h1{font-size:26px}}
