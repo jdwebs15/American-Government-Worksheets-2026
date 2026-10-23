@@ -1,4 +1,4 @@
-const URL='https://script.google.com/macros/s/AKfycbyAkahbkT3Tn7wVxAap3EqF1uhnB2iJF9hm6pnuUueHkBibHUgZg2R8ZVEHE-Gky6y7/exec';
+const URL='https://script.google.com/macros/s/AKfycbxENUBm5pd966tRn1g9R7HH0zSXcEI10LGLivzQzN0pn6b0ytZHJdV8HU9i0ihYtHJW/exec';
 const TITLE='CS 14–15 Rights and Civil Rights Vocabulary',KEY='gov-cs14-15-vocabulary-2026-v3',Q=window.VOCAB_QUESTIONS;
 const app=document.getElementById('app');let s={name:'',period:'',email:'',items:[],index:0,attempts:0,start:null,end:null,completed:false,events:[],sessionCount:0};
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
