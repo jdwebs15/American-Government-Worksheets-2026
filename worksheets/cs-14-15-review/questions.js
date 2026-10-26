@@ -3,12 +3,12 @@ window.REVIEW_QUESTIONS=[
     "id": "q1",
     "area": "CS 14",
     "stem": "A speaker criticizes a mayor at a public forum while allowing opponents to respond. Which explanation best connects the right and responsibility?",
-    "answer": "Speech permits criticism; civil discourse respects others’ opportunity to respond.",
+    "answer": "Speech protects criticism, while respectful dialogue makes disagreement productive.",
     "choices": [
-      "Speech permits criticism; civil discourse respects others’ opportunity to respond.",
-      "Speech protects criticism only when the mayor agrees.",
-      "Civil discourse requires speakers to avoid all political criticism.",
-      "The mayor may cancel criticism whenever opponents object."
+      "Criticism is protected, but responsible speech requires agreement with elected officials.",
+      "Civil discourse protects debate only after officials approve the forum.",
+      "Speech protects criticism, while respectful dialogue makes disagreement productive.",
+      "Petition rights require residents to accept the mayor’s final decision."
     ],
     "hint": "Identify both the protected expression and respectful conduct.",
     "explain": "Free speech protects criticism; civil discourse encourages respectful disagreement.",
@@ -21,10 +21,10 @@ window.REVIEW_QUESTIONS=[
     "stem": "A newspaper uncovers misuse of city funds but checks evidence before publication. Why do these actions belong together?",
     "answer": "Press freedom supports scrutiny; verifying claims promotes informed debate.",
     "choices": [
+      "Checking sources is required by the First Amendment before any article is published.",
       "Press freedom supports scrutiny; verifying claims promotes informed debate.",
-      "Press freedom applies only after officials approve an article.",
-      "Verifying claims transfers responsibility for news to government.",
-      "The public may investigate officials only during elections."
+      "Journalists may publish only information that public officials have independently verified.",
+      "Press freedom protects reporting, but public oversight belongs exclusively to voters."
     ],
     "hint": "Separate the legal freedom from responsible journalistic practice.",
     "explain": "Free press enables oversight; accuracy helps citizens evaluate claims.",
@@ -37,10 +37,10 @@ window.REVIEW_QUESTIONS=[
     "stem": "Residents organize a peaceful rally but keep emergency entrances accessible. Which principle explains their choice?",
     "answer": "Assembly rights coexist with the safety and rights of other people.",
     "choices": [
+      "Assembly rights allow any route so long as protesters do not damage property.",
+      "Safety restrictions may apply only when the government supports the protest message.",
       "Assembly rights coexist with the safety and rights of other people.",
-      "Assembly may occur only if every resident supports its message.",
-      "Public safety always eliminates the right to peaceful assembly.",
-      "Peaceful assembly requires a permit from the federal courts."
+      "The right to assemble requires authorities to suspend all emergency-access rules."
     ],
     "hint": "Rights are important, but their exercise is not unlimited.",
     "explain": "Rights can be subject to lawful, content-neutral safety restrictions.",
@@ -242,13 +242,13 @@ window.REVIEW_QUESTIONS=[
   {
     "id": "q16",
     "area": "CS 14",
-    "stem": "A protest blocks an ambulance route, and authorities enforce a neutral emergency-access rule. What makes the response potentially legitimate?",
-    "answer": "A narrowly applied safety rule can protect others without targeting the protesters’ viewpoint.",
+    "stem": "A city requires all demonstrations to leave a fire lane open, but denies only an anti-mayor group permission to use the square. Which analysis is strongest?",
+    "answer": "The fire-lane rule may be neutral, but denying access based on criticism is viewpoint discrimination.",
     "choices": [
-      "A narrowly applied safety rule can protect others without targeting the protesters’ viewpoint.",
-      "Officials may prohibit all protests that criticize emergency policy.",
-      "Any inconvenience makes peaceful protest constitutionally unprotected.",
-      "A protest’s popularity alone determines whether safety laws apply."
+      "Both restrictions are valid whenever a city cites public safety.",
+      "The fire-lane rule may be neutral, but denying access based on criticism is viewpoint discrimination.",
+      "The city must allow demonstrators to obstruct the fire lane if they criticize officials.",
+      "Both restrictions violate assembly rights because cities cannot regulate public spaces."
     ],
     "hint": "Compare public safety with viewpoint suppression.",
     "explain": "Neutral, lawful restrictions may balance assembly with safety.",
@@ -291,12 +291,12 @@ window.REVIEW_QUESTIONS=[
     "id": "q19",
     "area": "CS 14",
     "stem": "A voter shares an unverified rumor about a candidate despite easily available corrections. What responsibility is being neglected?",
-    "answer": "Seeking reliable information before contributing to public debate.",
+    "answer": "The responsibility to investigate claims before influencing others.",
     "choices": [
-      "Seeking reliable information before contributing to public debate.",
-      "Registering to vote in a different state.",
-      "Serving as a juror in a criminal trial.",
-      "Paying an additional tax on political speech."
+      "The duty to serve on a jury before criticizing a candidate.",
+      "The responsibility to investigate claims before influencing others.",
+      "The requirement to avoid criticizing candidates until election day.",
+      "The obligation to support the candidate chosen by most voters."
     ],
     "hint": "Think informed participation and civil discourse.",
     "explain": "Informed voters assess evidence and public issues.",
@@ -306,13 +306,13 @@ window.REVIEW_QUESTIONS=[
   {
     "id": "q20",
     "area": "CS 14",
-    "stem": "Which situation best demonstrates that rights are relative rather than absolute?",
-    "answer": "A city protects peaceful protest while enforcing a neutral rule against blocking emergency exits.",
+    "stem": "A public school permits students to wear political buttons but restricts disruptive shouting during instruction. Which conclusion best explains the difference?",
+    "answer": "Expression may be protected even when schools regulate substantial disruption to instruction.",
     "choices": [
-      "A city protects peaceful protest while enforcing a neutral rule against blocking emergency exits.",
-      "A city bans criticism whenever most residents object.",
-      "A state denies voting access to an unpopular group.",
-      "A mayor cancels a jury trial because it is inconvenient."
+      "Schools may ban any political view that causes disagreement among classmates.",
+      "Student speech is protected only when teachers agree with its message.",
+      "Expression may be protected even when schools regulate substantial disruption to instruction.",
+      "All expression is immune from school rules when it concerns public affairs."
     ],
     "hint": "The correct example preserves a right while protecting others.",
     "explain": "Lawful limits may protect safety and others’ rights.",
@@ -396,8 +396,8 @@ window.REVIEW_QUESTIONS=[
     ],
     "hint": "Consider which branch enforces federal law.",
     "explain": "Federal executive action supported university integration.",
-    "source": "https://www.nps.gov/chsc/learn/historyculture/little-rock-nine.htm",
-    "where": "Compare federal enforcement of school desegregation"
+    "source": "https://www.archives.gov/milestone-documents/stand-in-the-schoolhouse-door",
+    "where": "Stand in the Schoolhouse Door: federal response to Wallace at the University of Alabama"
   },
   {
     "id": "q26",
@@ -466,18 +466,18 @@ window.REVIEW_QUESTIONS=[
   {
     "id": "q30",
     "area": "CS 15",
-    "stem": "A state restricts a protection that the Supreme Court has incorporated from the Bill of Rights. Which principle allows federal constitutional review?",
-    "answer": "Most incorporated protections bind states through Fourteenth Amendment due process.",
+    "stem": "A city applies a facially neutral public-accommodations rule differently to customers based on race. Which constitutional concern is most directly raised by city officials’ conduct?",
+    "answer": "Equal protection when government applies a rule unequally on the basis of race.",
     "choices": [
-      "Most incorporated protections bind states through Fourteenth Amendment due process.",
-      "The Tenth Amendment prevents all federal review of states.",
-      "The Electoral College reviews local civil liberties disputes.",
-      "Only congressional statutes can ever limit state governments."
+      "Incorporation because all private business policies are part of the Bill of Rights.",
+      "Due process because every unequal outcome automatically denies a jury trial.",
+      "Reserved powers because cities are free to choose different rules for racial groups.",
+      "Equal protection when government applies a rule unequally on the basis of race."
     ],
-    "hint": "Think incorporation, not equal protection alone.",
-    "explain": "Selective incorporation uses Fourteenth Amendment due process.",
+    "hint": "Distinguish unequal government treatment from applying Bill of Rights guarantees to states.",
+    "explain": "The Equal Protection Clause limits discriminatory state and local government action.",
     "source": "https://constitutioncenter.org/the-constitution/amendments/amendment-xiv",
-    "where": "Due Process Clause"
+    "where": "Fourteenth Amendment: Equal Protection Clause"
   },
   {
     "id": "q31",
@@ -514,16 +514,16 @@ window.REVIEW_QUESTIONS=[
   {
     "id": "q33",
     "area": "CS 15",
-    "stem": "A state denies a protected right, and a plaintiff asks the Supreme Court to apply a Bill of Rights guarantee to the state. What would be the relevant judicial process?",
-    "answer": "Selective incorporation under the Fourteenth Amendment.",
+    "stem": "Congress passes a civil-rights law, a federal agency investigates violations, and a court decides a challenge. What does this sequence illustrate?",
+    "answer": "Different branches can legislate, enforce, and adjudicate civil-rights protections.",
     "choices": [
-      "Selective incorporation under the Fourteenth Amendment.",
-      "A presidential veto of the state constitution.",
-      "Congressional impeachment of every state judge.",
-      "A nationwide referendum conducted by the Supreme Court."
+      "The courts write the law while Congress determines guilt in each individual case.",
+      "Different branches can legislate, enforce, and adjudicate civil-rights protections.",
+      "Federal agencies amend the Constitution before a court may hear a case.",
+      "Congress enforces each complaint directly while agencies determine constitutional meaning."
     ],
-    "hint": "The Supreme Court interprets constitutional limits on states.",
-    "explain": "Incorporation applies most Bill of Rights guarantees to states.",
+    "hint": "Identify which branch makes, carries out, and interprets law.",
+    "explain": "Congress legislates, executive agencies enforce, and courts adjudicate disputes.",
     "source": "https://constitutioncenter.org/the-constitution/amendments/amendment-xiv",
     "where": "Incorporation through due process"
   },
@@ -546,13 +546,13 @@ window.REVIEW_QUESTIONS=[
   {
     "id": "q35",
     "area": "CS 15",
-    "stem": "Which pair correctly links a historically denied opportunity to a federal response?",
-    "answer": "Women excluded from voting — Nineteenth Amendment.",
+    "stem": "A historian compares several federal responses to discrimination. Which pairing identifies the most direct remedy for its stated barrier?",
+    "answer": "Poll taxes in federal elections — Twenty-Fourth Amendment.",
     "choices": [
-      "Women excluded from voting — Nineteenth Amendment.",
-      "Black voters charged poll taxes — Twenty-Second Amendment.",
-      "Students blocked from integration — federal tax legislation.",
-      "Racial housing discrimination — Twenty-Sixth Amendment."
+      "Racial discrimination in housing — Voting Rights Act of 1965.",
+      "Unequal access to hotels — Nineteenth Amendment.",
+      "Poll taxes in federal elections — Twenty-Fourth Amendment.",
+      "Sex-based exclusion from voting — Civil Rights Act of 1968."
     ],
     "hint": "Match each remedy to the same kind of exclusion.",
     "explain": "The Nineteenth Amendment barred sex-based denial of voting rights.",
@@ -562,13 +562,13 @@ window.REVIEW_QUESTIONS=[
   {
     "id": "q36",
     "area": "CS 15",
-    "stem": "Which pair correctly identifies a civil rights problem and the branch that addressed it?",
-    "answer": "Discriminatory voting practices — Congress through the Voting Rights Act.",
+    "stem": "A state resists a federal court order to integrate a public school. Which response correctly identifies a federal branch and its authority?",
+    "answer": "The executive branch can enforce federal court orders using lawful federal authority.",
     "choices": [
-      "Discriminatory voting practices — Congress through the Voting Rights Act.",
-      "School integration resistance — Congress commanding Army units directly.",
-      "Racial housing discrimination — Supreme Court passing the Fair Housing Act.",
-      "Unconstitutional state action — president issuing a final judicial ruling."
+      "Congress can overturn a court order by instructing state juries to disregard it.",
+      "The judiciary can write a new federal criminal statute to punish the governor.",
+      "The executive branch can enforce federal court orders using lawful federal authority.",
+      "State executives alone determine whether federal constitutional rulings are binding."
     ],
     "hint": "Choose a historically accurate branch-action pairing.",
     "explain": "Congress enacted the Voting Rights Act to protect ballot access.",
@@ -626,15 +626,15 @@ window.REVIEW_QUESTIONS=[
   {
     "id": "q40",
     "area": "CS 14–15",
-    "stem": "Which conclusion best connects both standards?",
-    "answer": "Citizens exercise rights responsibly while federal institutions protect those rights against discriminatory denial.",
+    "stem": "A community group advocates expanded voting access while members carefully verify election claims. Congress then strengthens protections against discrimination. Which conclusion connects CS 14 and CS 15?",
+    "answer": "Responsible civic participation can influence federal action that protects equal access to rights.",
     "choices": [
-      "Citizens exercise rights responsibly while federal institutions protect those rights against discriminatory denial.",
-      "Majority votes remove the need for constitutional rights or civic duties.",
-      "Federal protection of rights makes citizen participation unnecessary.",
-      "Civic responsibilities authorize states to deny rights to minorities."
+      "Responsible civic participation replaces the need for enforceable voting protections.",
+      "Federal voting protections eliminate the need for citizens to examine political claims.",
+      "Responsible civic participation can influence federal action that protects equal access to rights.",
+      "Federal action guarantees that every civic demand becomes a constitutional amendment."
     ],
-    "hint": "Connect individual conduct to government protection.",
+    "hint": "Connect responsible citizen participation to federal protection against discrimination.",
     "explain": "CS 14 emphasizes responsible exercise; CS 15 emphasizes federal protection and extension.",
     "source": "https://constitutioncenter.org/the-constitution/amendments/amendment-xiv",
     "where": "Fourteenth Amendment; compare to civic responsibilities"
