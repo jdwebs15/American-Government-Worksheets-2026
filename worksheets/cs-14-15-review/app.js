@@ -1,5 +1,5 @@
 'use strict';
-const GOV_SCRIPT_URL='https://script.google.com/macros/s/AKfycbyAkahbkT3Tn7wVxAap3EqF1uhnB2iJF9hm6pnuUueHkBibHUgZg2R8ZVEHE-Gky6y7/exec';
+const GOV_SCRIPT_URL='https://script.google.com/macros/s/AKfycbxENUBm5pd966tRn1g9R7HH0zSXcEI10LGLivzQzN0pn6b0ytZHJdV8HU9i0ihYtHJW/exec';
 const TITLE='CS 14–15 Rights and Civil Rights Comprehensive Review', KEY='gov-cs14-15-review-2026-v2', Q=window.REVIEW_QUESTIONS;
 const app=document.getElementById('app');
 const blank=()=>({name:'',email:'',period:'',items:[],index:0,attempts:0,start:null,end:null,events:[],completed:false,started:false,tabLeaves:0,copies:0,pastes:0});
