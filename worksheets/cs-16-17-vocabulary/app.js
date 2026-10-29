@@ -34,525 +34,525 @@ function sourceGuide(q){
 
 
 const questions=[
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “separation of powers”?",
-  "answer": "Government authority divided among three branches",
-  "choices": [
-   "Government authority divided among three branches",
-   "Checks and balances",
-   "Federalism",
-   "Popular sovereignty"
-  ],
-  "hint": "Focus on the role or action described by “separation of powers” in Ohio and U.S. constitutional government.",
-  "explain": "separation of powers: Government authority divided among three branches."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “checks and balances”?",
-  "answer": "Each branch can limit powers of the other branches",
-  "choices": [
-   "Separation of powers",
-   "Each branch can limit powers of the other branches",
-   "Judicial elections",
-   "Direct democracy"
-  ],
-  "hint": "Focus on the role or action described by “checks and balances” in Ohio and U.S. constitutional government.",
-  "explain": "checks and balances: Each branch can limit powers of the other branches."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “limited government”?",
-  "answer": "Government must obey constitutional and legal limits",
-  "choices": [
-   "Unlimited authority",
-   "Popular election",
-   "Government must obey constitutional and legal limits",
-   "Majority rule"
-  ],
-  "hint": "Focus on the role or action described by “limited government” in Ohio and U.S. constitutional government.",
-  "explain": "limited government: Government must obey constitutional and legal limits."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “popular sovereignty”?",
-  "answer": "Government receives its authority from the people",
-  "choices": [
-   "Judicial review",
-   "Federal appointment",
-   "Legislative oversight",
-   "Government receives its authority from the people"
-  ],
-  "hint": "Focus on the role or action described by “popular sovereignty” in Ohio and U.S. constitutional government.",
-  "explain": "popular sovereignty: Government receives its authority from the people."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “Bill of Rights”?",
-  "answer": "Constitutional protections for individual freedoms",
-  "choices": [
-   "Constitutional protections for individual freedoms",
-   "A state budget",
-   "A list of elected officials",
-   "A court schedule"
-  ],
-  "hint": "Focus on the role or action described by “Bill of Rights” in Ohio and U.S. constitutional government.",
-  "explain": "Bill of Rights: Constitutional protections for individual freedoms."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “federalism”?",
-  "answer": "Power shared between national and state governments",
-  "choices": [
-   "Power held only by courts",
-   "Power shared between national and state governments",
-   "Power held only by cities",
-   "Power held only by Congress"
-  ],
-  "hint": "Focus on the role or action described by “federalism” in Ohio and U.S. constitutional government.",
-  "explain": "federalism: Power shared between national and state governments."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “U.S. Constitution”?",
-  "answer": "The supreme governing document of the United States",
-  "choices": [
-   "A city ordinance",
-   "A state court ruling",
-   "The supreme governing document of the United States",
-   "An Ohio election law"
-  ],
-  "hint": "Focus on the role or action described by “U.S. Constitution” in Ohio and U.S. constitutional government.",
-  "explain": "U.S. Constitution: The supreme governing document of the United States."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “Ohio Constitution”?",
-  "answer": "The fundamental law organizing Ohio government",
-  "choices": [
-   "A federal executive order",
-   "A township policy",
-   "A congressional rule",
-   "The fundamental law organizing Ohio government"
-  ],
-  "hint": "Focus on the role or action described by “Ohio Constitution” in Ohio and U.S. constitutional government.",
-  "explain": "Ohio Constitution: The fundamental law organizing Ohio government."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “legislative branch”?",
-  "answer": "The branch that makes laws",
-  "choices": [
-   "The branch that makes laws",
-   "The branch that hears cases",
-   "The branch that enforces laws",
-   "The branch that runs elections only"
-  ],
-  "hint": "Focus on the role or action described by “legislative branch” in Ohio and U.S. constitutional government.",
-  "explain": "legislative branch: The branch that makes laws."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “executive branch”?",
-  "answer": "The branch that carries out laws",
-  "choices": [
-   "The branch that writes court opinions",
-   "The branch that carries out laws",
-   "The branch that approves amendments alone",
-   "The branch that sets jury verdicts"
-  ],
-  "hint": "Focus on the role or action described by “executive branch” in Ohio and U.S. constitutional government.",
-  "explain": "executive branch: The branch that carries out laws."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “judicial branch”?",
-  "answer": "The branch that interprets laws and resolves legal disputes",
-  "choices": [
-   "The branch that proposes budgets",
-   "The branch that commands the legislature",
-   "The branch that interprets laws and resolves legal disputes",
-   "The branch that writes statutes"
-  ],
-  "hint": "Focus on the role or action described by “judicial branch” in Ohio and U.S. constitutional government.",
-  "explain": "judicial branch: The branch that interprets laws and resolves legal disputes."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “initiative”?",
-  "answer": "Ohio voters propose a law or constitutional amendment",
-  "choices": [
-   "Judges issue a court order",
-   "The governor appoints a judge",
-   "Legislators override a veto",
-   "Ohio voters propose a law or constitutional amendment"
-  ],
-  "hint": "Focus on the role or action described by “initiative” in Ohio and U.S. constitutional government.",
-  "explain": "initiative: Ohio voters propose a law or constitutional amendment."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “referendum”?",
-  "answer": "Voters approve or reject a law through a ballot vote",
-  "choices": [
-   "Voters approve or reject a law through a ballot vote",
-   "The Senate confirms a nominee",
-   "A mayor issues an ordinance",
-   "A court hears an appeal"
-  ],
-  "hint": "Focus on the role or action described by “referendum” in Ohio and U.S. constitutional government.",
-  "explain": "referendum: Voters approve or reject a law through a ballot vote."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “direct democracy”?",
-  "answer": "Voters decide public questions themselves",
-  "choices": [
-   "Only elected representatives vote",
-   "Voters decide public questions themselves",
-   "Judges select all public officials",
-   "Federal agencies write local laws"
-  ],
-  "hint": "Focus on the role or action described by “direct democracy” in Ohio and U.S. constitutional government.",
-  "explain": "direct democracy: Voters decide public questions themselves."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “elected judges”?",
-  "answer": "Judges selected by voters in an election",
-  "choices": [
-   "Judges selected by the president",
-   "Judges selected by juries",
-   "Judges selected by voters in an election",
-   "Judges selected by Congress alone"
-  ],
-  "hint": "Focus on the role or action described by “elected judges” in Ohio and U.S. constitutional government.",
-  "explain": "elected judges: Judges selected by voters in an election."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “appointed federal judges”?",
-  "answer": "Judges nominated by the president and confirmed by the Senate",
-  "choices": [
-   "Judges elected in Ohio counties",
-   "Judges selected by state governors",
-   "Judges chosen by popular referendum",
-   "Judges nominated by the president and confirmed by the Senate"
-  ],
-  "hint": "Focus on the role or action described by “appointed federal judges” in Ohio and U.S. constitutional government.",
-  "explain": "appointed federal judges: Judges nominated by the president and confirmed by the Senate."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “legislative term limits”?",
-  "answer": "Rules restricting consecutive service in a legislative office",
-  "choices": [
-   "Rules restricting consecutive service in a legislative office",
-   "Rules limiting how many bills can pass",
-   "Rules limiting the length of court trials",
-   "Rules limiting voter registration"
-  ],
-  "hint": "Focus on the role or action described by “legislative term limits” in Ohio and U.S. constitutional government.",
-  "explain": "legislative term limits: Rules restricting consecutive service in a legislative office."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “1851 Ohio Constitution”?",
-  "answer": "Ohio governing document that expanded elected offices and restricted state debt",
-  "choices": [
-   "The first U.S. Constitution",
-   "Ohio governing document that expanded elected offices and restricted state debt",
-   "A federal amendment on voting",
-   "A local charter adopted in 2000"
-  ],
-  "hint": "Focus on the role or action described by “1851 Ohio Constitution” in Ohio and U.S. constitutional government.",
-  "explain": "1851 Ohio Constitution: Ohio governing document that expanded elected offices and restricted state debt."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “state debt limits”?",
-  "answer": "Constitutional restrictions on how much debt Ohio may incur",
-  "choices": [
-   "Limits on the number of state employees",
-   "Rules about judicial terms",
-   "Constitutional restrictions on how much debt Ohio may incur",
-   "Limits on how often citizens vote"
-  ],
-  "hint": "Focus on the role or action described by “state debt limits” in Ohio and U.S. constitutional government.",
-  "explain": "state debt limits: Constitutional restrictions on how much debt Ohio may incur."
- },
- {
-  "area": "CS 16",
-  "stem": "Which definition best matches “constitutional amendment”?",
-  "answer": "A formal change to a constitution",
-  "choices": [
-   "A temporary executive memo",
-   "A court witness statement",
-   "An ordinary school policy",
-   "A formal change to a constitution"
-  ],
-  "hint": "Focus on the role or action described by “constitutional amendment” in Ohio and U.S. constitutional government.",
-  "explain": "constitutional amendment: A formal change to a constitution."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “state government”?",
-  "answer": "Government responsible for statewide Ohio matters",
-  "choices": [
-   "Government responsible for statewide Ohio matters",
-   "Government serving one neighborhood",
-   "Government operating only federal agencies",
-   "Government limited to one school"
-  ],
-  "hint": "Focus on the role or action described by “state government” in state and local civic life.",
-  "explain": "state government: Government responsible for statewide Ohio matters."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “local government”?",
-  "answer": "County, municipal, township, or other community-level government",
-  "choices": [
-   "The U.S. Supreme Court",
-   "County, municipal, township, or other community-level government",
-   "The federal cabinet",
-   "Congress and the president"
-  ],
-  "hint": "Focus on the role or action described by “local government” in state and local civic life.",
-  "explain": "local government: County, municipal, township, or other community-level government."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “county government”?",
-  "answer": "Local government serving residents across a county",
-  "choices": [
-   "A federal agency covering all states",
-   "A branch of the United Nations",
-   "Local government serving residents across a county",
-   "A national political party"
-  ],
-  "hint": "Focus on the role or action described by “county government” in state and local civic life.",
-  "explain": "county government: Local government serving residents across a county."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “municipal government”?",
-  "answer": "Government of a city or village",
-  "choices": [
-   "Government of the entire nation",
-   "Government of every Ohio county",
-   "Government of the federal courts",
-   "Government of a city or village"
-  ],
-  "hint": "Focus on the role or action described by “municipal government” in state and local civic life.",
-  "explain": "municipal government: Government of a city or village."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “township government”?",
-  "answer": "Local government serving an Ohio township",
-  "choices": [
-   "Local government serving an Ohio township",
-   "The U.S. Senate",
-   "The Ohio Supreme Court",
-   "A national executive department"
-  ],
-  "hint": "Focus on the role or action described by “township government” in state and local civic life.",
-  "explain": "township government: Local government serving an Ohio township."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “school district”?",
-  "answer": "Local public organization that operates public schools",
-  "choices": [
-   "A state criminal court",
-   "Local public organization that operates public schools",
-   "A federal legislative district",
-   "A county military unit"
-  ],
-  "hint": "Focus on the role or action described by “school district” in state and local civic life.",
-  "explain": "school district: Local public organization that operates public schools."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “candidate”?",
-  "answer": "A person seeking election to public office",
-  "choices": [
-   "A person serving on a jury",
-   "A person filing a court appeal",
-   "A person seeking election to public office",
-   "A person signing a contract"
-  ],
-  "hint": "Focus on the role or action described by “candidate” in state and local civic life.",
-  "explain": "candidate: A person seeking election to public office."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “informed voting”?",
-  "answer": "Learning about candidates and issues before voting",
-  "choices": [
-   "Voting without reviewing choices",
-   "Allowing a neighbor to vote for you",
-   "Voting only on national offices",
-   "Learning about candidates and issues before voting"
-  ],
-  "hint": "Focus on the role or action described by “informed voting” in state and local civic life.",
-  "explain": "informed voting: Learning about candidates and issues before voting."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “petition”?",
-  "answer": "A formal request supported by citizens or signatures",
-  "choices": [
-   "A formal request supported by citizens or signatures",
-   "A court punishment",
-   "A government tax refund",
-   "A judicial appointment"
-  ],
-  "hint": "Focus on the role or action described by “petition” in state and local civic life.",
-  "explain": "petition: A formal request supported by citizens or signatures."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “ballot access”?",
-  "answer": "Meeting requirements to place a candidate or issue before voters",
-  "choices": [
-   "Obtaining a government job",
-   "Meeting requirements to place a candidate or issue before voters",
-   "Getting a court transcript",
-   "Receiving a property deed"
-  ],
-  "hint": "Focus on the role or action described by “ballot access” in state and local civic life.",
-  "explain": "ballot access: Meeting requirements to place a candidate or issue before voters."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “public meeting”?",
-  "answer": "A government gathering open for citizens to observe or participate as permitted",
-  "choices": [
-   "A private family event",
-   "A closed campaign fundraiser",
-   "A government gathering open for citizens to observe or participate as permitted",
-   "A federal jury deliberation"
-  ],
-  "hint": "Focus on the role or action described by “public meeting” in state and local civic life.",
-  "explain": "public meeting: A government gathering open for citizens to observe or participate as permitted."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “public comment”?",
-  "answer": "Citizens sharing views during an allowed portion of a government meeting",
-  "choices": [
-   "A judge issuing a sentence",
-   "A legislator casting a vote",
-   "A candidate filing taxes",
-   "Citizens sharing views during an allowed portion of a government meeting"
-  ],
-  "hint": "Focus on the role or action described by “public comment” in state and local civic life.",
-  "explain": "public comment: Citizens sharing views during an allowed portion of a government meeting."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “civic responsibility”?",
-  "answer": "An action citizens should take to support their community and government",
-  "choices": [
-   "An action citizens should take to support their community and government",
-   "A power reserved for the president",
-   "A right to ignore all laws",
-   "A requirement to hold public office"
-  ],
-  "hint": "Focus on the role or action described by “civic responsibility” in state and local civic life.",
-  "explain": "civic responsibility: An action citizens should take to support their community and government."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “civic participation”?",
-  "answer": "Taking part in public life to influence or improve the community",
-  "choices": [
-   "Avoiding all public decisions",
-   "Taking part in public life to influence or improve the community",
-   "Leaving all choices to courts",
-   "Serving only in the military"
-  ],
-  "hint": "Focus on the role or action described by “civic participation” in state and local civic life.",
-  "explain": "civic participation: Taking part in public life to influence or improve the community."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “volunteering”?",
-  "answer": "Giving time and effort to help others without required pay",
-  "choices": [
-   "Paying a fine for an offense",
-   "Receiving an elected salary",
-   "Giving time and effort to help others without required pay",
-   "Collecting state taxes"
-  ],
-  "hint": "Focus on the role or action described by “volunteering” in state and local civic life.",
-  "explain": "volunteering: Giving time and effort to help others without required pay."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “community watch”?",
-  "answer": "Neighbors cooperating to observe and report local safety concerns",
-  "choices": [
-   "A state appeals court",
-   "A federal military branch",
-   "A city tax committee",
-   "Neighbors cooperating to observe and report local safety concerns"
-  ],
-  "hint": "Focus on the role or action described by “community watch” in state and local civic life.",
-  "explain": "community watch: Neighbors cooperating to observe and report local safety concerns."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “volunteer fire department”?",
-  "answer": "Emergency fire service staffed partly or fully by trained volunteers",
-  "choices": [
-   "Emergency fire service staffed partly or fully by trained volunteers",
-   "A federal police agency",
-   "A state election office",
-   "A legislative committee"
-  ],
-  "hint": "Focus on the role or action described by “volunteer fire department” in state and local civic life.",
-  "explain": "volunteer fire department: Emergency fire service staffed partly or fully by trained volunteers."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “Ohio National Guard”?",
-  "answer": "Military force with state and federal responsibilities",
-  "choices": [
-   "An elected city council",
-   "Military force with state and federal responsibilities",
-   "A federal appeals court",
-   "A local voting board"
-  ],
-  "hint": "Focus on the role or action described by “Ohio National Guard” in state and local civic life.",
-  "explain": "Ohio National Guard: Military force with state and federal responsibilities."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “local public office”?",
-  "answer": "An official position serving a city, village, township, or county",
-  "choices": [
-   "A lifetime seat in Congress",
-   "A position in a foreign embassy",
-   "An official position serving a city, village, township, or county",
-   "A federal cabinet position"
-  ],
-  "hint": "Focus on the role or action described by “local public office” in state and local civic life.",
-  "explain": "local public office: An official position serving a city, village, township, or county."
- },
- {
-  "area": "CS 17",
-  "stem": "Which definition best matches “community service”?",
-  "answer": "Work performed to benefit a community or its residents",
-  "choices": [
-   "A vote in the U.S. Senate",
-   "An appeal to a federal court",
-   "A constitutional veto",
-   "Work performed to benefit a community or its residents"
-  ],
-  "hint": "Focus on the role or action described by “community service” in state and local civic life.",
-  "explain": "community service: Work performed to benefit a community or its residents."
- }
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “separation of powers”?",
+    "answer": "Government authority divided among three branches",
+    "choices": [
+      "Government authority divided among three branches",
+      "Each branch can limit the actions of other branches",
+      "National and state governments divide public powers",
+      "Voters give government its authority through elections"
+    ],
+    "hint": "Focus on the role or action described by “separation of powers” in Ohio and U.S. constitutional government.",
+    "explain": "separation of powers: Government authority divided among three branches."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “checks and balances”?",
+    "answer": "Each branch can limit powers of the other branches",
+    "choices": [
+      "Each branch can limit powers of the other branches",
+      "Each branch has a separate set of assigned duties",
+      "National and state governments share governing powers",
+      "Voters select officials to represent their interests"
+    ],
+    "hint": "Focus on the role or action described by “checks and balances” in Ohio and U.S. constitutional government.",
+    "explain": "checks and balances: Each branch can limit powers of the other branches."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “limited government”?",
+    "answer": "Government must obey constitutional and legal limits",
+    "choices": [
+      "Government must obey constitutional and legal limits",
+      "Government officials may act without legal restrictions",
+      "Government powers belong exclusively to local councils",
+      "Government decisions require unanimous public approval"
+    ],
+    "hint": "Focus on the role or action described by “limited government” in Ohio and U.S. constitutional government.",
+    "explain": "limited government: Government must obey constitutional and legal limits."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “popular sovereignty”?",
+    "answer": "Government receives its authority from the people",
+    "choices": [
+      "Government receives its authority from the people",
+      "Government authority rests with appointed federal judges",
+      "Government authority comes from military leadership",
+      "Government authority belongs to the legislative branch"
+    ],
+    "hint": "Focus on the role or action described by “popular sovereignty” in Ohio and U.S. constitutional government.",
+    "explain": "popular sovereignty: Government receives its authority from the people."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “Bill of Rights”?",
+    "answer": "Constitutional protections for individual freedoms",
+    "choices": [
+      "Constitutional protections for individual freedoms",
+      "A collection of rules for conducting state elections",
+      "A collection of procedures for amending budgets",
+      "A collection of powers assigned to county officials"
+    ],
+    "hint": "Focus on the role or action described by “Bill of Rights” in Ohio and U.S. constitutional government.",
+    "explain": "Bill of Rights: Constitutional protections for individual freedoms."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “federalism”?",
+    "answer": "Power shared between national and state governments",
+    "choices": [
+      "Power shared between national and state governments",
+      "Authority is divided between legislative and executive branches",
+      "Authority is divided among elected and appointed judges",
+      "Authority is divided between counties and townships only"
+    ],
+    "hint": "Focus on the role or action described by “federalism” in Ohio and U.S. constitutional government.",
+    "explain": "federalism: Power shared between national and state governments."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “U.S. Constitution”?",
+    "answer": "The supreme governing document of the United States",
+    "choices": [
+      "The supreme governing document of the United States",
+      "The governing charter for Ohio counties and townships",
+      "The set of regulations adopted by federal agencies",
+      "The collection of rulings issued by federal courts"
+    ],
+    "hint": "Focus on the role or action described by “U.S. Constitution” in Ohio and U.S. constitutional government.",
+    "explain": "U.S. Constitution: The supreme governing document of the United States."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “Ohio Constitution”?",
+    "answer": "The fundamental law organizing Ohio government",
+    "choices": [
+      "The fundamental law organizing Ohio government",
+      "The governing charter for the entire United States",
+      "The federal law that establishes congressional districts",
+      "The collection of decisions issued by Ohio courts"
+    ],
+    "hint": "Focus on the role or action described by “Ohio Constitution” in Ohio and U.S. constitutional government.",
+    "explain": "Ohio Constitution: The fundamental law organizing Ohio government."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “legislative branch”?",
+    "answer": "The branch that makes laws",
+    "choices": [
+      "The branch that makes laws",
+      "The branch that reviews whether laws are constitutional",
+      "The branch that administers and enforces enacted laws",
+      "The branch that oversees statewide voting procedures"
+    ],
+    "hint": "Focus on the role or action described by “legislative branch” in Ohio and U.S. constitutional government.",
+    "explain": "legislative branch: The branch that makes laws."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “executive branch”?",
+    "answer": "The branch that carries out laws",
+    "choices": [
+      "The branch that carries out laws",
+      "The branch that interprets laws in legal disputes",
+      "The branch that writes and approves proposed laws",
+      "The branch that organizes public election campaigns"
+    ],
+    "hint": "Focus on the role or action described by “executive branch” in Ohio and U.S. constitutional government.",
+    "explain": "executive branch: The branch that carries out laws."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “judicial branch”?",
+    "answer": "The branch that interprets laws and resolves legal disputes",
+    "choices": [
+      "The branch that interprets laws and resolves legal disputes",
+      "The branch that administers laws passed by legislators under Ohio law",
+      "The branch that drafts bills for legislative consideration",
+      "The branch that supervises statewide election procedures"
+    ],
+    "hint": "Focus on the role or action described by “judicial branch” in Ohio and U.S. constitutional government.",
+    "explain": "judicial branch: The branch that interprets laws and resolves legal disputes."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “initiative”?",
+    "answer": "Ohio voters propose a law or constitutional amendment",
+    "choices": [
+      "Ohio voters propose a law or constitutional amendment",
+      "Ohio voters approve or reject an existing state law under Ohio law",
+      "Ohio judges decide whether a law is constitutional",
+      "Ohio lawmakers propose bills for legislative debate"
+    ],
+    "hint": "Focus on the role or action described by “initiative” in Ohio and U.S. constitutional government.",
+    "explain": "initiative: Ohio voters propose a law or constitutional amendment."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “referendum”?",
+    "answer": "Voters approve or reject a law through a ballot vote",
+    "choices": [
+      "Voters approve or reject a law through a ballot vote",
+      "Voters propose a new law or constitutional amendment",
+      "Legislators approve a governor’s executive appointment",
+      "Judges decide whether an election law is valid"
+    ],
+    "hint": "Focus on the role or action described by “referendum” in Ohio and U.S. constitutional government.",
+    "explain": "referendum: Voters approve or reject a law through a ballot vote."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “direct democracy”?",
+    "answer": "Voters decide public questions themselves",
+    "choices": [
+      "Voters decide public questions themselves",
+      "Elected officials vote on behalf of their constituents",
+      "Judges decide disputes through the state court system",
+      "State agencies enforce laws passed by legislators"
+    ],
+    "hint": "Focus on the role or action described by “direct democracy” in Ohio and U.S. constitutional government.",
+    "explain": "direct democracy: Voters decide public questions themselves."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “elected judges”?",
+    "answer": "Judges selected by voters in an election",
+    "choices": [
+      "Judges selected by voters in an election",
+      "Judges selected by appointment of the state governor",
+      "Judges selected through nomination by the president",
+      "Judges selected through confirmation by legislators"
+    ],
+    "hint": "Focus on the role or action described by “elected judges” in Ohio and U.S. constitutional government.",
+    "explain": "elected judges: Judges selected by voters in an election."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “appointed federal judges”?",
+    "answer": "Judges nominated by the president and confirmed by the Senate",
+    "choices": [
+      "Judges nominated by the president and confirmed by the Senate",
+      "Judges elected by voters in statewide judicial races under Ohio law",
+      "Judges appointed by a governor and approved by courts",
+      "Judges nominated by state lawmakers for local courts"
+    ],
+    "hint": "Focus on the role or action described by “appointed federal judges” in Ohio and U.S. constitutional government.",
+    "explain": "appointed federal judges: Judges nominated by the president and confirmed by the Senate."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “legislative term limits”?",
+    "answer": "Rules restricting consecutive service in a legislative office",
+    "choices": [
+      "Rules restricting consecutive service in a legislative office",
+      "Rules restricting the number of bills lawmakers introduce under Ohio law",
+      "Rules restricting how often statewide elections occur",
+      "Rules restricting the total number of legislative seats"
+    ],
+    "hint": "Focus on the role or action described by “legislative term limits” in Ohio and U.S. constitutional government.",
+    "explain": "legislative term limits: Rules restricting consecutive service in a legislative office."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “1851 Ohio Constitution”?",
+    "answer": "Ohio governing document that expanded elected offices and restricted state debt",
+    "choices": [
+      "Ohio governing document that expanded elected offices and restricted state debt",
+      "Ohio governing document establishing its first state courts in state and local government",
+      "Ohio governing document creating a federal court system",
+      "Ohio governing document replacing the U.S. Constitution"
+    ],
+    "hint": "Focus on the role or action described by “1851 Ohio Constitution” in Ohio and U.S. constitutional government.",
+    "explain": "1851 Ohio Constitution: Ohio governing document that expanded elected offices and restricted state debt."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “state debt limits”?",
+    "answer": "Constitutional restrictions on how much debt Ohio may incur",
+    "choices": [
+      "Constitutional restrictions on how much debt Ohio may incur",
+      "Constitutional restrictions on the number of state judges under Ohio law",
+      "Constitutional restrictions on terms served by lawmakers",
+      "Constitutional restrictions on county election schedules"
+    ],
+    "hint": "Focus on the role or action described by “state debt limits” in Ohio and U.S. constitutional government.",
+    "explain": "state debt limits: Constitutional restrictions on how much debt Ohio may incur."
+  },
+  {
+    "area": "CS 16",
+    "stem": "Which definition best matches “constitutional amendment”?",
+    "answer": "A formal change to a constitution",
+    "choices": [
+      "A formal change to a constitution",
+      "A proposed change to an ordinary state administrative rule",
+      "A formal decision issued by an appellate court judge",
+      "A new statute approved by a state legislative majority"
+    ],
+    "hint": "Focus on the role or action described by “constitutional amendment” in Ohio and U.S. constitutional government.",
+    "explain": "constitutional amendment: A formal change to a constitution."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “state government”?",
+    "answer": "Government responsible for statewide Ohio matters",
+    "choices": [
+      "Government responsible for statewide Ohio matters",
+      "Government responsible for matters affecting one township",
+      "Government responsible for matters affecting the nation",
+      "Government responsible for matters affecting one city"
+    ],
+    "hint": "Focus on the role or action described by “state government” in state and local civic life.",
+    "explain": "state government: Government responsible for statewide Ohio matters."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “local government”?",
+    "answer": "County, municipal, township, or other community-level government",
+    "choices": [
+      "County, municipal, township, or other community-level government",
+      "National government agencies operating across all states under Ohio law",
+      "State government branches overseeing the entire state",
+      "Federal courts that hear disputes involving local officials"
+    ],
+    "hint": "Focus on the role or action described by “local government” in state and local civic life.",
+    "explain": "local government: County, municipal, township, or other community-level government."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “county government”?",
+    "answer": "Local government serving residents across a county",
+    "choices": [
+      "Local government serving residents across a county",
+      "Local government responsible for a city or village",
+      "Local government responsible for a township only",
+      "State government responsible for all Ohio residents"
+    ],
+    "hint": "Focus on the role or action described by “county government” in state and local civic life.",
+    "explain": "county government: Local government serving residents across a county."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “municipal government”?",
+    "answer": "Government of a city or village",
+    "choices": [
+      "Government of a city or village",
+      "Government responsible for an entire Ohio county",
+      "Government responsible for the whole state of Ohio",
+      "Government responsible for a federal judicial district"
+    ],
+    "hint": "Focus on the role or action described by “municipal government” in state and local civic life.",
+    "explain": "municipal government: Government of a city or village."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “township government”?",
+    "answer": "Local government serving an Ohio township",
+    "choices": [
+      "Local government serving an Ohio township",
+      "Local government serving residents of an Ohio county",
+      "Local government serving residents of an Ohio city",
+      "Local government serving residents of an entire state"
+    ],
+    "hint": "Focus on the role or action described by “township government” in state and local civic life.",
+    "explain": "township government: Local government serving an Ohio township."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “school district”?",
+    "answer": "Local public organization that operates public schools",
+    "choices": [
+      "Local public organization that operates public schools",
+      "Local government organization that oversees city police",
+      "Local public organization that manages county elections",
+      "Local public organization that operates county courts"
+    ],
+    "hint": "Focus on the role or action described by “school district” in state and local civic life.",
+    "explain": "school district: Local public organization that operates public schools."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “candidate”?",
+    "answer": "A person seeking election to public office",
+    "choices": [
+      "A person seeking election to public office",
+      "A person appointed to interpret state constitutional law",
+      "A person authorized to administer public elections",
+      "A person selected to oversee legislative committees"
+    ],
+    "hint": "Focus on the role or action described by “candidate” in state and local civic life.",
+    "explain": "candidate: A person seeking election to public office."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “informed voting”?",
+    "answer": "Learning about candidates and issues before voting",
+    "choices": [
+      "Learning about candidates and issues before voting",
+      "Following candidates without examining policy positions",
+      "Choosing candidates based only on campaign slogans",
+      "Casting a ballot without learning about public issues"
+    ],
+    "hint": "Focus on the role or action described by “informed voting” in state and local civic life.",
+    "explain": "informed voting: Learning about candidates and issues before voting."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “petition”?",
+    "answer": "A formal request supported by citizens or signatures",
+    "choices": [
+      "A formal request supported by citizens or signatures",
+      "A formal ruling delivered by a judge after a trial under Ohio law",
+      "A formal law passed by a state legislative body",
+      "A formal notice issued by a state executive agency"
+    ],
+    "hint": "Focus on the role or action described by “petition” in state and local civic life.",
+    "explain": "petition: A formal request supported by citizens or signatures."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “ballot access”?",
+    "answer": "Meeting requirements to place a candidate or issue before voters",
+    "choices": [
+      "Meeting requirements to place a candidate or issue before voters",
+      "Meeting requirements to become a registered voter in state and local government",
+      "Meeting requirements to serve as an elected judge",
+      "Meeting requirements to introduce legislation in Ohio"
+    ],
+    "hint": "Focus on the role or action described by “ballot access” in state and local civic life.",
+    "explain": "ballot access: Meeting requirements to place a candidate or issue before voters."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “public meeting”?",
+    "answer": "A government gathering open for citizens to observe or participate as permitted",
+    "choices": [
+      "A government gathering open for citizens to observe or participate as permitted",
+      "A private meeting of elected officials and party leaders in state and local government",
+      "A legislative committee meeting closed to the public",
+      "A campaign event organized by a political candidate"
+    ],
+    "hint": "Focus on the role or action described by “public meeting” in state and local civic life.",
+    "explain": "public meeting: A government gathering open for citizens to observe or participate as permitted."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “public comment”?",
+    "answer": "Citizens sharing views during an allowed portion of a government meeting",
+    "choices": [
+      "Citizens sharing views during an allowed portion of a government meeting",
+      "Citizens submitting a ballot during a general election in state and local government",
+      "Citizens filing legal appeals in a state trial court",
+      "Citizens volunteering to administer local elections"
+    ],
+    "hint": "Focus on the role or action described by “public comment” in state and local civic life.",
+    "explain": "public comment: Citizens sharing views during an allowed portion of a government meeting."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “civic responsibility”?",
+    "answer": "An action citizens should take to support their community and government",
+    "choices": [
+      "An action citizens should take to support their community and government",
+      "A legal power reserved exclusively for elected officials in state and local government",
+      "A constitutional authority held by the judicial branch",
+      "A formal requirement to serve in the state legislature"
+    ],
+    "hint": "Focus on the role or action described by “civic responsibility” in state and local civic life.",
+    "explain": "civic responsibility: An action citizens should take to support their community and government."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “civic participation”?",
+    "answer": "Taking part in public life to influence or improve the community",
+    "choices": [
+      "Taking part in public life to influence or improve the community",
+      "Taking part in court proceedings as an appointed judge under Ohio law",
+      "Carrying out laws as a full-time state agency employee",
+      "Making decisions without considering community concerns"
+    ],
+    "hint": "Focus on the role or action described by “civic participation” in state and local civic life.",
+    "explain": "civic participation: Taking part in public life to influence or improve the community."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “volunteering”?",
+    "answer": "Giving time and effort to help others without required pay",
+    "choices": [
+      "Giving time and effort to help others without required pay",
+      "Receiving payment for a government service contract under Ohio law",
+      "Completing court-ordered work as a legal punishment",
+      "Working in public office for an elected salary"
+    ],
+    "hint": "Focus on the role or action described by “volunteering” in state and local civic life.",
+    "explain": "volunteering: Giving time and effort to help others without required pay."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “community watch”?",
+    "answer": "Neighbors cooperating to observe and report local safety concerns",
+    "choices": [
+      "Neighbors cooperating to observe and report local safety concerns",
+      "Neighbors meeting to set statewide education standards under Ohio law",
+      "Neighbors gathering to draft new federal legislation",
+      "Neighbors serving as judges in municipal court cases"
+    ],
+    "hint": "Focus on the role or action described by “community watch” in state and local civic life.",
+    "explain": "community watch: Neighbors cooperating to observe and report local safety concerns."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “volunteer fire department”?",
+    "answer": "Emergency fire service staffed partly or fully by trained volunteers",
+    "choices": [
+      "Emergency fire service staffed partly or fully by trained volunteers",
+      "Emergency fire service operated only by federal troops under Ohio law",
+      "Emergency fire service staffed only by elected officials",
+      "Emergency fire service directed by state legislators"
+    ],
+    "hint": "Focus on the role or action described by “volunteer fire department” in state and local civic life.",
+    "explain": "volunteer fire department: Emergency fire service staffed partly or fully by trained volunteers."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “Ohio National Guard”?",
+    "answer": "Military force with state and federal responsibilities",
+    "choices": [
+      "Military force with state and federal responsibilities",
+      "Military force serving exclusively under county officials",
+      "Military force responsible only for municipal elections",
+      "Military force assigned solely to federal court security"
+    ],
+    "hint": "Focus on the role or action described by “Ohio National Guard” in state and local civic life.",
+    "explain": "Ohio National Guard: Military force with state and federal responsibilities."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “local public office”?",
+    "answer": "An official position serving a city, village, township, or county",
+    "choices": [
+      "An official position serving a city, village, township, or county",
+      "An official position serving the entire federal government under Ohio law",
+      "An official position serving an international organization",
+      "An official position serving a national political committee"
+    ],
+    "hint": "Focus on the role or action described by “local public office” in state and local civic life.",
+    "explain": "local public office: An official position serving a city, village, township, or county."
+  },
+  {
+    "area": "CS 17",
+    "stem": "Which definition best matches “community service”?",
+    "answer": "Work performed to benefit a community or its residents",
+    "choices": [
+      "Work performed to benefit a community or its residents",
+      "Work performed to benefit an elected official personally",
+      "Work performed to support only federal military duties",
+      "Work performed as a paid state government occupation"
+    ],
+    "hint": "Focus on the role or action described by “community service” in state and local civic life.",
+    "explain": "community service: Work performed to benefit a community or its residents."
+  }
 ];
 launchMasteryGame({title:"CS 16–17 Ohio Government and Citizenship Vocabulary",subtitle:"Compare the Ohio and U.S. Constitutions and examine how citizens assist state and local government.",assignmentKey:"gov-cs16-17-vocabulary-2026-v1",questions,linger:4000});
