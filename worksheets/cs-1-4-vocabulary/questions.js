@@ -1,643 +1,683 @@
-window.BLOCK_CONFIG={"assignmentKey": "gov-cs1-4-vocabulary-2026-v1", "title": "CS 1–4 Civic Involvement and Participation Vocabulary", "description": "Content Statements 1–4 • 40-question vocabulary mastery", "practice": "Civic action, parties and interest groups, source credibility, and democratic conflict resolution."};
+window.BLOCK_CONFIG={"assignmentKey": "gov-cs1-4-vocabulary-2026-v1", "title": "CS 1–4 Civic Engagement Vocabulary", "description": "Content Statements 1–4 • Government Vocabulary • 40 questions", "practice": "Civic action plans; parties, interest groups, and media; source credibility; and democratic agreement.", "mode": "vocabulary"};
 window.BLOCK_QUESTIONS=[
   {
-    "id": "q20",
-    "topic": "CS 2",
-    "prompt": "Which description best matches the term “target audience”?",
+    "id": "q1",
+    "cs": "CS 1",
+    "topic": "CS 1 • Civic action plans",
+    "prompt": "Which vocabulary term best fits this description? taking part in addressing community issues and influencing government decisions.",
     "choices": [
-      "the agency’s computer servers",
-      "every person regardless of the issue",
-      "only people who already wrote the message",
-      "people a communication effort is intended to reach"
-    ],
-    "answer": 3,
-    "explanation": "Target Audience means people a communication effort is intended to reach.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of target audience: people a communication effort is intended to reach"
-  },
-  {
-    "id": "q18",
-    "topic": "CS 2",
-    "prompt": "Which description best matches the term “candidate recruitment”?",
-    "choices": [
-      "an agency posts its operating hours",
-      "encouraging people to seek elected office",
-      "a reporter verifies a source",
-      "a civic club tests drinking water"
-    ],
-    "answer": 1,
-    "explanation": "Candidate Recruitment means encouraging people to seek elected office.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of candidate recruitment: encouraging people to seek elected office"
-  },
-  {
-    "id": "q11",
-    "topic": "CS 2",
-    "prompt": "Which description best matches the term “political party”?",
-    "choices": [
-      "administer city trash collection",
-      "lobby officials without seeking to elect its own slate",
-      "organization seeking to win elections and place members in office",
-      "publish weather forecasts only"
+      "Political process",
+      "Cost-benefit analysis",
+      "Civic engagement",
+      "Civic issue"
     ],
     "answer": 2,
-    "explanation": "Political Party means organization seeking to win elections and place members in office.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of political party: organization seeking to win elections and place members in office"
-  },
-  {
-    "id": "q22",
-    "topic": "CS 3",
-    "prompt": "Which description best matches the term “relevance”?",
-    "choices": [
-      "cite a document that never discusses traffic",
-      "how closely information addresses the question being studied",
-      "choose a source only because it is lengthy",
-      "use unrelated national sports statistics"
-    ],
-    "answer": 1,
-    "explanation": "Relevance means how closely information addresses the question being studied.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of relevance: how closely information addresses the question being studied"
-  },
-  {
-    "id": "q19",
-    "topic": "CS 2",
-    "prompt": "Which description best matches the term “policy influence”?",
-    "choices": [
-      "a party wins office without discussing any policy",
-      "a clerk archives an old document",
-      "efforts to shape government choices or implementation",
-      "a journalist reports only sports scores"
-    ],
-    "answer": 2,
-    "explanation": "Policy Influence means efforts to shape government choices or implementation.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of policy influence: efforts to shape government choices or implementation"
-  },
-  {
-    "id": "q5",
-    "topic": "CS 1",
-    "prompt": "Which description best matches the term “propose solutions”?",
-    "choices": [
-      "suggest practical responses to an identified issue",
-      "attack the motives of every critic",
-      "assume the problem will disappear",
-      "avoid specifying any action"
-    ],
-    "answer": 0,
-    "explanation": "Propose Solutions means suggest practical responses to an identified issue.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of propose solutions: suggest practical responses to an identified issue"
-  },
-  {
-    "id": "q32",
-    "topic": "CS 3",
-    "prompt": "Which description best matches the term “primary source”?",
-    "choices": [
-      "an unrelated opinion about city politics",
-      "a later textbook summary of the meeting",
-      "a commentary quoting an unknown rumor",
-      "direct record or firsthand evidence of an event or decision"
-    ],
-    "answer": 3,
-    "explanation": "Primary Source means direct record or firsthand evidence of an event or decision.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of primary source: direct record or firsthand evidence of an event or decision"
-  },
-  {
-    "id": "q31",
-    "topic": "CS 3",
-    "prompt": "Which description best matches the term “unstated assumption”?",
-    "choices": [
-      "accept every implied premise without review",
-      "confuse the author’s job title with evidence",
-      "an unproven premise on which an argument relies",
-      "count how many paragraphs appear in the report"
-    ],
-    "answer": 2,
-    "explanation": "Unstated Assumption means an unproven premise on which an argument relies.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of unstated assumption: an unproven premise on which an argument relies"
-  },
-  {
-    "id": "q8",
-    "topic": "CS 1",
-    "prompt": "Which description best matches the term “cost-benefit analysis”?",
-    "choices": [
-      "treat every proposal as equally effective",
-      "select the most expensive proposal automatically",
-      "consider benefits while ignoring tradeoffs",
-      "comparison of expected advantages and disadvantages"
-    ],
-    "answer": 3,
-    "explanation": "Cost-Benefit Analysis means comparison of expected advantages and disadvantages.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of cost-benefit analysis: comparison of expected advantages and disadvantages"
+    "source": "reference.html#cs1",
+    "where": "In the CS 1 section of the reference guide, locate the explanation of civic action plans; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'taking part in addressing community…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Civic engagement: Taking part in addressing community issues and influencing government decisions."
   },
   {
     "id": "q2",
-    "topic": "CS 1",
-    "prompt": "Which description best matches the term “identify an issue”?",
+    "cs": "CS 1",
+    "topic": "CS 1 • Civic action plans",
+    "prompt": "Identify the concept described: activities for gaining government power or influencing government decisions.",
     "choices": [
-      "choose a solution before learning the problem",
-      "define a specific public problem that needs attention",
-      "assume all residents agree",
-      "announce a campaign victory"
-    ],
-    "answer": 1,
-    "explanation": "Identify An Issue means define a specific public problem that needs attention.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of identify an issue: define a specific public problem that needs attention"
-  },
-  {
-    "id": "q12",
-    "topic": "CS 2",
-    "prompt": "Which description best matches the term “interest group”?",
-    "choices": [
-      "a party nominates candidates for governor",
-      "a court hears a criminal appeal",
-      "a county election board counts votes",
-      "organization seeking to influence policy without primarily winning office"
-    ],
-    "answer": 3,
-    "explanation": "Interest Group means organization seeking to influence policy without primarily winning office.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of interest group: organization seeking to influence policy without primarily winning office"
-  },
-  {
-    "id": "q39",
-    "topic": "CS 4",
-    "prompt": "Which description best matches the term “common ground”?",
-    "choices": [
-      "a party wins an election by one vote",
-      "one side refuses to acknowledge any shared goal",
-      "interests or goals shared by different parties",
-      "every participant supports identical budgets"
+      "Consequence",
+      "Action plan",
+      "Political process",
+      "Public policy process"
     ],
     "answer": 2,
-    "explanation": "Common Ground means interests or goals shared by different parties.",
-    "source": "https://www.uscourts.gov/educational-resources/educational-activities",
-    "where": "Consider how discussion and resolution of disagreements support civic life.",
-    "hint": "Focus on the meaning of common ground: interests or goals shared by different parties"
-  },
-  {
-    "id": "q34",
-    "topic": "CS 3",
-    "prompt": "Which description best matches the term “source date”?",
-    "choices": [
-      "assume a twenty-year-old estimate is always current",
-      "time a source was created or updated",
-      "ignore changes in law since publication",
-      "choose sources by headline length"
-    ],
-    "answer": 1,
-    "explanation": "Source Date means time a source was created or updated.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of source date: time a source was created or updated"
-  },
-  {
-    "id": "q7",
-    "topic": "CS 1",
-    "prompt": "Which description best matches the term “consequences”?",
-    "choices": [
-      "ignore people affected by a proposal",
-      "assume every change is cost-free",
-      "likely results, intended or unintended, of an action",
-      "focus only on the preferred outcome"
-    ],
-    "answer": 2,
-    "explanation": "Consequences means likely results, intended or unintended, of an action.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of consequences: likely results, intended or unintended, of an action"
-  },
-  {
-    "id": "q29",
-    "topic": "CS 3",
-    "prompt": "Which description best matches the term “logical conclusion”?",
-    "choices": [
-      "inference that reasonably follows from the evidence",
-      "draw a conclusion unrelated to the findings",
-      "claim one example proves a universal rule",
-      "treat coincidence as certain causation"
-    ],
-    "answer": 0,
-    "explanation": "Logical Conclusion means inference that reasonably follows from the evidence.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of logical conclusion: inference that reasonably follows from the evidence"
-  },
-  {
-    "id": "q15",
-    "topic": "CS 2",
-    "prompt": "Which description best matches the term “public opinion”?",
-    "choices": [
-      "the number of judges in a courthouse",
-      "an agency’s legal filing deadline",
-      "views held by people about public issues",
-      "the text of a zoning ordinance"
-    ],
-    "answer": 2,
-    "explanation": "Public Opinion means views held by people about public issues.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of public opinion: views held by people about public issues"
-  },
-  {
-    "id": "q21",
-    "topic": "CS 3",
-    "prompt": "Which description best matches the term “credible source”?",
-    "choices": [
-      "information worthy of trust after checking evidence and reliability",
-      "an anonymous claim without supporting details",
-      "a viral post that provides no original source",
-      "a claim contradicted by its own figures"
-    ],
-    "answer": 0,
-    "explanation": "Credible Source means information worthy of trust after checking evidence and reliability.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of credible source: information worthy of trust after checking evidence and reliability"
-  },
-  {
-    "id": "q40",
-    "topic": "CS 4",
-    "prompt": "Which description best matches the term “democratic decision-making”?",
-    "choices": [
-      "silence every opposing speaker",
-      "replace public deliberation with unsupported rumors",
-      "ignore the effects on affected residents",
-      "collective problem-solving that considers differing views"
-    ],
-    "answer": 3,
-    "explanation": "Democratic Decision-Making means collective problem-solving that considers differing views.",
-    "source": "https://www.uscourts.gov/educational-resources/educational-activities",
-    "where": "Consider how discussion and resolution of disagreements support civic life.",
-    "hint": "Focus on the meaning of democratic decision-making: collective problem-solving that considers differing views"
-  },
-  {
-    "id": "q30",
-    "topic": "CS 3",
-    "prompt": "Which description best matches the term “bias”?",
-    "choices": [
-      "trust only sources agreeing with you",
-      "a perspective that may selectively shape presentation",
-      "assume every opinion is automatically false",
-      "avoid identifying a writer’s viewpoint"
-    ],
-    "answer": 1,
-    "explanation": "Bias means a perspective that may selectively shape presentation.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of bias: a perspective that may selectively shape presentation"
-  },
-  {
-    "id": "q36",
-    "topic": "CS 4",
-    "prompt": "Which description best matches the term “compromise”?",
-    "choices": [
-      "a judge issues an unrelated ruling",
-      "one side gets everything it demanded",
-      "all sides refuse any change",
-      "agreement in which sides each give up something"
-    ],
-    "answer": 3,
-    "explanation": "Compromise means agreement in which sides each give up something.",
-    "source": "https://www.uscourts.gov/educational-resources/educational-activities",
-    "where": "Consider how discussion and resolution of disagreements support civic life.",
-    "hint": "Focus on the meaning of compromise: agreement in which sides each give up something"
-  },
-  {
-    "id": "q23",
-    "topic": "CS 3",
-    "prompt": "Which description best matches the term “author qualifications”?",
-    "choices": [
-      "assume all anonymous posts are expert opinions",
-      "judge expertise solely by the number of followers",
-      "expertise and experience relevant to a claim",
-      "ignore whether the author knows the topic"
-    ],
-    "answer": 2,
-    "explanation": "Author Qualifications means expertise and experience relevant to a claim.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of author qualifications: expertise and experience relevant to a claim"
-  },
-  {
-    "id": "q38",
-    "topic": "CS 4",
-    "prompt": "Which description best matches the term “negotiation”?",
-    "choices": [
-      "repeat a slogan instead of talking",
-      "discussion between parties seeking acceptable terms",
-      "publish a notice without hearing responses",
-      "ignore the other side’s priorities"
-    ],
-    "answer": 1,
-    "explanation": "Negotiation means discussion between parties seeking acceptable terms.",
-    "source": "https://www.uscourts.gov/educational-resources/educational-activities",
-    "where": "Consider how discussion and resolution of disagreements support civic life.",
-    "hint": "Focus on the meaning of negotiation: discussion between parties seeking acceptable terms"
-  },
-  {
-    "id": "q37",
-    "topic": "CS 4",
-    "prompt": "Which description best matches the term “consensus building”?",
-    "choices": [
-      "working toward broad shared support for a decision",
-      "exclude everyone who disagrees",
-      "declare victory after one person approves",
-      "stop discussion before hearing concerns"
-    ],
-    "answer": 0,
-    "explanation": "Consensus Building means working toward broad shared support for a decision.",
-    "source": "https://www.uscourts.gov/educational-resources/educational-activities",
-    "where": "Consider how discussion and resolution of disagreements support civic life.",
-    "hint": "Focus on the meaning of consensus building: working toward broad shared support for a decision"
-  },
-  {
-    "id": "q28",
-    "topic": "CS 3",
-    "prompt": "Which description best matches the term “supporting evidence”?",
-    "choices": [
-      "offer an opinion without any basis",
-      "assume a headline proves a conclusion",
-      "replace data with insults",
-      "verifiable facts or documentation backing a claim"
-    ],
-    "answer": 3,
-    "explanation": "Supporting Evidence means verifiable facts or documentation backing a claim.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of supporting evidence: verifiable facts or documentation backing a claim"
-  },
-  {
-    "id": "q9",
-    "topic": "CS 1",
-    "prompt": "Which description best matches the term “political process”?",
-    "choices": [
-      "activities aimed at gaining governmental power or influencing decisions",
-      "have a department issue building permits",
-      "inspect compliance with an adopted rule",
-      "carry out an approved sanitation schedule"
-    ],
-    "answer": 0,
-    "explanation": "Political Process means activities aimed at gaining governmental power or influencing decisions.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of political process: activities aimed at gaining governmental power or influencing decisions"
+    "source": "reference.html#cs1",
+    "where": "In the CS 1 section of the reference guide, locate the explanation of civic action plans; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'activities for gaining government power…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Political process: Activities for gaining government power or influencing government decisions."
   },
   {
     "id": "q3",
-    "topic": "CS 1",
-    "prompt": "Which description best matches the term “research”?",
+    "cs": "CS 1",
+    "topic": "CS 1 • Civic action plans",
+    "prompt": "Select the term that means: government procedures and actions used to carry out public functions.",
     "choices": [
-      "repeat an unsupported rumor",
-      "skip conflicting evidence",
-      "gather relevant evidence about a public concern",
-      "decide based only on a slogan"
-    ],
-    "answer": 2,
-    "explanation": "Research means gather relevant evidence about a public concern.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of research: gather relevant evidence about a public concern"
-  },
-  {
-    "id": "q6",
-    "topic": "CS 1",
-    "prompt": "Which description best matches the term “action plan”?",
-    "choices": [
-      "publish only an opinion poll",
-      "organized steps, responsibilities, and timing for a civic goal",
-      "announce success before implementation",
-      "express concern without next steps"
+      "Cost-benefit analysis",
+      "Public policy process",
+      "Jurisdiction",
+      "Civic issue"
     ],
     "answer": 1,
-    "explanation": "Action Plan means organized steps, responsibilities, and timing for a civic goal.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of action plan: organized steps, responsibilities, and timing for a civic goal"
-  },
-  {
-    "id": "q14",
-    "topic": "CS 2",
-    "prompt": "Which description best matches the term “media strategy”?",
-    "choices": [
-      "avoid explaining the issue to anyone",
-      "choice of communication channel suited to an audience and goal",
-      "use a closed meeting to reach every resident",
-      "choose a channel without considering its audience"
-    ],
-    "answer": 1,
-    "explanation": "Media Strategy means choice of communication channel suited to an audience and goal.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of media strategy: choice of communication channel suited to an audience and goal"
-  },
-  {
-    "id": "q35",
-    "topic": "CS 4",
-    "prompt": "Which description best matches the term “persuasion”?",
-    "choices": [
-      "divide funding equally without debate",
-      "force a decision without discussion",
-      "using reasons and evidence to change others’ views",
-      "refuse to explain a proposal"
-    ],
-    "answer": 2,
-    "explanation": "Persuasion means using reasons and evidence to change others’ views.",
-    "source": "https://www.uscourts.gov/educational-resources/educational-activities",
-    "where": "Consider how discussion and resolution of disagreements support civic life.",
-    "hint": "Focus on the meaning of persuasion: using reasons and evidence to change others’ views"
-  },
-  {
-    "id": "q24",
-    "topic": "CS 3",
-    "prompt": "Which description best matches the term “organizational reputation”?",
-    "choices": [
-      "ignore a history of fabricated reports",
-      "trust a source because its logo is colorful",
-      "assume popularity proves accuracy",
-      "record of accuracy and accountability of a publisher"
-    ],
-    "answer": 3,
-    "explanation": "Organizational Reputation means record of accuracy and accountability of a publisher.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of organizational reputation: record of accuracy and accountability of a publisher"
-  },
-  {
-    "id": "q1",
-    "topic": "CS 1",
-    "prompt": "Which description best matches the term “civic engagement”?",
-    "choices": [
-      "participating in efforts to address community or government issues",
-      "avoiding every public issue",
-      "receiving a government benefit",
-      "only holding elected office"
-    ],
-    "answer": 0,
-    "explanation": "Civic Engagement means participating in efforts to address community or government issues.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of civic engagement: participating in efforts to address community or government issues"
+    "source": "reference.html#cs1",
+    "where": "In the CS 1 section of the reference guide, locate the explanation of civic action plans; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'government procedures and actions used…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Public policy process: Government procedures and actions used to carry out public functions."
   },
   {
     "id": "q4",
-    "topic": "CS 1",
-    "prompt": "Which description best matches the term “debate”?",
+    "cs": "CS 1",
+    "topic": "CS 1 • Civic action plans",
+    "prompt": "Which term is defined here? a community problem or concern that may call for collective or government action.",
     "choices": [
-      "refuse to hear objections",
-      "enforce an existing regulation",
-      "count ballots in an election",
-      "exchange arguments and evidence about competing ideas"
-    ],
-    "answer": 3,
-    "explanation": "Debate means exchange arguments and evidence about competing ideas.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of debate: exchange arguments and evidence about competing ideas"
-  },
-  {
-    "id": "q17",
-    "topic": "CS 2",
-    "prompt": "Which description best matches the term “lobbying”?",
-    "choices": [
-      "attempting to persuade officials about public decisions",
-      "carry out an agency inspection",
-      "issue a court ruling",
-      "count votes as an election worker"
-    ],
-    "answer": 0,
-    "explanation": "Lobbying means attempting to persuade officials about public decisions.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of lobbying: attempting to persuade officials about public decisions"
-  },
-  {
-    "id": "q33",
-    "topic": "CS 3",
-    "prompt": "Which description best matches the term “fact versus opinion”?",
-    "choices": [
-      "distinction between verifiable claims and judgments",
-      "reject facts because they are unpopular",
-      "treat every value judgment as a measured fact",
-      "assume all statistics are opinions"
-    ],
-    "answer": 0,
-    "explanation": "Fact Versus Opinion means distinction between verifiable claims and judgments.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of fact versus opinion: distinction between verifiable claims and judgments"
-  },
-  {
-    "id": "q16",
-    "topic": "CS 2",
-    "prompt": "Which description best matches the term “advocacy”?",
-    "choices": [
-      "administer an approved city payroll",
-      "calculate election district boundaries",
-      "secretly discard contrary evidence",
-      "public support for a particular cause or policy"
-    ],
-    "answer": 3,
-    "explanation": "Advocacy means public support for a particular cause or policy.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of advocacy: public support for a particular cause or policy"
-  },
-  {
-    "id": "q26",
-    "topic": "CS 3",
-    "prompt": "Which description best matches the term “corroboration”?",
-    "choices": [
-      "cite a single anonymous comment three times",
-      "agreement among independent reliable sources",
-      "repeat the same unverified post on several websites",
-      "ignore independent evidence that conflicts"
+      "Action plan",
+      "Civic issue",
+      "Consequence",
+      "Public hearing"
     ],
     "answer": 1,
-    "explanation": "Corroboration means agreement among independent reliable sources.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of corroboration: agreement among independent reliable sources"
+    "source": "reference.html#cs1",
+    "where": "In the CS 1 section of the reference guide, locate the explanation of civic action plans; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'a community problem or concern…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Civic issue: A community problem or concern that may call for collective or government action."
   },
   {
-    "id": "q27",
-    "topic": "CS 3",
-    "prompt": "Which description best matches the term “internal consistency”?",
+    "id": "q5",
+    "cs": "CS 1",
+    "topic": "CS 1 • Civic action plans",
+    "prompt": "Choose the vocabulary word for this idea: a sequence of tasks, responsibilities, and deadlines for addressing a problem.",
     "choices": [
-      "trust a source solely for its confident tone",
-      "ignore changing definitions in a report",
-      "absence of contradictions within a source",
-      "accept totals that conflict with the report’s own chart"
+      "Public comment",
+      "Action plan",
+      "Jurisdiction",
+      "Cost-benefit analysis"
+    ],
+    "answer": 1,
+    "source": "reference.html#cs1",
+    "where": "In the CS 1 section of the reference guide, locate the explanation of civic action plans; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'a sequence of tasks, responsibilities,…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Action plan: A sequence of tasks, responsibilities, and deadlines for addressing a problem."
+  },
+  {
+    "id": "q6",
+    "cs": "CS 1",
+    "topic": "CS 1 • Civic action plans",
+    "prompt": "What concept does this describe? comparing the disadvantages and advantages of possible courses of action.",
+    "choices": [
+      "Civic engagement",
+      "Public hearing",
+      "Cost-benefit analysis",
+      "Consequence"
     ],
     "answer": 2,
-    "explanation": "Internal Consistency means absence of contradictions within a source.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of internal consistency: absence of contradictions within a source"
+    "source": "reference.html#cs1",
+    "where": "In the CS 1 section of the reference guide, locate the explanation of civic action plans; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'comparing the disadvantages and advantages…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Cost-benefit analysis: Comparing the disadvantages and advantages of possible courses of action."
   },
   {
-    "id": "q13",
-    "topic": "CS 2",
-    "prompt": "Which description best matches the term “mass media”?",
+    "id": "q7",
+    "cs": "CS 1",
+    "topic": "CS 1 • Civic action plans",
+    "prompt": "Which government vocabulary term applies? an outcome that can result from a decision, whether intended or unintended.",
     "choices": [
-      "channels communicating information to broad audiences",
-      "an internal agency budget code",
-      "a private conversation between two neighbors",
-      "a ballot counted in secret"
+      "Consequence",
+      "Jurisdiction",
+      "Political process",
+      "Public comment"
     ],
     "answer": 0,
-    "explanation": "Mass Media means channels communicating information to broad audiences.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of mass media: channels communicating information to broad audiences"
+    "source": "reference.html#cs1",
+    "where": "In the CS 1 section of the reference guide, locate the explanation of civic action plans; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'an outcome that can result…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Consequence: An outcome that can result from a decision, whether intended or unintended."
   },
   {
-    "id": "q25",
-    "topic": "CS 3",
-    "prompt": "Which description best matches the term “source context”?",
+    "id": "q8",
+    "cs": "CS 1",
+    "topic": "CS 1 • Civic action plans",
+    "prompt": "Identify the correct term: the area or subject over which a government body has authority.",
     "choices": [
-      "circumstances and purpose surrounding a source’s creation",
-      "assume the author’s purpose never matters",
-      "treat every campaign advertisement as neutral research",
-      "ignore when a report was produced"
+      "Public hearing",
+      "Civic engagement",
+      "Jurisdiction",
+      "Public policy process"
+    ],
+    "answer": 2,
+    "source": "reference.html#cs1",
+    "where": "In the CS 1 section of the reference guide, locate the explanation of civic action plans; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'the area or subject over…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Jurisdiction: The area or subject over which a government body has authority."
+  },
+  {
+    "id": "q9",
+    "cs": "CS 1",
+    "topic": "CS 1 • Civic action plans",
+    "prompt": "Which vocabulary term best fits this description? a government meeting that allows people to present views on a proposed action.",
+    "choices": [
+      "Public hearing",
+      "Public comment",
+      "Civic issue",
+      "Political process"
     ],
     "answer": 0,
-    "explanation": "Source Context means circumstances and purpose surrounding a source’s creation.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of source context: circumstances and purpose surrounding a source’s creation"
+    "source": "reference.html#cs1",
+    "where": "In the CS 1 section of the reference guide, locate the explanation of civic action plans; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'a government meeting that allows…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Public hearing: A government meeting that allows people to present views on a proposed action."
   },
   {
     "id": "q10",
-    "topic": "CS 1",
-    "prompt": "Which description best matches the term “public policy process”?",
+    "cs": "CS 1",
+    "topic": "CS 1 • Civic action plans",
+    "prompt": "Identify the concept described: input that people submit to a government body about a policy or proposal.",
     "choices": [
-      "a party nominates its candidate",
-      "institutional steps by which government develops or carries out action",
-      "a campaign recruits volunteers to elect a mayor",
-      "a voter persuades friends to support a candidate"
+      "Civic engagement",
+      "Action plan",
+      "Public comment",
+      "Public policy process"
+    ],
+    "answer": 2,
+    "source": "reference.html#cs1",
+    "where": "In the CS 1 section of the reference guide, locate the explanation of civic action plans; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'input that people submit to…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Public comment: Input that people submit to a government body about a policy or proposal."
+  },
+  {
+    "id": "q11",
+    "cs": "CS 2",
+    "topic": "CS 2 • Parties, interest groups, and media",
+    "prompt": "Select the term that means: an organization seeking to influence policy by winning elections and holding office.",
+    "choices": [
+      "Lobbying",
+      "Party platform",
+      "Interest group",
+      "Political party"
+    ],
+    "answer": 3,
+    "source": "reference.html#cs2",
+    "where": "In the CS 2 section of the reference guide, locate the explanation of parties, interest groups, and media; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'an organization seeking to influence…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Political party: An organization seeking to influence policy by winning elections and holding office."
+  },
+  {
+    "id": "q12",
+    "cs": "CS 2",
+    "topic": "CS 2 • Parties, interest groups, and media",
+    "prompt": "Which term is defined here? an organization seeking to influence policy around shared interests or concerns.",
+    "choices": [
+      "Media",
+      "Interest group",
+      "Advocacy",
+      "Campaign"
     ],
     "answer": 1,
-    "explanation": "Public Policy Process means institutional steps by which government develops or carries out action.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of public policy process: institutional steps by which government develops or carries out action"
+    "source": "reference.html#cs2",
+    "where": "In the CS 2 section of the reference guide, locate the explanation of parties, interest groups, and media; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'an organization seeking to influence…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Interest group: An organization seeking to influence policy around shared interests or concerns."
+  },
+  {
+    "id": "q13",
+    "cs": "CS 2",
+    "topic": "CS 2 • Parties, interest groups, and media",
+    "prompt": "Choose the vocabulary word for this idea: channels of mass communication that reach particular audiences.",
+    "choices": [
+      "Media",
+      "Lobbying",
+      "Grassroots organizing",
+      "Party platform"
+    ],
+    "answer": 0,
+    "source": "reference.html#cs2",
+    "where": "In the CS 2 section of the reference guide, locate the explanation of parties, interest groups, and media; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'channels of mass communication that…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Media: Channels of mass communication that reach particular audiences."
+  },
+  {
+    "id": "q14",
+    "cs": "CS 2",
+    "topic": "CS 2 • Parties, interest groups, and media",
+    "prompt": "What concept does this describe? a statement of the policies and goals a political party supports.",
+    "choices": [
+      "Advocacy",
+      "Party platform",
+      "Target audience",
+      "Campaign"
+    ],
+    "answer": 1,
+    "source": "reference.html#cs2",
+    "where": "In the CS 2 section of the reference guide, locate the explanation of parties, interest groups, and media; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'a statement of the policies…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Party platform: A statement of the policies and goals a political party supports."
+  },
+  {
+    "id": "q15",
+    "cs": "CS 2",
+    "topic": "CS 2 • Parties, interest groups, and media",
+    "prompt": "Which government vocabulary term applies? an organized effort to persuade voters to support a candidate or ballot proposal.",
+    "choices": [
+      "Campaign",
+      "Coalition",
+      "Lobbying",
+      "Grassroots organizing"
+    ],
+    "answer": 0,
+    "source": "reference.html#cs2",
+    "where": "In the CS 2 section of the reference guide, locate the explanation of parties, interest groups, and media; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'an organized effort to persuade…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Campaign: An organized effort to persuade voters to support a candidate or ballot proposal."
+  },
+  {
+    "id": "q16",
+    "cs": "CS 2",
+    "topic": "CS 2 • Parties, interest groups, and media",
+    "prompt": "Identify the correct term: communicating with government officials to influence public policy decisions.",
+    "choices": [
+      "Target audience",
+      "Lobbying",
+      "Advocacy",
+      "Political party"
+    ],
+    "answer": 1,
+    "source": "reference.html#cs2",
+    "where": "In the CS 2 section of the reference guide, locate the explanation of parties, interest groups, and media; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'communicating with government officials to…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Lobbying: Communicating with government officials to influence public policy decisions."
+  },
+  {
+    "id": "q17",
+    "cs": "CS 2",
+    "topic": "CS 2 • Parties, interest groups, and media",
+    "prompt": "Which vocabulary term best fits this description? publicly supporting a cause or a proposed course of action.",
+    "choices": [
+      "Grassroots organizing",
+      "Advocacy",
+      "Interest group",
+      "Coalition"
+    ],
+    "answer": 1,
+    "source": "reference.html#cs2",
+    "where": "In the CS 2 section of the reference guide, locate the explanation of parties, interest groups, and media; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'publicly supporting a cause or…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Advocacy: Publicly supporting a cause or a proposed course of action."
+  },
+  {
+    "id": "q18",
+    "cs": "CS 2",
+    "topic": "CS 2 • Parties, interest groups, and media",
+    "prompt": "Identify the concept described: building participation among ordinary community members to support a cause.",
+    "choices": [
+      "Grassroots organizing",
+      "Target audience",
+      "Media",
+      "Political party"
+    ],
+    "answer": 0,
+    "source": "reference.html#cs2",
+    "where": "In the CS 2 section of the reference guide, locate the explanation of parties, interest groups, and media; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'building participation among ordinary community…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Grassroots organizing: Building participation among ordinary community members to support a cause."
+  },
+  {
+    "id": "q19",
+    "cs": "CS 2",
+    "topic": "CS 2 • Parties, interest groups, and media",
+    "prompt": "Select the term that means: the particular people a message is designed to reach and influence.",
+    "choices": [
+      "Target audience",
+      "Interest group",
+      "Coalition",
+      "Party platform"
+    ],
+    "answer": 0,
+    "source": "reference.html#cs2",
+    "where": "In the CS 2 section of the reference guide, locate the explanation of parties, interest groups, and media; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'the particular people a message…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Target audience: The particular people a message is designed to reach and influence."
+  },
+  {
+    "id": "q20",
+    "cs": "CS 2",
+    "topic": "CS 2 • Parties, interest groups, and media",
+    "prompt": "Which term is defined here? an alliance of groups working together toward a shared objective.",
+    "choices": [
+      "Coalition",
+      "Media",
+      "Campaign",
+      "Political party"
+    ],
+    "answer": 0,
+    "source": "reference.html#cs2",
+    "where": "In the CS 2 section of the reference guide, locate the explanation of parties, interest groups, and media; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'an alliance of groups working…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Coalition: An alliance of groups working together toward a shared objective."
+  },
+  {
+    "id": "q21",
+    "cs": "CS 3",
+    "topic": "CS 3 • Evaluating sources",
+    "prompt": "Choose the vocabulary word for this idea: the degree to which information or its source deserves trust.",
+    "choices": [
+      "Corroboration",
+      "Bias",
+      "Relevance",
+      "Credibility"
+    ],
+    "answer": 3,
+    "source": "reference.html#cs3",
+    "where": "In the CS 3 section of the reference guide, locate the explanation of evaluating sources; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'the degree to which information…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Credibility: The degree to which information or its source deserves trust."
+  },
+  {
+    "id": "q22",
+    "cs": "CS 3",
+    "topic": "CS 3 • Evaluating sources",
+    "prompt": "What concept does this describe? the degree to which information addresses the specific question being researched.",
+    "choices": [
+      "Perspective",
+      "Evidence",
+      "Internal consistency",
+      "Relevance"
+    ],
+    "answer": 3,
+    "source": "reference.html#cs3",
+    "where": "In the CS 3 section of the reference guide, locate the explanation of evaluating sources; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'the degree to which information…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Relevance: The degree to which information addresses the specific question being researched."
+  },
+  {
+    "id": "q23",
+    "cs": "CS 3",
+    "topic": "CS 3 • Evaluating sources",
+    "prompt": "Which government vocabulary term applies? facts, observations, or data used to support a claim or conclusion.",
+    "choices": [
+      "Corroboration",
+      "Bias",
+      "Evidence",
+      "Qualification"
+    ],
+    "answer": 2,
+    "source": "reference.html#cs3",
+    "where": "In the CS 3 section of the reference guide, locate the explanation of evaluating sources; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'facts, observations, or data used…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Evidence: Facts, observations, or data used to support a claim or conclusion."
+  },
+  {
+    "id": "q24",
+    "cs": "CS 3",
+    "topic": "CS 3 • Evaluating sources",
+    "prompt": "Identify the correct term: a tendency or preference that may influence how information is selected or presented.",
+    "choices": [
+      "Internal consistency",
+      "Assumption",
+      "Perspective",
+      "Bias"
+    ],
+    "answer": 3,
+    "source": "reference.html#cs3",
+    "where": "In the CS 3 section of the reference guide, locate the explanation of evaluating sources; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'a tendency or preference that…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Bias: A tendency or preference that may influence how information is selected or presented."
+  },
+  {
+    "id": "q25",
+    "cs": "CS 3",
+    "topic": "CS 3 • Evaluating sources",
+    "prompt": "Which vocabulary term best fits this description? a viewpoint shaped by a source’s experiences, position, or interests.",
+    "choices": [
+      "Perspective",
+      "Context",
+      "Qualification",
+      "Corroboration"
+    ],
+    "answer": 0,
+    "source": "reference.html#cs3",
+    "where": "In the CS 3 section of the reference guide, locate the explanation of evaluating sources; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'a viewpoint shaped by a…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Perspective: A viewpoint shaped by a source’s experiences, position, or interests."
+  },
+  {
+    "id": "q26",
+    "cs": "CS 3",
+    "topic": "CS 3 • Evaluating sources",
+    "prompt": "Identify the concept described: checking a claim against independent sources to see whether they support it.",
+    "choices": [
+      "Assumption",
+      "Internal consistency",
+      "Corroboration",
+      "Credibility"
+    ],
+    "answer": 2,
+    "source": "reference.html#cs3",
+    "where": "In the CS 3 section of the reference guide, locate the explanation of evaluating sources; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'checking a claim against independent…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Corroboration: Checking a claim against independent sources to see whether they support it."
+  },
+  {
+    "id": "q27",
+    "cs": "CS 3",
+    "topic": "CS 3 • Evaluating sources",
+    "prompt": "Select the term that means: agreement among the statements and data within the same source.",
+    "choices": [
+      "Qualification",
+      "Context",
+      "Relevance",
+      "Internal consistency"
+    ],
+    "answer": 3,
+    "source": "reference.html#cs3",
+    "where": "In the CS 3 section of the reference guide, locate the explanation of evaluating sources; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'agreement among the statements and…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Internal consistency: Agreement among the statements and data within the same source."
+  },
+  {
+    "id": "q28",
+    "cs": "CS 3",
+    "topic": "CS 3 • Evaluating sources",
+    "prompt": "Which term is defined here? training, experience, or expertise relevant to the topic a source discusses.",
+    "choices": [
+      "Credibility",
+      "Evidence",
+      "Assumption",
+      "Qualification"
+    ],
+    "answer": 3,
+    "source": "reference.html#cs3",
+    "where": "In the CS 3 section of the reference guide, locate the explanation of evaluating sources; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'training, experience, or expertise relevant…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Qualification: Training, experience, or expertise relevant to the topic a source discusses."
+  },
+  {
+    "id": "q29",
+    "cs": "CS 3",
+    "topic": "CS 3 • Evaluating sources",
+    "prompt": "Choose the vocabulary word for this idea: an idea accepted as true without being demonstrated in the argument.",
+    "choices": [
+      "Relevance",
+      "Context",
+      "Assumption",
+      "Bias"
+    ],
+    "answer": 2,
+    "source": "reference.html#cs3",
+    "where": "In the CS 3 section of the reference guide, locate the explanation of evaluating sources; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'an idea accepted as true…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Assumption: An idea accepted as true without being demonstrated in the argument."
+  },
+  {
+    "id": "q30",
+    "cs": "CS 3",
+    "topic": "CS 3 • Evaluating sources",
+    "prompt": "What concept does this describe? the circumstances in which a source was created and should be interpreted.",
+    "choices": [
+      "Context",
+      "Evidence",
+      "Credibility",
+      "Perspective"
+    ],
+    "answer": 0,
+    "source": "reference.html#cs3",
+    "where": "In the CS 3 section of the reference guide, locate the explanation of evaluating sources; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'the circumstances in which a…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Context: The circumstances in which a source was created and should be interpreted."
+  },
+  {
+    "id": "q31",
+    "cs": "CS 4",
+    "topic": "CS 4 • Reaching democratic agreement",
+    "prompt": "Which government vocabulary term applies? using reasons and evidence to encourage others to accept a position.",
+    "choices": [
+      "Common ground",
+      "Compromise",
+      "Negotiation",
+      "Persuasion"
+    ],
+    "answer": 3,
+    "source": "reference.html#cs4",
+    "where": "In the CS 4 section of the reference guide, locate the explanation of reaching democratic agreement; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'using reasons and evidence to…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Persuasion: Using reasons and evidence to encourage others to accept a position."
+  },
+  {
+    "id": "q32",
+    "cs": "CS 4",
+    "topic": "CS 4 • Reaching democratic agreement",
+    "prompt": "Identify the correct term: settling a disagreement through concessions by the parties involved.",
+    "choices": [
+      "Compromise",
+      "Consensus building",
+      "Concession",
+      "Active listening"
+    ],
+    "answer": 0,
+    "source": "reference.html#cs4",
+    "where": "In the CS 4 section of the reference guide, locate the explanation of reaching democratic agreement; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'settling a disagreement through concessions…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Compromise: Settling a disagreement through concessions by the parties involved."
+  },
+  {
+    "id": "q33",
+    "cs": "CS 4",
+    "topic": "CS 4 • Reaching democratic agreement",
+    "prompt": "Which vocabulary term best fits this description? developing a decision participants can broadly support through shared discussion.",
+    "choices": [
+      "Common ground",
+      "Negotiation",
+      "Consensus building",
+      "Deliberation"
+    ],
+    "answer": 2,
+    "source": "reference.html#cs4",
+    "where": "In the CS 4 section of the reference guide, locate the explanation of reaching democratic agreement; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'developing a decision participants can…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Consensus building: Developing a decision participants can broadly support through shared discussion."
+  },
+  {
+    "id": "q34",
+    "cs": "CS 4",
+    "topic": "CS 4 • Reaching democratic agreement",
+    "prompt": "Identify the concept described: discussing proposals and terms with others to reach an agreement.",
+    "choices": [
+      "Active listening",
+      "Trade-off",
+      "Concession",
+      "Negotiation"
+    ],
+    "answer": 3,
+    "source": "reference.html#cs4",
+    "where": "In the CS 4 section of the reference guide, locate the explanation of reaching democratic agreement; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'discussing proposals and terms with…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Negotiation: Discussing proposals and terms with others to reach an agreement."
+  },
+  {
+    "id": "q35",
+    "cs": "CS 4",
+    "topic": "CS 4 • Reaching democratic agreement",
+    "prompt": "Select the term that means: giving up part of a demand to help reach an agreement.",
+    "choices": [
+      "Stakeholder",
+      "Concession",
+      "Common ground",
+      "Deliberation"
+    ],
+    "answer": 1,
+    "source": "reference.html#cs4",
+    "where": "In the CS 4 section of the reference guide, locate the explanation of reaching democratic agreement; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'giving up part of a…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Concession: Giving up part of a demand to help reach an agreement."
+  },
+  {
+    "id": "q36",
+    "cs": "CS 4",
+    "topic": "CS 4 • Reaching democratic agreement",
+    "prompt": "Which term is defined here? interests or goals that people with different positions share.",
+    "choices": [
+      "Trade-off",
+      "Common ground",
+      "Active listening",
+      "Persuasion"
+    ],
+    "answer": 1,
+    "source": "reference.html#cs4",
+    "where": "In the CS 4 section of the reference guide, locate the explanation of reaching democratic agreement; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'interests or goals that people…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Common ground: Interests or goals that people with different positions share."
+  },
+  {
+    "id": "q37",
+    "cs": "CS 4",
+    "topic": "CS 4 • Reaching democratic agreement",
+    "prompt": "Choose the vocabulary word for this idea: giving careful attention to another person and checking your understanding.",
+    "choices": [
+      "Deliberation",
+      "Stakeholder",
+      "Compromise",
+      "Active listening"
+    ],
+    "answer": 3,
+    "source": "reference.html#cs4",
+    "where": "In the CS 4 section of the reference guide, locate the explanation of reaching democratic agreement; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'giving careful attention to another…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Active listening: Giving careful attention to another person and checking your understanding."
+  },
+  {
+    "id": "q38",
+    "cs": "CS 4",
+    "topic": "CS 4 • Reaching democratic agreement",
+    "prompt": "What concept does this describe? carefully considering evidence and alternatives before making a group decision.",
+    "choices": [
+      "Consensus building",
+      "Deliberation",
+      "Trade-off",
+      "Persuasion"
+    ],
+    "answer": 1,
+    "source": "reference.html#cs4",
+    "where": "In the CS 4 section of the reference guide, locate the explanation of reaching democratic agreement; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'carefully considering evidence and alternatives…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Deliberation: Carefully considering evidence and alternatives before making a group decision."
+  },
+  {
+    "id": "q39",
+    "cs": "CS 4",
+    "topic": "CS 4 • Reaching democratic agreement",
+    "prompt": "Which government vocabulary term applies? accepting less of one benefit to gain more of another.",
+    "choices": [
+      "Negotiation",
+      "Stakeholder",
+      "Compromise",
+      "Trade-off"
+    ],
+    "answer": 3,
+    "source": "reference.html#cs4",
+    "where": "In the CS 4 section of the reference guide, locate the explanation of reaching democratic agreement; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'accepting less of one benefit…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Trade-off: Accepting less of one benefit to gain more of another."
+  },
+  {
+    "id": "q40",
+    "cs": "CS 4",
+    "topic": "CS 4 • Reaching democratic agreement",
+    "prompt": "Identify the correct term: a person or group affected by or interested in a decision.",
+    "choices": [
+      "Consensus building",
+      "Persuasion",
+      "Stakeholder",
+      "Concession"
+    ],
+    "answer": 2,
+    "source": "reference.html#cs4",
+    "where": "In the CS 4 section of the reference guide, locate the explanation of reaching democratic agreement; compare the definitions and the examples before answering.",
+    "hint": "Look for the idea described by 'a person or group affected…'. Eliminate terms describing a different action, participant, or result.",
+    "explanation": "Stakeholder: A person or group affected by or interested in a decision."
   }
 ];
