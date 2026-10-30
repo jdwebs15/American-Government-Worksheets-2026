@@ -1,643 +1,643 @@
-window.BLOCK_CONFIG={"assignmentKey": "gov-cs1-4-intro-2026-v1", "title": "CS 1–4 Civic Involvement and Participation Intro", "description": "Content Statements 1–4 • 40-question intro mastery", "practice": "Civic action, parties and interest groups, source credibility, and democratic conflict resolution."};
+window.BLOCK_CONFIG={"assignmentKey": "gov-cs1-4-intro-2026-v2", "title": "CS 1–4 Civic Involvement and Participation Intro", "description": "Content Statements 1–4 • 40-question introductory mastery", "practice": "Civic action, parties and interest groups, source credibility, and democratic decision making."};
 window.BLOCK_QUESTIONS=[
   {
-    "id": "q31",
-    "topic": "CS 3",
-    "prompt": "Which example best illustrates unstated assumption?",
+    "id": "cs14intro_01",
+    "topic": "CS 1",
+    "prompt": "Students discover unsafe crossings near school. What should they do first?",
     "choices": [
-      "confuse the author’s job title with evidence",
-      "count how many paragraphs appear in the report",
-      "question a claim that all residents can drive to meetings",
-      "accept every implied premise without review"
+      "Identify the specific crossing problem",
+      "Launch a campaign before checking facts",
+      "Assume every intersection is equally dangerous",
+      "Demand a solution without gathering evidence"
     ],
-    "answer": 2,
-    "explanation": "The example demonstrates unstated assumption: an unproven premise on which an argument relies.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of unstated assumption: an unproven premise on which an argument relies"
+    "answer": 0,
+    "explanation": "Identify the specific crossing problem. This is the best match for the civic concept in CS 1.",
+    "source": "reference.html",
+    "where": "Read the CS 1 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 1 concept."
   },
   {
-    "id": "q36",
+    "id": "cs14intro_02",
+    "topic": "CS 1",
+    "prompt": "Which action is research rather than debate?",
+    "choices": [
+      "Argue for a favorite proposal at a meeting",
+      "Ask classmates to vote on a slogan",
+      "Collect crash reports and traffic counts",
+      "Deliver a speech supporting a candidate"
+    ],
+    "answer": 2,
+    "explanation": "Collect crash reports and traffic counts. This is the best match for the civic concept in CS 1.",
+    "source": "reference.html",
+    "where": "Read the CS 1 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 1 concept."
+  },
+  {
+    "id": "cs14intro_03",
+    "topic": "CS 1",
+    "prompt": "A class compares two sidewalk proposals. What should its action plan include?",
+    "choices": [
+      "Only the students’ preferred final outcome",
+      "Steps, responsible people, and a timeline",
+      "A promise that every resident will agree",
+      "A list of unrelated national election issues"
+    ],
+    "answer": 1,
+    "explanation": "Steps, responsible people, and a timeline. This is the best match for the civic concept in CS 1.",
+    "source": "reference.html",
+    "where": "Read the CS 1 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 1 concept."
+  },
+  {
+    "id": "cs14intro_04",
+    "topic": "CS 1",
+    "prompt": "Which choice best demonstrates weighing costs and benefits?",
+    "choices": [
+      "Compare safety gains with construction expenses",
+      "Select whichever plan sounds most exciting",
+      "Ignore who would pay for the improvements",
+      "Reject every proposal that has a drawback"
+    ],
+    "answer": 0,
+    "explanation": "Compare safety gains with construction expenses. This is the best match for the civic concept in CS 1.",
+    "source": "reference.html",
+    "where": "Read the CS 1 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 1 concept."
+  },
+  {
+    "id": "cs14intro_05",
+    "topic": "CS 1",
+    "prompt": "Students want a city council to change park hours. Which action uses a public policy process?",
+    "choices": [
+      "Recruit volunteers to elect a new mayor",
+      "Present a proposed ordinance to the council",
+      "Create a political party for the next election",
+      "Campaign for a candidate in another state"
+    ],
+    "answer": 1,
+    "explanation": "Present a proposed ordinance to the council. This is the best match for the civic concept in CS 1.",
+    "source": "reference.html",
+    "where": "Read the CS 1 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 1 concept."
+  },
+  {
+    "id": "cs14intro_06",
+    "topic": "CS 1",
+    "prompt": "Which activity most directly uses the political process?",
+    "choices": [
+      "Ask a department to enforce an existing rule",
+      "Organize voters to support a candidate",
+      "Submit a maintenance request to city staff",
+      "Review the results of a municipal safety audit"
+    ],
+    "answer": 1,
+    "explanation": "Organize voters to support a candidate. This is the best match for the civic concept in CS 1.",
+    "source": "reference.html",
+    "where": "Read the CS 1 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 1 concept."
+  },
+  {
+    "id": "cs14intro_07",
+    "topic": "CS 1",
+    "prompt": "Why examine unintended consequences before adopting a proposal?",
+    "choices": [
+      "A solution may create additional problems",
+      "All government decisions are legally permanent",
+      "The most popular choice is always inexpensive",
+      "Every proposal benefits all groups equally"
+    ],
+    "answer": 0,
+    "explanation": "A solution may create additional problems. This is the best match for the civic concept in CS 1.",
+    "source": "reference.html",
+    "where": "Read the CS 1 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 1 concept."
+  },
+  {
+    "id": "cs14intro_08",
+    "topic": "CS 1",
+    "prompt": "Residents want a new bus stop. Which evidence is most useful?",
+    "choices": [
+      "A celebrity’s opinion about public transit",
+      "The color of buses used in other countries",
+      "Ridership estimates and nearby route maps",
+      "An unrelated article about national campaigns"
+    ],
+    "answer": 2,
+    "explanation": "Ridership estimates and nearby route maps. This is the best match for the civic concept in CS 1.",
+    "source": "reference.html",
+    "where": "Read the CS 1 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 1 concept."
+  },
+  {
+    "id": "cs14intro_09",
+    "topic": "CS 1",
+    "prompt": "What makes a proposed civic solution appropriate?",
+    "choices": [
+      "It promises results without any public input",
+      "It depends on powers the city does not possess",
+      "It prevents affected residents from commenting",
+      "It addresses the issue and fits available authority"
+    ],
+    "answer": 3,
+    "explanation": "It addresses the issue and fits available authority. This is the best match for the civic concept in CS 1.",
+    "source": "reference.html",
+    "where": "Read the CS 1 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 1 concept."
+  },
+  {
+    "id": "cs14intro_10",
+    "topic": "CS 1",
+    "prompt": "After a proposal is approved, students monitor whether it works. Why?",
+    "choices": [
+      "To avoid learning whether costs increased",
+      "To replace evidence with campaign slogans",
+      "To evaluate results and adjust the plan",
+      "To guarantee that no changes are ever needed"
+    ],
+    "answer": 2,
+    "explanation": "To evaluate results and adjust the plan. This is the best match for the civic concept in CS 1.",
+    "source": "reference.html",
+    "where": "Read the CS 1 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 1 concept."
+  },
+  {
+    "id": "cs14intro_11",
+    "topic": "CS 2",
+    "prompt": "What is the main goal that distinguishes political parties from interest groups?",
+    "choices": [
+      "Publish information without taking any position",
+      "Enforce laws through executive agencies",
+      "Settle legal disputes in the court system",
+      "Win elections and place members in office"
+    ],
+    "answer": 3,
+    "explanation": "Win elections and place members in office. This is the best match for the civic concept in CS 2.",
+    "source": "reference.html",
+    "where": "Read the CS 2 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 2 concept."
+  },
+  {
+    "id": "cs14intro_12",
+    "topic": "CS 2",
+    "prompt": "An organization lobbies legislators but does not run candidates. It is most likely a(n):",
+    "choices": [
+      "Political party competing for the presidency",
+      "Election board counting official ballots",
+      "Interest group",
+      "Court deciding a constitutional challenge"
+    ],
+    "answer": 2,
+    "explanation": "Interest group. This is the best match for the civic concept in CS 2.",
+    "source": "reference.html",
+    "where": "Read the CS 2 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 2 concept."
+  },
+  {
+    "id": "cs14intro_13",
+    "topic": "CS 2",
+    "prompt": "Which example shows a political party participating in government?",
+    "choices": [
+      "Recruiting candidates for a state election",
+      "Reviewing a newspaper for factual accuracy",
+      "Issuing permits through a city department",
+      "Publishing a nonpartisan weather forecast"
+    ],
+    "answer": 0,
+    "explanation": "Recruiting candidates for a state election. This is the best match for the civic concept in CS 2.",
+    "source": "reference.html",
+    "where": "Read the CS 2 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 2 concept."
+  },
+  {
+    "id": "cs14intro_14",
+    "topic": "CS 2",
+    "prompt": "An environmental organization asks lawmakers to tighten pollution limits. Its primary purpose is to:",
+    "choices": [
+      "Influence public policy decisions",
+      "Win every election in the state",
+      "Administer the court system directly",
+      "Replace elected officials with reporters"
+    ],
+    "answer": 0,
+    "explanation": "Influence public policy decisions. This is the best match for the civic concept in CS 2.",
+    "source": "reference.html",
+    "where": "Read the CS 2 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 2 concept."
+  },
+  {
+    "id": "cs14intro_15",
+    "topic": "CS 2",
+    "prompt": "How can media help a neighborhood group seeking safer roads?",
+    "choices": [
+      "Guarantee a law passes without debate",
+      "Give the group formal legislative authority",
+      "Inform residents about a public meeting",
+      "Automatically register every viewer to vote"
+    ],
+    "answer": 2,
+    "explanation": "Inform residents about a public meeting. This is the best match for the civic concept in CS 2.",
+    "source": "reference.html",
+    "where": "Read the CS 2 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 2 concept."
+  },
+  {
+    "id": "cs14intro_16",
+    "topic": "CS 2",
+    "prompt": "Why would a civic group choose local radio instead of a national ad?",
+    "choices": [
+      "It makes evidence unnecessary for the message",
+      "It reaches the people affected by the issue",
+      "It prevents all opposing views from appearing",
+      "It allows the station to enact an ordinance"
+    ],
+    "answer": 1,
+    "explanation": "It reaches the people affected by the issue. This is the best match for the civic concept in CS 2.",
+    "source": "reference.html",
+    "where": "Read the CS 2 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 2 concept."
+  },
+  {
+    "id": "cs14intro_17",
+    "topic": "CS 2",
+    "prompt": "Which media choice best fits a campaign aimed at city council members?",
+    "choices": [
+      "An advertisement shown only in another state",
+      "A flyer distributed after the final vote",
+      "A concise briefing sent to council offices",
+      "A message that never identifies the issue"
+    ],
+    "answer": 2,
+    "explanation": "A concise briefing sent to council offices. This is the best match for the civic concept in CS 2.",
+    "source": "reference.html",
+    "where": "Read the CS 2 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 2 concept."
+  },
+  {
+    "id": "cs14intro_18",
+    "topic": "CS 2",
+    "prompt": "Two groups share a policy goal. One runs candidates; the other lobbies them. Which is accurate?",
+    "choices": [
+      "Both must be political parties by definition",
+      "The first is a party; the second is an interest group",
+      "Neither can influence government decisions",
+      "The second group must conduct elections"
+    ],
+    "answer": 1,
+    "explanation": "The first is a party; the second is an interest group. This is the best match for the civic concept in CS 2.",
+    "source": "reference.html",
+    "where": "Read the CS 2 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 2 concept."
+  },
+  {
+    "id": "cs14intro_19",
+    "topic": "CS 2",
+    "prompt": "Why should an organization explain its choice of communication method?",
+    "choices": [
+      "To prove every message will persuade everyone",
+      "To avoid identifying its intended audience",
+      "To guarantee government will adopt its plan",
+      "To show the audience can realistically be reached"
+    ],
+    "answer": 3,
+    "explanation": "To show the audience can realistically be reached. This is the best match for the civic concept in CS 2.",
+    "source": "reference.html",
+    "where": "Read the CS 2 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 2 concept."
+  },
+  {
+    "id": "cs14intro_20",
+    "topic": "CS 2",
+    "prompt": "A community group wants to change school-board policy. Which is a viable first step?",
+    "choices": [
+      "Ask a national court to manage daily classes",
+      "Ignore the district’s existing public meetings",
+      "Contact board members with a documented proposal",
+      "Replace all evidence with an anonymous rumor"
+    ],
+    "answer": 2,
+    "explanation": "Contact board members with a documented proposal. This is the best match for the civic concept in CS 2.",
+    "source": "reference.html",
+    "where": "Read the CS 2 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 2 concept."
+  },
+  {
+    "id": "cs14intro_21",
+    "topic": "CS 3",
+    "prompt": "Which factor most directly helps evaluate an author’s expertise?",
+    "choices": [
+      "Relevant training and professional experience",
+      "The number of colors used on the website",
+      "Whether the article includes a large photograph",
+      "How quickly the page loads on a phone"
+    ],
+    "answer": 0,
+    "explanation": "Relevant training and professional experience. This is the best match for the civic concept in CS 3.",
+    "source": "reference.html",
+    "where": "Read the CS 3 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 3 concept."
+  },
+  {
+    "id": "cs14intro_22",
+    "topic": "CS 3",
+    "prompt": "A report makes a claim but cites no data. What is the main concern?",
+    "choices": [
+      "Its title may be too short for a report",
+      "The author used a common vocabulary word",
+      "It was published on a weekday morning",
+      "It lacks supporting evidence"
+    ],
+    "answer": 3,
+    "explanation": "It lacks supporting evidence. This is the best match for the civic concept in CS 3.",
+    "source": "reference.html",
+    "where": "Read the CS 3 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 3 concept."
+  },
+  {
+    "id": "cs14intro_23",
+    "topic": "CS 3",
+    "prompt": "Two reliable reports disagree about a statistic. What should students do?",
+    "choices": [
+      "Choose the report with the brighter graphics",
+      "Ignore both sources without further research",
+      "Accept whichever number supports their view",
+      "Check dates, methods, and original data"
+    ],
+    "answer": 3,
+    "explanation": "Check dates, methods, and original data. This is the best match for the civic concept in CS 3.",
+    "source": "reference.html",
+    "where": "Read the CS 3 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 3 concept."
+  },
+  {
+    "id": "cs14intro_24",
+    "topic": "CS 3",
+    "prompt": "Why does the date of a source matter when researching a current policy?",
+    "choices": [
+      "Older sources are always false in every detail",
+      "New sources never contain factual mistakes",
+      "Conditions may have changed since publication",
+      "Publication dates prove an author is unbiased"
+    ],
+    "answer": 2,
+    "explanation": "Conditions may have changed since publication. This is the best match for the civic concept in CS 3.",
+    "source": "reference.html",
+    "where": "Read the CS 3 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 3 concept."
+  },
+  {
+    "id": "cs14intro_25",
+    "topic": "CS 3",
+    "prompt": "Which statement identifies a possible bias?",
+    "choices": [
+      "The author benefits if the proposal passes",
+      "The source includes a publication date",
+      "The report defines its technical terms",
+      "The writer provides links to public records"
+    ],
+    "answer": 0,
+    "explanation": "The author benefits if the proposal passes. This is the best match for the civic concept in CS 3.",
+    "source": "reference.html",
+    "where": "Read the CS 3 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 3 concept."
+  },
+  {
+    "id": "cs14intro_26",
+    "topic": "CS 3",
+    "prompt": "An article says “everyone supports this plan” but cites no survey. What should a reader question?",
+    "choices": [
+      "The spelling of the city’s official name",
+      "The unsupported assumption about public opinion",
+      "The number of paragraphs in the article",
+      "The fact that residents can hold opinions"
+    ],
+    "answer": 1,
+    "explanation": "The unsupported assumption about public opinion. This is the best match for the civic concept in CS 3.",
+    "source": "reference.html",
+    "where": "Read the CS 3 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 3 concept."
+  },
+  {
+    "id": "cs14intro_27",
+    "topic": "CS 3",
+    "prompt": "Which source is most relevant to a city’s current budget?",
+    "choices": [
+      "A decade-old national sports schedule",
+      "An anonymous comment about another city",
+      "A commercial for an unrelated product",
+      "The city’s published budget documents"
+    ],
+    "answer": 3,
+    "explanation": "The city’s published budget documents. This is the best match for the civic concept in CS 3.",
+    "source": "reference.html",
+    "where": "Read the CS 3 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 3 concept."
+  },
+  {
+    "id": "cs14intro_28",
+    "topic": "CS 3",
+    "prompt": "A source contradicts itself in two paragraphs. Which credibility test does it fail?",
+    "choices": [
+      "Audience size and geographic reach",
+      "Political party membership requirements",
+      "Rules for holding public office",
+      "Internal consistency"
+    ],
+    "answer": 3,
+    "explanation": "Internal consistency. This is the best match for the civic concept in CS 3.",
+    "source": "reference.html",
+    "where": "Read the CS 3 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 3 concept."
+  },
+  {
+    "id": "cs14intro_29",
+    "topic": "CS 3",
+    "prompt": "Which claim uses evidence and a logical conclusion?",
+    "choices": [
+      "Traffic counts rose, supporting a safety review",
+      "The speaker is popular, so the claim is true",
+      "The proposal is new, so it must be effective",
+      "A rumor spread quickly, so it is confirmed"
+    ],
+    "answer": 0,
+    "explanation": "Traffic counts rose, supporting a safety review. This is the best match for the civic concept in CS 3.",
+    "source": "reference.html",
+    "where": "Read the CS 3 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 3 concept."
+  },
+  {
+    "id": "cs14intro_30",
+    "topic": "CS 3",
+    "prompt": "Why identify the circumstances in which a source was created?",
+    "choices": [
+      "Every source has the same intended audience",
+      "Purpose and context may shape its message",
+      "Sources created for campaigns cannot be read",
+      "Only government employees can write reports"
+    ],
+    "answer": 1,
+    "explanation": "Purpose and context may shape its message. This is the best match for the civic concept in CS 3.",
+    "source": "reference.html",
+    "where": "Read the CS 3 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 3 concept."
+  },
+  {
+    "id": "cs14intro_31",
     "topic": "CS 4",
-    "prompt": "Which example best illustrates compromise?",
+    "prompt": "A council member explains why a proposal benefits residents. This is:",
     "choices": [
-      "all sides refuse any change",
-      "one side gets everything it demanded",
-      "a judge issues an unrelated ruling",
-      "reduce a proposed fee while preserving some service funding"
-    ],
-    "answer": 3,
-    "explanation": "The example demonstrates compromise: agreement in which sides each give up something.",
-    "source": "https://www.uscourts.gov/educational-resources/educational-activities",
-    "where": "Consider how discussion and resolution of disagreements support civic life.",
-    "hint": "Focus on the meaning of compromise: agreement in which sides each give up something"
-  },
-  {
-    "id": "q24",
-    "topic": "CS 3",
-    "prompt": "Which example best illustrates organizational reputation?",
-    "choices": [
-      "trust a source because its logo is colorful",
-      "assume popularity proves accuracy",
-      "ignore a history of fabricated reports",
-      "check whether an outlet corrects errors and identifies sources"
-    ],
-    "answer": 3,
-    "explanation": "The example demonstrates organizational reputation: record of accuracy and accountability of a publisher.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of organizational reputation: record of accuracy and accountability of a publisher"
-  },
-  {
-    "id": "q23",
-    "topic": "CS 3",
-    "prompt": "Which example best illustrates author qualifications?",
-    "choices": [
-      "ignore whether the author knows the topic",
-      "judge expertise solely by the number of followers",
-      "check a traffic engineer’s training for a road-safety report",
-      "assume all anonymous posts are expert opinions"
-    ],
-    "answer": 2,
-    "explanation": "The example demonstrates author qualifications: expertise and experience relevant to a claim.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of author qualifications: expertise and experience relevant to a claim"
-  },
-  {
-    "id": "q8",
-    "topic": "CS 1",
-    "prompt": "Which example best illustrates cost-benefit analysis?",
-    "choices": [
-      "treat every proposal as equally effective",
-      "consider benefits while ignoring tradeoffs",
-      "select the most expensive proposal automatically",
-      "weigh a park project’s price against access and safety"
-    ],
-    "answer": 3,
-    "explanation": "The example demonstrates cost-benefit analysis: comparison of expected advantages and disadvantages.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of cost-benefit analysis: comparison of expected advantages and disadvantages"
-  },
-  {
-    "id": "q1",
-    "topic": "CS 1",
-    "prompt": "Which example best illustrates civic engagement?",
-    "choices": [
-      "casting a vote or proposing a neighborhood safety change",
-      "avoiding every public issue",
-      "receiving a government benefit",
-      "only holding elected office"
+      "Persuasion",
+      "A formal election recount",
+      "A judicial appeal of a verdict",
+      "Enforcement of an existing ordinance"
     ],
     "answer": 0,
-    "explanation": "The example demonstrates civic engagement: participating in efforts to address community or government issues.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of civic engagement: participating in efforts to address community or government issues"
+    "explanation": "Persuasion. This is the best match for the civic concept in CS 4.",
+    "source": "reference.html",
+    "where": "Read the CS 4 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 4 concept."
   },
   {
-    "id": "q34",
-    "topic": "CS 3",
-    "prompt": "Which example best illustrates source date?",
-    "choices": [
-      "ignore changes in law since publication",
-      "check whether population figures are current enough for the proposal",
-      "choose sources by headline length",
-      "assume a twenty-year-old estimate is always current"
-    ],
-    "answer": 1,
-    "explanation": "The example demonstrates source date: time a source was created or updated.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of source date: time a source was created or updated"
-  },
-  {
-    "id": "q13",
-    "topic": "CS 2",
-    "prompt": "Which example best illustrates mass media?",
-    "choices": [
-      "radio, newspapers, television, and online news",
-      "an internal agency budget code",
-      "a private conversation between two neighbors",
-      "a ballot counted in secret"
-    ],
-    "answer": 0,
-    "explanation": "The example demonstrates mass media: channels communicating information to broad audiences.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of mass media: channels communicating information to broad audiences"
-  },
-  {
-    "id": "q30",
-    "topic": "CS 3",
-    "prompt": "Which example best illustrates bias?",
-    "choices": [
-      "trust only sources agreeing with you",
-      "check whether a source omits facts favoring the opposing side",
-      "avoid identifying a writer’s viewpoint",
-      "assume every opinion is automatically false"
-    ],
-    "answer": 1,
-    "explanation": "The example demonstrates bias: a perspective that may selectively shape presentation.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of bias: a perspective that may selectively shape presentation"
-  },
-  {
-    "id": "q17",
-    "topic": "CS 2",
-    "prompt": "Which example best illustrates lobbying?",
-    "choices": [
-      "meet with legislators to support a clean-water bill",
-      "issue a court ruling",
-      "count votes as an election worker",
-      "carry out an agency inspection"
-    ],
-    "answer": 0,
-    "explanation": "The example demonstrates lobbying: attempting to persuade officials about public decisions.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of lobbying: attempting to persuade officials about public decisions"
-  },
-  {
-    "id": "q27",
-    "topic": "CS 3",
-    "prompt": "Which example best illustrates internal consistency?",
-    "choices": [
-      "accept totals that conflict with the report’s own chart",
-      "ignore changing definitions in a report",
-      "check whether tables and conclusions agree",
-      "trust a source solely for its confident tone"
-    ],
-    "answer": 2,
-    "explanation": "The example demonstrates internal consistency: absence of contradictions within a source.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of internal consistency: absence of contradictions within a source"
-  },
-  {
-    "id": "q4",
-    "topic": "CS 1",
-    "prompt": "Which example best illustrates debate?",
-    "choices": [
-      "count ballots in an election",
-      "enforce an existing regulation",
-      "refuse to hear objections",
-      "compare reasons for two traffic proposals"
-    ],
-    "answer": 3,
-    "explanation": "The example demonstrates debate: exchange arguments and evidence about competing ideas.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of debate: exchange arguments and evidence about competing ideas"
-  },
-  {
-    "id": "q25",
-    "topic": "CS 3",
-    "prompt": "Which example best illustrates source context?",
-    "choices": [
-      "note that a campaign flyer was written to persuade voters",
-      "ignore when a report was produced",
-      "treat every campaign advertisement as neutral research",
-      "assume the author’s purpose never matters"
-    ],
-    "answer": 0,
-    "explanation": "The example demonstrates source context: circumstances and purpose surrounding a source’s creation.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of source context: circumstances and purpose surrounding a source’s creation"
-  },
-  {
-    "id": "q38",
+    "id": "cs14intro_32",
     "topic": "CS 4",
-    "prompt": "Which example best illustrates negotiation?",
+    "prompt": "Two groups each give up part of their demands to reach agreement. This is:",
     "choices": [
-      "ignore the other side’s priorities",
-      "council members bargain over project funding",
-      "publish a notice without hearing responses",
-      "repeat a slogan instead of talking"
-    ],
-    "answer": 1,
-    "explanation": "The example demonstrates negotiation: discussion between parties seeking acceptable terms.",
-    "source": "https://www.uscourts.gov/educational-resources/educational-activities",
-    "where": "Consider how discussion and resolution of disagreements support civic life.",
-    "hint": "Focus on the meaning of negotiation: discussion between parties seeking acceptable terms"
-  },
-  {
-    "id": "q10",
-    "topic": "CS 1",
-    "prompt": "Which example best illustrates public policy process?",
-    "choices": [
-      "a party nominates its candidate",
-      "a city agency implements an adopted recycling program",
-      "a voter persuades friends to support a candidate",
-      "a campaign recruits volunteers to elect a mayor"
-    ],
-    "answer": 1,
-    "explanation": "The example demonstrates public policy process: institutional steps by which government develops or carries out action.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of public policy process: institutional steps by which government develops or carries out action"
-  },
-  {
-    "id": "q11",
-    "topic": "CS 2",
-    "prompt": "Which example best illustrates political party?",
-    "choices": [
-      "administer city trash collection",
-      "lobby officials without seeking to elect its own slate",
-      "recruit candidates and campaign for seats",
-      "publish weather forecasts only"
-    ],
-    "answer": 2,
-    "explanation": "The example demonstrates political party: organization seeking to win elections and place members in office.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of political party: organization seeking to win elections and place members in office"
-  },
-  {
-    "id": "q14",
-    "topic": "CS 2",
-    "prompt": "Which example best illustrates media strategy?",
-    "choices": [
-      "avoid explaining the issue to anyone",
-      "use a local radio station to reach commuters",
-      "choose a channel without considering its audience",
-      "use a closed meeting to reach every resident"
-    ],
-    "answer": 1,
-    "explanation": "The example demonstrates media strategy: choice of communication channel suited to an audience and goal.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of media strategy: choice of communication channel suited to an audience and goal"
-  },
-  {
-    "id": "q33",
-    "topic": "CS 3",
-    "prompt": "Which example best illustrates fact versus opinion?",
-    "choices": [
-      "separate measured spending from claims that it is wasteful",
-      "treat every value judgment as a measured fact",
-      "assume all statistics are opinions",
-      "reject facts because they are unpopular"
-    ],
-    "answer": 0,
-    "explanation": "The example demonstrates fact versus opinion: distinction between verifiable claims and judgments.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of fact versus opinion: distinction between verifiable claims and judgments"
-  },
-  {
-    "id": "q18",
-    "topic": "CS 2",
-    "prompt": "Which example best illustrates candidate recruitment?",
-    "choices": [
-      "an agency posts its operating hours",
-      "a party invites a resident to run for council",
-      "a reporter verifies a source",
-      "a civic club tests drinking water"
-    ],
-    "answer": 1,
-    "explanation": "The example demonstrates candidate recruitment: encouraging people to seek elected office.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of candidate recruitment: encouraging people to seek elected office"
-  },
-  {
-    "id": "q9",
-    "topic": "CS 1",
-    "prompt": "Which example best illustrates political process?",
-    "choices": [
-      "organize voters to support a candidate",
-      "inspect compliance with an adopted rule",
-      "have a department issue building permits",
-      "carry out an approved sanitation schedule"
-    ],
-    "answer": 0,
-    "explanation": "The example demonstrates political process: activities aimed at gaining governmental power or influencing decisions.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of political process: activities aimed at gaining governmental power or influencing decisions"
-  },
-  {
-    "id": "q20",
-    "topic": "CS 2",
-    "prompt": "Which example best illustrates target audience?",
-    "choices": [
-      "every person regardless of the issue",
-      "the agency’s computer servers",
-      "only people who already wrote the message",
-      "bus riders affected by a proposed route change"
+      "A refusal to discuss alternatives",
+      "A campaign to replace elected officials",
+      "An official review of ballot totals",
+      "Compromise"
     ],
     "answer": 3,
-    "explanation": "The example demonstrates target audience: people a communication effort is intended to reach.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of target audience: people a communication effort is intended to reach"
+    "explanation": "Compromise. This is the best match for the civic concept in CS 4.",
+    "source": "reference.html",
+    "where": "Read the CS 4 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 4 concept."
   },
   {
-    "id": "q39",
+    "id": "cs14intro_33",
     "topic": "CS 4",
-    "prompt": "Which example best illustrates common ground?",
+    "prompt": "Several participants discuss options until they support one shared decision. This is:",
     "choices": [
-      "every participant supports identical budgets",
-      "one side refuses to acknowledge any shared goal",
-      "both sides agree that children need safe routes",
-      "a party wins an election by one vote"
+      "A candidate filing for public office",
+      "Consensus building",
+      "An agency collecting overdue fees",
+      "A court hearing an unrelated dispute"
     ],
-    "answer": 2,
-    "explanation": "The example demonstrates common ground: interests or goals shared by different parties.",
-    "source": "https://www.uscourts.gov/educational-resources/educational-activities",
-    "where": "Consider how discussion and resolution of disagreements support civic life.",
-    "hint": "Focus on the meaning of common ground: interests or goals shared by different parties"
+    "answer": 1,
+    "explanation": "Consensus building. This is the best match for the civic concept in CS 4.",
+    "source": "reference.html",
+    "where": "Read the CS 4 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 4 concept."
   },
   {
-    "id": "q35",
+    "id": "cs14intro_34",
     "topic": "CS 4",
-    "prompt": "Which example best illustrates persuasion?",
+    "prompt": "Representatives exchange proposals to settle a disagreement. They are using:",
     "choices": [
-      "divide funding equally without debate",
-      "force a decision without discussion",
-      "present safety data to win support for a crossing",
-      "refuse to explain a proposal"
-    ],
-    "answer": 2,
-    "explanation": "The example demonstrates persuasion: using reasons and evidence to change others’ views.",
-    "source": "https://www.uscourts.gov/educational-resources/educational-activities",
-    "where": "Consider how discussion and resolution of disagreements support civic life.",
-    "hint": "Focus on the meaning of persuasion: using reasons and evidence to change others’ views"
-  },
-  {
-    "id": "q6",
-    "topic": "CS 1",
-    "prompt": "Which example best illustrates action plan?",
-    "choices": [
-      "publish only an opinion poll",
-      "schedule research, outreach, and a council presentation",
-      "announce success before implementation",
-      "express concern without next steps"
-    ],
-    "answer": 1,
-    "explanation": "The example demonstrates action plan: organized steps, responsibilities, and timing for a civic goal.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of action plan: organized steps, responsibilities, and timing for a civic goal"
-  },
-  {
-    "id": "q28",
-    "topic": "CS 3",
-    "prompt": "Which example best illustrates supporting evidence?",
-    "choices": [
-      "replace data with insults",
-      "assume a headline proves a conclusion",
-      "offer an opinion without any basis",
-      "cite survey methods and publicly available results"
+      "A media blackout of public discussion",
+      "A vote to dissolve the entire government",
+      "An audit of historical election results",
+      "Negotiation"
     ],
     "answer": 3,
-    "explanation": "The example demonstrates supporting evidence: verifiable facts or documentation backing a claim.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of supporting evidence: verifiable facts or documentation backing a claim"
+    "explanation": "Negotiation. This is the best match for the civic concept in CS 4.",
+    "source": "reference.html",
+    "where": "Read the CS 4 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 4 concept."
   },
   {
-    "id": "q40",
+    "id": "cs14intro_35",
     "topic": "CS 4",
-    "prompt": "Which example best illustrates democratic decision-making?",
+    "prompt": "Why is compromise useful in a democracy?",
     "choices": [
-      "silence every opposing speaker",
-      "replace public deliberation with unsupported rumors",
-      "ignore the effects on affected residents",
-      "hear stakeholders and work toward an acceptable policy"
-    ],
-    "answer": 3,
-    "explanation": "The example demonstrates democratic decision-making: collective problem-solving that considers differing views.",
-    "source": "https://www.uscourts.gov/educational-resources/educational-activities",
-    "where": "Consider how discussion and resolution of disagreements support civic life.",
-    "hint": "Focus on the meaning of democratic decision-making: collective problem-solving that considers differing views"
-  },
-  {
-    "id": "q21",
-    "topic": "CS 3",
-    "prompt": "Which example best illustrates credible source?",
-    "choices": [
-      "a documented report with verifiable data and methods",
-      "an anonymous claim without supporting details",
-      "a viral post that provides no original source",
-      "a claim contradicted by its own figures"
+      "It can make agreement possible despite differences",
+      "It requires every person to change all beliefs",
+      "It eliminates the need for public discussion",
+      "It guarantees that every side wins everything"
     ],
     "answer": 0,
-    "explanation": "The example demonstrates credible source: information worthy of trust after checking evidence and reliability.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of credible source: information worthy of trust after checking evidence and reliability"
+    "explanation": "It can make agreement possible despite differences. This is the best match for the civic concept in CS 4.",
+    "source": "reference.html",
+    "where": "Read the CS 4 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 4 concept."
   },
   {
-    "id": "q32",
-    "topic": "CS 3",
-    "prompt": "Which example best illustrates primary source?",
-    "choices": [
-      "a commentary quoting an unknown rumor",
-      "an unrelated opinion about city politics",
-      "a later textbook summary of the meeting",
-      "minutes from the council meeting being studied"
-    ],
-    "answer": 3,
-    "explanation": "The example demonstrates primary source: direct record or firsthand evidence of an event or decision.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of primary source: direct record or firsthand evidence of an event or decision"
-  },
-  {
-    "id": "q29",
-    "topic": "CS 3",
-    "prompt": "Which example best illustrates logical conclusion?",
-    "choices": [
-      "limit a claim to what the collected data can show",
-      "draw a conclusion unrelated to the findings",
-      "claim one example proves a universal rule",
-      "treat coincidence as certain causation"
-    ],
-    "answer": 0,
-    "explanation": "The example demonstrates logical conclusion: inference that reasonably follows from the evidence.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of logical conclusion: inference that reasonably follows from the evidence"
-  },
-  {
-    "id": "q7",
-    "topic": "CS 1",
-    "prompt": "Which example best illustrates consequences?",
-    "choices": [
-      "ignore people affected by a proposal",
-      "assume every change is cost-free",
-      "consider whether a new bus route increases travel time",
-      "focus only on the preferred outcome"
-    ],
-    "answer": 2,
-    "explanation": "The example demonstrates consequences: likely results, intended or unintended, of an action.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of consequences: likely results, intended or unintended, of an action"
-  },
-  {
-    "id": "q26",
-    "topic": "CS 3",
-    "prompt": "Which example best illustrates corroboration?",
-    "choices": [
-      "cite a single anonymous comment three times",
-      "compare a claim with multiple independently documented reports",
-      "repeat the same unverified post on several websites",
-      "ignore independent evidence that conflicts"
-    ],
-    "answer": 1,
-    "explanation": "The example demonstrates corroboration: agreement among independent reliable sources.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of corroboration: agreement among independent reliable sources"
-  },
-  {
-    "id": "q2",
-    "topic": "CS 1",
-    "prompt": "Which example best illustrates identify an issue?",
-    "choices": [
-      "announce a campaign victory",
-      "describe unsafe crossings near a school",
-      "choose a solution before learning the problem",
-      "assume all residents agree"
-    ],
-    "answer": 1,
-    "explanation": "The example demonstrates identify an issue: define a specific public problem that needs attention.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of identify an issue: define a specific public problem that needs attention"
-  },
-  {
-    "id": "q22",
-    "topic": "CS 3",
-    "prompt": "Which example best illustrates relevance?",
-    "choices": [
-      "cite a document that never discusses traffic",
-      "use local crash records for a crosswalk proposal",
-      "use unrelated national sports statistics",
-      "choose a source only because it is lengthy"
-    ],
-    "answer": 1,
-    "explanation": "The example demonstrates relevance: how closely information addresses the question being studied.",
-    "source": "https://guides.loc.gov/primary-sources",
-    "where": "Review source types and ask who created the evidence and why.",
-    "hint": "Focus on the meaning of relevance: how closely information addresses the question being studied"
-  },
-  {
-    "id": "q16",
-    "topic": "CS 2",
-    "prompt": "Which example best illustrates advocacy?",
-    "choices": [
-      "calculate election district boundaries",
-      "secretly discard contrary evidence",
-      "administer an approved city payroll",
-      "speak at a hearing for accessible sidewalks"
-    ],
-    "answer": 3,
-    "explanation": "The example demonstrates advocacy: public support for a particular cause or policy.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of advocacy: public support for a particular cause or policy"
-  },
-  {
-    "id": "q19",
-    "topic": "CS 2",
-    "prompt": "Which example best illustrates policy influence?",
-    "choices": [
-      "a clerk archives an old document",
-      "a journalist reports only sports scores",
-      "an advocacy group submits testimony on a proposed rule",
-      "a party wins office without discussing any policy"
-    ],
-    "answer": 2,
-    "explanation": "The example demonstrates policy influence: efforts to shape government choices or implementation.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of policy influence: efforts to shape government choices or implementation"
-  },
-  {
-    "id": "q15",
-    "topic": "CS 2",
-    "prompt": "Which example best illustrates public opinion?",
-    "choices": [
-      "the text of a zoning ordinance",
-      "an agency’s legal filing deadline",
-      "residents’ preferences on a proposed transit route",
-      "the number of judges in a courthouse"
-    ],
-    "answer": 2,
-    "explanation": "The example demonstrates public opinion: views held by people about public issues.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of public opinion: views held by people about public issues"
-  },
-  {
-    "id": "q3",
-    "topic": "CS 1",
-    "prompt": "Which example best illustrates research?",
-    "choices": [
-      "decide based only on a slogan",
-      "repeat an unsupported rumor",
-      "review crash data and resident reports",
-      "skip conflicting evidence"
-    ],
-    "answer": 2,
-    "explanation": "The example demonstrates research: gather relevant evidence about a public concern.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of research: gather relevant evidence about a public concern"
-  },
-  {
-    "id": "q5",
-    "topic": "CS 1",
-    "prompt": "Which example best illustrates propose solutions?",
-    "choices": [
-      "recommend a marked school crosswalk",
-      "avoid specifying any action",
-      "assume the problem will disappear",
-      "attack the motives of every critic"
-    ],
-    "answer": 0,
-    "explanation": "The example demonstrates propose solutions: suggest practical responses to an identified issue.",
-    "source": "https://www.usa.gov/elected-officials",
-    "where": "Explore how residents contact elected officials and participate in public decisions.",
-    "hint": "Focus on the meaning of propose solutions: suggest practical responses to an identified issue"
-  },
-  {
-    "id": "q37",
+    "id": "cs14intro_36",
     "topic": "CS 4",
-    "prompt": "Which example best illustrates consensus building?",
+    "prompt": "During negotiation, one side explains the benefits of its plan. Which skills are combined?",
     "choices": [
-      "revise a park plan until diverse groups can support it",
-      "exclude everyone who disagrees",
-      "declare victory after one person approves",
-      "stop discussion before hearing concerns"
+      "Voting and judicial review",
+      "Negotiation and persuasion",
+      "Enforcement and prosecution",
+      "Campaign finance and redistricting"
     ],
-    "answer": 0,
-    "explanation": "The example demonstrates consensus building: working toward broad shared support for a decision.",
-    "source": "https://www.uscourts.gov/educational-resources/educational-activities",
-    "where": "Consider how discussion and resolution of disagreements support civic life.",
-    "hint": "Focus on the meaning of consensus building: working toward broad shared support for a decision"
+    "answer": 1,
+    "explanation": "Negotiation and persuasion. This is the best match for the civic concept in CS 4.",
+    "source": "reference.html",
+    "where": "Read the CS 4 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 4 concept."
   },
   {
-    "id": "q12",
-    "topic": "CS 2",
-    "prompt": "Which example best illustrates interest group?",
+    "id": "cs14intro_37",
+    "topic": "CS 4",
+    "prompt": "Which situation best shows consensus rather than a narrow majority vote?",
     "choices": [
-      "a county election board counts votes",
-      "a court hears a criminal appeal",
-      "a party nominates candidates for governor",
-      "a neighborhood association urges lawmakers to change zoning"
+      "One faction refuses to hear other proposals",
+      "A chairperson makes a choice without discussion",
+      "A group ends debate before concerns are heard",
+      "Members work toward a decision all can support"
     ],
     "answer": 3,
-    "explanation": "The example demonstrates interest group: organization seeking to influence policy without primarily winning office.",
-    "source": "https://www.usa.gov/voting",
-    "where": "Review elections and ways people participate in political life.",
-    "hint": "Focus on the meaning of interest group: organization seeking to influence policy without primarily winning office"
+    "explanation": "Members work toward a decision all can support. This is the best match for the civic concept in CS 4.",
+    "source": "reference.html",
+    "where": "Read the CS 4 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 4 concept."
+  },
+  {
+    "id": "cs14intro_38",
+    "topic": "CS 4",
+    "prompt": "What is a productive response when participants disagree about funding?",
+    "choices": [
+      "Assume opponents have no legitimate concerns",
+      "End all communication until the next election",
+      "Discuss priorities and consider trade-offs",
+      "Ignore costs and promise every requested project"
+    ],
+    "answer": 2,
+    "explanation": "Discuss priorities and consider trade-offs. This is the best match for the civic concept in CS 4.",
+    "source": "reference.html",
+    "where": "Read the CS 4 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 4 concept."
+  },
+  {
+    "id": "cs14intro_39",
+    "topic": "CS 4",
+    "prompt": "Why do democratic institutions depend on interpersonal skills?",
+    "choices": [
+      "Every disagreement must be settled in court",
+      "Public decisions often require resolving differences",
+      "Government works only when nobody disagrees",
+      "Citizens must hold identical policy preferences"
+    ],
+    "answer": 1,
+    "explanation": "Public decisions often require resolving differences. This is the best match for the civic concept in CS 4.",
+    "source": "reference.html",
+    "where": "Read the CS 4 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 4 concept."
+  },
+  {
+    "id": "cs14intro_40",
+    "topic": "CS 4",
+    "prompt": "A committee revises a plan after hearing concerns from several groups. What does this illustrate?",
+    "choices": [
+      "Public input always prevents final decisions",
+      "Only elected officials can express concerns",
+      "Deliberation can improve a shared decision",
+      "A proposal cannot change after it is introduced"
+    ],
+    "answer": 2,
+    "explanation": "Deliberation can improve a shared decision. This is the best match for the civic concept in CS 4.",
+    "source": "reference.html",
+    "where": "Read the CS 4 section of the included reference guide and compare the examples.",
+    "hint": "Look for the choice that directly addresses the situation using the CS 4 concept."
   }
 ];
