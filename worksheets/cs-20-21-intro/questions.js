@@ -6,9 +6,9 @@ const raw=[
   "CS 20-21",
   "What is fiscal policy?",
   [
-   "Sales remove reserves from the banking system",
-   "Costlier borrowing can reduce spending and investment",
-   "Businesses may incur compliance costs",
+   "Federal Reserve decisions about money and credit",
+   "Agency rules governing business conduct",
+   "Bank decisions about individual loan approvals",
    "Government decisions about taxation and spending"
   ],
   3,
@@ -21,10 +21,10 @@ const raw=[
   "CS 20-21",
   "How can fiscal policy encourage economic growth?",
   [
-   "Sales remove reserves from the banking system",
-   "Cheaper borrowing can encourage spending and investment",
+   "Reduce spending or raise taxes to restrain demand",
+   "Keep tax rates and spending levels unchanged",
    "Increase spending or reduce taxes to support demand",
-   "Historically, lowering the reserve requirement could allow more lending"
+   "Shift spending without changing overall demand"
   ],
   2,
   "https://www.cbo.gov/topics/budget",
@@ -37,9 +37,9 @@ const raw=[
   "How can fiscal policy slow economic growth?",
   [
    "Reduce spending or raise taxes to restrain demand",
-   "Protect consumers against unfair or deceptive practices",
-   "Purchases add reserves to the banking system",
-   "Government decisions about taxation and spending"
+   "Increase spending or reduce taxes to raise demand",
+   "Expand public purchases while lowering tax rates",
+   "Maintain spending and taxes during rapid growth"
   ],
   0,
   "https://www.cbo.gov/topics/budget",
@@ -51,10 +51,10 @@ const raw=[
   "CS 20-21",
   "Why might a tax cut encourage growth?",
   [
-   "Cheaper borrowing can encourage spending and investment",
+   "Consumers must deposit a larger share of their income",
    "Households or businesses retain more money to spend or invest",
-   "Protect consumers against unfair or deceptive practices",
-   "Federal Reserve actions affecting money, credit, and interest rates"
+   "Employers face higher taxes on additional hiring",
+   "Households receive less take-home pay each month"
   ],
   1,
   "https://www.cbo.gov/topics/budget",
@@ -66,10 +66,10 @@ const raw=[
   "CS 20-21",
   "Why might increased government spending encourage growth?",
   [
-   "Government decisions about taxation and spending",
+   "Public purchases automatically reduce private employment",
    "Public purchases can increase demand, jobs, and income",
-   "Reduce spending or raise taxes to restrain demand",
-   "Sales remove reserves from the banking system"
+   "Government spending directly raises bank reserve rules",
+   "Government spending always eliminates price increases"
   ],
   1,
   "https://www.cbo.gov/topics/budget",
@@ -81,10 +81,10 @@ const raw=[
   "CS 20-21",
   "What is one benefit of economic regulation?",
   [
-   "Federal Reserve actions affecting money, credit, and interest rates",
+   "Guarantee that all regulated businesses earn profits",
    "Protect consumers against unfair or deceptive practices",
-   "Reduce spending or raise taxes to restrain demand",
-   "Cheaper borrowing can encourage spending and investment"
+   "Remove every cost associated with producing goods",
+   "Ensure that all companies charge identical prices"
   ],
   1,
   "https://www.ftc.gov/about-ftc/mission",
@@ -96,10 +96,10 @@ const raw=[
   "CS 20-21",
   "What is one possible cost of regulation?",
   [
-   "Historically, lowering the reserve requirement could allow more lending",
-   "Public purchases can increase demand, jobs, and income",
+   "Businesses automatically receive larger subsidies",
+   "Consumers lose all protection from unsafe products",
    "Businesses may incur compliance costs",
-   "Households or businesses retain more money to spend or invest"
+   "Companies are exempted from following safety rules"
   ],
   2,
   "https://www.ftc.gov/about-ftc/mission",
@@ -112,9 +112,9 @@ const raw=[
   "Why must policymakers weigh both regulatory benefits and costs?",
   [
    "Protections help the public while compliance may carry economic costs",
-   "Public purchases can increase demand, jobs, and income",
-   "Protect consumers against unfair or deceptive practices",
-   "Households or businesses retain more money to spend or invest"
+   "Consider only the cost of enforcing a new rule",
+   "Assume every rule benefits every business equally",
+   "Measure only whether a rule increases tax revenue"
   ],
   0,
   "https://www.ftc.gov/about-ftc/mission",
@@ -126,10 +126,10 @@ const raw=[
   "CS 20-21",
   "What is monetary policy?",
   [
-   "Households or businesses retain more money to spend or invest",
+   "Congressional decisions about taxes and public spending",
    "Federal Reserve actions affecting money, credit, and interest rates",
-   "Cheaper borrowing can encourage spending and investment",
-   "Raise taxes or lower spending, and raise interest rates or sell securities"
+   "Agency decisions about product safety and labeling",
+   "State decisions about business licensing and fees"
   ],
   1,
   "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm",
@@ -141,9 +141,9 @@ const raw=[
   "CS 20-21",
   "How does lowering interest rates tend to affect growth?",
   [
-   "Businesses may incur compliance costs",
-   "Historically, lowering the reserve requirement could allow more lending",
-   "Households or businesses retain more money to spend or invest",
+   "Cheaper borrowing generally discourages home purchases",
+   "Lower rates automatically reduce every household income",
+   "Lower rates force businesses to postpone new projects",
    "Cheaper borrowing can encourage spending and investment"
   ],
   3,
@@ -156,10 +156,10 @@ const raw=[
   "CS 20-21",
   "How does raising interest rates tend to affect growth?",
   [
-   "Government decisions about taxation and spending",
-   "Public purchases can increase demand, jobs, and income",
+   "Costlier borrowing usually increases demand for loans",
+   "Higher rates automatically increase household purchasing power",
    "Costlier borrowing can reduce spending and investment",
-   "Increase spending or reduce taxes to support demand"
+   "Higher rates require banks to approve more applications"
   ],
   2,
   "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm",
@@ -172,9 +172,9 @@ const raw=[
   "How can the reserve requirement encourage growth?",
   [
    "Historically, lowering the reserve requirement could allow more lending",
-   "Raise taxes or lower spending, and raise interest rates or sell securities",
-   "Public purchases can increase demand, jobs, and income",
-   "Increase spending or reduce taxes to support demand"
+   "Historically, raising reserve requirements allowed more lending",
+   "Historically, unchanged reserve rules always increased credit",
+   "Historically, reserve rules directly determined tax collections"
   ],
   0,
   "https://www.federalreserve.gov/monetarypolicy/reservereq.htm",
@@ -187,9 +187,9 @@ const raw=[
   "What happens when the Fed buys government bonds?",
   [
    "Purchases add reserves to the banking system",
-   "Protect consumers against unfair or deceptive practices",
-   "Reduce spending or raise taxes to restrain demand",
-   "Historically, lowering the reserve requirement could allow more lending"
+   "Purchases remove reserves from the banking system",
+   "Purchases require banks to raise their lending rates",
+   "Purchases directly increase federal income-tax rates"
   ],
   0,
   "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
@@ -201,9 +201,9 @@ const raw=[
   "CS 20-21",
   "What happens when the Fed sells government bonds?",
   [
-   "Public purchases can increase demand, jobs, and income",
-   "Federal Reserve actions affecting money, credit, and interest rates",
-   "Protections help the public while compliance may carry economic costs",
+   "Sales add reserves to the banking system",
+   "Sales automatically reduce bank borrowing costs",
+   "Sales require Congress to increase spending",
    "Sales remove reserves from the banking system"
   ],
   3,
@@ -216,10 +216,10 @@ const raw=[
   "CS 20-21",
   "What is the main difference between fiscal and monetary policy?",
   [
-   "Public purchases can increase demand, jobs, and income",
-   "Cheaper borrowing can encourage spending and investment",
+   "Fiscal policy uses Fed tools; monetary policy uses tax laws",
+   "Fiscal policy sets bank rates; monetary policy sets tax rates",
    "Fiscal policy uses taxes and spending; monetary policy uses Federal Reserve tools",
-   "Protections help the public while compliance may carry economic costs"
+   "Fiscal policy regulates products; monetary policy sets budgets"
   ],
   2,
   "https://www.federalreserve.gov/monetarypolicy/monetary-policy-what-are-its-goals-how-does-it-work.htm",
@@ -231,9 +231,9 @@ const raw=[
   "CS 20-21",
   "The economy is growing too quickly. Choose one fiscal and one monetary response.",
   [
-   "Cheaper borrowing can encourage spending and investment",
-   "Government decisions about taxation and spending",
-   "Historically, lowering the reserve requirement could allow more lending",
+   "Increase government spending and lower interest rates",
+   "Cut taxes and increase government spending",
+   "Lower interest rates and purchase more securities",
    "Raise taxes or lower spending, and raise interest rates or sell securities"
   ],
   3,
@@ -242,6 +242,6 @@ const raw=[
   "Raise taxes or lower spending, and raise interest rates or sell securities."
  ]
 ];
-const added=[{"id": "slider01", "topic": "Interactive Policy Tool", "prompt": "Congress increases spending on road construction during a recession. Move the slider to represent this action, then identify the policy.", "type": "slider", "tool": "spending", "direction": 1, "policy": "Expansionary fiscal policy", "source": "https://www.cbo.gov/topics/budget", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Expansionary fiscal policy: Congress increases spending on road construction during a recession.", "sliderQuestion": "Which type of fiscal policy is represented?", "sliderChoices": ["Expansionary fiscal policy", "Contractionary fiscal policy"], "sliderAnswer": 0}, {"id": "slider02", "topic": "Interactive Policy Tool", "prompt": "Congress cuts spending to reduce demand during high inflation. Move the slider to represent this action, then identify the policy.", "type": "slider", "tool": "spending", "direction": -1, "policy": "Contractionary fiscal policy", "source": "https://www.cbo.gov/topics/budget", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Contractionary fiscal policy: Congress cuts spending to reduce demand during high inflation.", "sliderQuestion": "What happens to economic activity when this action is taken?", "sliderChoices": ["Economic activity decreases", "Economic activity increases"], "sliderAnswer": 0}, {"id": "slider03", "topic": "Interactive Policy Tool", "prompt": "A recession is reducing jobs and consumer purchases. Use the tax tool to choose a government action that would encourage demand.", "type": "slider", "tool": "taxes", "direction": -1, "policy": "Expansionary fiscal policy", "source": "https://www.cbo.gov/topics/budget", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Expansionary fiscal policy: Congress lowers income taxes to encourage consumer spending.", "sliderQuestion": "Which tax action best responds to the situation?", "sliderChoices": ["Lower income taxes", "Raise income taxes"], "sliderAnswer": 0}, {"id": "slider04", "topic": "Interactive Policy Tool", "prompt": "Congress raises taxes to cool excessive demand. Move the slider to represent this action, then identify the policy.", "type": "slider", "tool": "taxes", "direction": 1, "policy": "Contractionary fiscal policy", "source": "https://www.cbo.gov/topics/budget", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Contractionary fiscal policy: Congress raises taxes to cool excessive demand.", "sliderQuestion": "Why does this tax adjustment generally restrain demand?", "sliderChoices": ["Households retain less disposable income", "Banks are required to purchase bonds"], "sliderAnswer": 0}, {"id": "slider05", "topic": "Interactive Policy Tool", "prompt": "The Federal Reserve purchases government securities to support lending. Move the slider to represent this action, then identify the policy.", "type": "slider", "tool": "securities", "direction": 1, "policy": "Expansionary monetary policy", "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Expansionary monetary policy: The Federal Reserve purchases government securities to support lending.", "sliderQuestion": "Which type of monetary policy is represented?", "sliderChoices": ["Expansionary monetary policy", "Contractionary monetary policy"], "sliderAnswer": 0}, {"id": "slider06", "topic": "Interactive Policy Tool", "prompt": "The Federal Reserve sells government securities to reduce available money. Move the slider to represent this action, then identify the policy.", "type": "slider", "tool": "securities", "direction": -1, "policy": "Contractionary monetary policy", "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Contractionary monetary policy: The Federal Reserve sells government securities to reduce available money.", "sliderQuestion": "What is the expected direction of the money supply?", "sliderChoices": ["Money supply decreases", "Money supply increases"], "sliderAnswer": 0}, {"id": "slider07", "topic": "Interactive Policy Tool", "prompt": "Banks are making too few loans during a downturn. Use the reserve-requirement tool to select an action that would encourage lending.", "type": "slider", "tool": "reserves", "direction": -1, "policy": "Expansionary monetary policy", "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Expansionary monetary policy: The Fed lowers reserve requirements so banks can lend more.", "sliderQuestion": "Which reserve-requirement adjustment would help increase lending?", "sliderChoices": ["Lower reserve requirements", "Raise reserve requirements"], "sliderAnswer": 0}, {"id": "slider08", "topic": "Interactive Policy Tool", "prompt": "The Fed raises its discount rate to discourage borrowing. Move the slider to represent this action, then identify the policy.", "type": "slider", "tool": "discount", "direction": 1, "policy": "Contractionary monetary policy", "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Contractionary monetary policy: The Fed raises its discount rate to discourage borrowing.", "sliderQuestion": "Why does this discount-rate change tend to slow borrowing?", "sliderChoices": ["Borrowing from the Fed becomes more expensive", "Congress automatically reduces its spending"], "sliderAnswer": 0}, {"id": "new17", "topic": "CS 20–21", "prompt": "Who sets federal fiscal policy?", "choices": ["Congress and the president", "Federal Reserve banks", "Federal courts", "State school boards"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Congress and the president."}, {"id": "new18", "topic": "CS 20–21", "prompt": "Which choice is a fiscal policy tool?", "choices": ["Government spending", "Discount rate", "Open-market purchases", "Bank reserve requirements"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Government spending."}, {"id": "new19", "topic": "CS 20–21", "prompt": "Which is a monetary policy decision?", "choices": ["The Fed buys securities", "Congress funds bridges", "A state raises sales tax", "Congress cuts income taxes"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "The Fed buys securities."}, {"id": "new20", "topic": "CS 20–21", "prompt": "During recession, a tax cut generally aims to", "choices": ["Increase private spending", "Restrict household demand", "Reduce available credit", "Increase borrowing costs"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Increase private spending."}, {"id": "new21", "topic": "CS 20–21", "prompt": "When Congress cuts spending, aggregate demand may", "choices": ["Decrease", "Increase automatically", "Remain fixed by law", "Become irrelevant"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Decrease."}, {"id": "new22", "topic": "CS 20–21", "prompt": "A Fed sale of securities generally", "choices": ["Withdraws funds from markets", "Adds reserves to banks", "Cuts federal income taxes", "Expands government spending"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Withdraws funds from markets."}, {"id": "new23", "topic": "CS 20–21", "prompt": "A Fed purchase of securities generally", "choices": ["Adds reserves to markets", "Reduces the money supply", "Raises federal tax rates", "Requires spending cuts"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Adds reserves to markets."}, {"id": "new24", "topic": "CS 20–21", "prompt": "Increasing reserve requirements would traditionally", "choices": ["Limit banks’ lending capacity", "Increase loanable reserves", "Lower the federal deficit", "Increase consumer tax refunds"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Limit banks’ lending capacity."}, {"id": "new25", "topic": "CS 20–21", "prompt": "Reducing reserve requirements would traditionally", "choices": ["Allow more bank lending", "Require fewer government bonds", "Raise income tax rates", "Decrease available credit"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Allow more bank lending."}, {"id": "new26", "topic": "CS 20–21", "prompt": "A higher discount rate tends to", "choices": ["Discourage borrowing from the Fed", "Lower the cost of borrowing", "Increase federal expenditures", "Lower individual income taxes"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Discourage borrowing from the Fed."}, {"id": "new27", "topic": "CS 20–21", "prompt": "A lower discount rate tends to", "choices": ["Make borrowing from the Fed cheaper", "Raise the cost of bank borrowing", "Reduce reserves by selling bonds", "Require Congress to raise taxes"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Make borrowing from the Fed cheaper."}, {"id": "new28", "topic": "CS 20–21", "prompt": "Which pair is expansionary fiscal policy?", "choices": ["Higher spending and lower taxes", "Lower spending and higher taxes", "Higher reserve ratios and bond sales", "Higher discount rates and bond sales"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Higher spending and lower taxes."}, {"id": "new29", "topic": "CS 20–21", "prompt": "Which pair is contractionary fiscal policy?", "choices": ["Lower spending and higher taxes", "Higher spending and lower taxes", "Bond purchases and lower rates", "Lower reserve ratios and lower rates"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Lower spending and higher taxes."}, {"id": "new30", "topic": "CS 20–21", "prompt": "What distinguishes fiscal from monetary policy?", "choices": ["Taxing/spending versus Fed credit tools", "Courts versus local elections", "Federal laws versus state laws", "Trade policy versus foreign policy"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Taxing/spending versus Fed credit tools."}, {"id": "new31", "topic": "CS 20–21", "prompt": "Why might a safety regulation increase business costs?", "choices": ["Firms must pay for compliance", "It automatically lowers every wage", "It removes all consumer protections", "It requires the Fed to buy bonds"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Firms must pay for compliance."}, {"id": "new32", "topic": "CS 20–21", "prompt": "Why might government regulate a product?", "choices": ["To protect consumers from harm", "To set the discount rate", "To eliminate all business expenses", "To replace federal taxation"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "To protect consumers from harm."}];
+const added=[{"id": "slider01", "topic": "Interactive Policy Tool", "prompt": "Congress increases spending on road construction during a recession. Move the slider to represent this action, then identify the policy.", "type": "slider", "tool": "spending", "direction": 1, "policy": "Expansionary fiscal policy", "source": "https://www.cbo.gov/topics/budget", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Expansionary fiscal policy: Congress increases spending on road construction during a recession.", "sliderQuestion": "Which type of fiscal policy is represented?", "sliderChoices": ["Expansionary fiscal policy", "Contractionary fiscal policy"], "sliderAnswer": 0}, {"id": "slider02", "topic": "Interactive Policy Tool", "prompt": "Congress cuts spending to reduce demand during high inflation. Move the slider to represent this action, then identify the policy.", "type": "slider", "tool": "spending", "direction": -1, "policy": "Contractionary fiscal policy", "source": "https://www.cbo.gov/topics/budget", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Contractionary fiscal policy: Congress cuts spending to reduce demand during high inflation.", "sliderQuestion": "What happens to economic activity when this action is taken?", "sliderChoices": ["Economic activity decreases", "Economic activity increases"], "sliderAnswer": 0}, {"id": "slider03", "topic": "Interactive Policy Tool", "prompt": "A recession is reducing jobs and consumer purchases. Use the tax tool to choose a government action that would encourage demand.", "type": "slider", "tool": "taxes", "direction": -1, "policy": "Expansionary fiscal policy", "source": "https://www.cbo.gov/topics/budget", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Expansionary fiscal policy: Congress lowers income taxes to encourage consumer spending.", "sliderQuestion": "Which tax action best responds to the situation?", "sliderChoices": ["Lower income taxes", "Raise income taxes"], "sliderAnswer": 0}, {"id": "slider04", "topic": "Interactive Policy Tool", "prompt": "Congress raises taxes to cool excessive demand. Move the slider to represent this action, then identify the policy.", "type": "slider", "tool": "taxes", "direction": 1, "policy": "Contractionary fiscal policy", "source": "https://www.cbo.gov/topics/budget", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Contractionary fiscal policy: Congress raises taxes to cool excessive demand.", "sliderQuestion": "Why does this tax adjustment generally restrain demand?", "sliderChoices": ["Households retain less disposable income", "Banks are required to purchase bonds"], "sliderAnswer": 0}, {"id": "slider05", "topic": "Interactive Policy Tool", "prompt": "The Federal Reserve purchases government securities to support lending. Move the slider to represent this action, then identify the policy.", "type": "slider", "tool": "securities", "direction": 1, "policy": "Expansionary monetary policy", "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Expansionary monetary policy: The Federal Reserve purchases government securities to support lending.", "sliderQuestion": "Which type of monetary policy is represented?", "sliderChoices": ["Expansionary monetary policy", "Contractionary monetary policy"], "sliderAnswer": 0}, {"id": "slider06", "topic": "Interactive Policy Tool", "prompt": "The Federal Reserve sells government securities to reduce available money. Move the slider to represent this action, then identify the policy.", "type": "slider", "tool": "securities", "direction": -1, "policy": "Contractionary monetary policy", "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Contractionary monetary policy: The Federal Reserve sells government securities to reduce available money.", "sliderQuestion": "What is the expected direction of the money supply?", "sliderChoices": ["Money supply decreases", "Money supply increases"], "sliderAnswer": 0}, {"id": "slider07", "topic": "Interactive Policy Tool", "prompt": "Banks are making too few loans during a downturn. Use the reserve-requirement tool to select an action that would encourage lending.", "type": "slider", "tool": "reserves", "direction": -1, "policy": "Expansionary monetary policy", "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Expansionary monetary policy: The Fed lowers reserve requirements so banks can lend more.", "sliderQuestion": "Which reserve-requirement adjustment would help increase lending?", "sliderChoices": ["Lower reserve requirements", "Raise reserve requirements"], "sliderAnswer": 0}, {"id": "slider08", "topic": "Interactive Policy Tool", "prompt": "The Fed raises its discount rate to discourage borrowing. Move the slider to represent this action, then identify the policy.", "type": "slider", "tool": "discount", "direction": 1, "policy": "Contractionary monetary policy", "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Identify which institution acts, what direction the tool changes, and whether the change stimulates or slows activity.", "hint": "Match the stated action to the slider direction. Fiscal tools are taxes/spending; monetary tools are Federal Reserve tools.", "explanation": "Contractionary monetary policy: The Fed raises its discount rate to discourage borrowing.", "sliderQuestion": "Why does this discount-rate change tend to slow borrowing?", "sliderChoices": ["Borrowing from the Fed becomes more expensive", "Congress automatically reduces its spending"], "sliderAnswer": 0}, {"id": "new17", "topic": "CS 20–21", "prompt": "Who sets federal fiscal policy?", "choices": ["Congress and the president", "The Federal Reserve and its regional banks", "The Supreme Court and federal district courts", "State governors and local school boards"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Congress and the president."}, {"id": "new18", "topic": "CS 20–21", "prompt": "Which choice is a fiscal policy tool?", "choices": ["Government spending", "Central-bank bond purchases", "The central bank discount rate", "Bank reserve requirements"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Government spending."}, {"id": "new19", "topic": "CS 20–21", "prompt": "Which is a monetary policy decision?", "choices": ["The Fed buys securities", "Congress purchases military equipment", "Congress reduces income tax rates", "The president proposes a new budget"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "The Fed buys securities."}, {"id": "new20", "topic": "CS 20–21", "prompt": "During recession, a tax cut generally aims to", "choices": ["Increase private spending", "Reduce household disposable income", "Discourage business investment", "Restrict consumer purchases"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Increase private spending."}, {"id": "new21", "topic": "CS 20–21", "prompt": "When Congress cuts spending, aggregate demand may", "choices": ["Decrease", "Increase", "Stay unchanged", "Double immediately"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Decrease."}, {"id": "new22", "topic": "CS 20–21", "prompt": "A Fed sale of securities generally", "choices": ["Withdraws funds from markets", "Adds funds to the banking system", "Leaves bank reserves unchanged", "Directly increases federal spending"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Withdraws funds from markets."}, {"id": "new23", "topic": "CS 20–21", "prompt": "A Fed purchase of securities generally", "choices": ["Adds reserves to markets", "Withdraws reserves from markets", "Leaves the supply of reserves unchanged", "Directly raises federal income taxes"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Adds reserves to markets."}, {"id": "new24", "topic": "CS 20–21", "prompt": "Increasing reserve requirements would traditionally", "choices": ["Limit banks’ lending capacity", "Increase banks’ available loan funds", "Lower the cost of loans from the Fed", "Increase banks’ freedom to use reserves"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Limit banks’ lending capacity."}, {"id": "new25", "topic": "CS 20–21", "prompt": "Reducing reserve requirements would traditionally", "choices": ["Allow more bank lending", "Restrict banks’ available lending funds", "Raise the reserves banks must retain", "Make all new bank loans more costly"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Allow more bank lending."}, {"id": "new26", "topic": "CS 20–21", "prompt": "A higher discount rate tends to", "choices": ["Discourage borrowing from the Fed", "Encourage borrowing from the Fed", "Reduce the cost of central-bank loans", "Increase the availability of cheap Fed credit"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Discourage borrowing from the Fed."}, {"id": "new27", "topic": "CS 20–21", "prompt": "A lower discount rate tends to", "choices": ["Make borrowing from the Fed cheaper", "Make borrowing from the Fed costlier", "Raise the interest charged on Fed loans", "Discourage banks from seeking Fed credit"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Make borrowing from the Fed cheaper."}, {"id": "new28", "topic": "CS 20–21", "prompt": "Which pair is expansionary fiscal policy?", "choices": ["Higher spending and lower taxes", "Lower spending and higher taxes", "Higher spending and higher taxes", "Lower spending and lower taxes"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Higher spending and lower taxes."}, {"id": "new29", "topic": "CS 20–21", "prompt": "Which pair is contractionary fiscal policy?", "choices": ["Lower spending and higher taxes", "Higher spending and lower taxes", "Higher spending and higher taxes", "Lower spending and lower taxes"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Lower spending and higher taxes."}, {"id": "new30", "topic": "CS 20–21", "prompt": "What distinguishes fiscal from monetary policy?", "choices": ["Taxing/spending versus Fed credit tools", "Fed credit tools versus taxing/spending", "Business licensing versus consumer safety", "Government budgets versus public regulations"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Taxing/spending versus Fed credit tools."}, {"id": "new31", "topic": "CS 20–21", "prompt": "Why might a safety regulation increase business costs?", "choices": ["Firms must pay for compliance", "Firms never need to replace equipment", "Firms automatically receive tax refunds", "Firms can ignore required safety training"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "Firms must pay for compliance."}, {"id": "new32", "topic": "CS 20–21", "prompt": "Why might government regulate a product?", "choices": ["To protect consumers from harm", "To guarantee profits for every seller", "To eliminate competition among sellers", "To prevent consumers from comparing prices"], "answer": 0, "source": "https://www.federalreserve.gov/monetarypolicy.htm", "where": "Determine whether the action is fiscal, monetary, or regulation, then predict its likely effect.", "hint": "Identify who takes the action and whether it stimulates or restrains spending and lending.", "explanation": "To protect consumers from harm."}];
 window.BLOCK_QUESTIONS=raw.map(([id,topic,prompt,choices,answer,source,where,explanation])=>({id,topic,prompt,choices,answer,source,where,hint:where,explanation})).concat(added);
 })();
