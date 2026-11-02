@@ -1,7 +1,7 @@
 // ================================================================
 // PASTE THIS WORKSHEET'S GOOGLE APPS SCRIPT /exec WEB ADDRESS BELOW
 // ================================================================
-const APPS_SCRIPT_URL="https://script.google.com/macros/s/AKfycbyAkahbkT3Tn7wVxAap3EqF1uhnB2iJF9hm6pnuUueHkBibHUgZg2R8ZVEHE-Gky6y7/exec";
+const APPS_SCRIPT_URL="https://script.google.com/macros/s/AKfycbxENUBm5pd966tRn1g9R7HH0zSXcEI10LGLivzQzN0pn6b0ytZHJdV8HU9i0ihYtHJW/exec";
 const questions=window.BLOCK_QUESTIONS;
 const C=window.BLOCK_CONFIG;
 const $=id=>document.getElementById(id);
@@ -30,16 +30,47 @@ function start(){if(!valid(true))return;restoreLocal();started=true;state.sessio
 function currentQuestion(){return questions[state.currentIndex]}
 function goToFirstUnmastered(){const i=questions.findIndex(q=>!state.mastered[q.id]);state.currentIndex=i<0?questions.length:i}
 function renderQuestion(){
-  if(state.currentIndex>=questions.length){showCompletion();return}
-  const q=currentQuestion(),n=state.currentIndex+1,letters=["A","B","C","D"];
-  $("questionCard").innerHTML=`<h2>${escapeHtml(q.topic||q.cs)}</h2><p class="prompt">${escapeHtml(q.prompt)}</p><div class="choices">${q.choices.map((choice,i)=>`<button class="choice" data-choice="${i}"><span class="choice-letter">${letters[i]}.</span><span>${escapeHtml(choice)}</span></button>`).join("")}</div><div id="feedback" class="feedback" role="status"></div>${q.source?`<div class="source-box"><a href="${q.source}" target="_blank" rel="noopener">Open supporting source ↗</a><p><strong>Where to look:</strong> ${escapeHtml(q.where)}</p></div>`:""}`;
-  document.querySelectorAll("[data-choice]").forEach(b=>b.onclick=()=>answer(Number(b.dataset.choice),b));
-  updateStats();window.scrollTo({top:Math.max(0,$("workspace").offsetTop-12),behavior:"smooth"});
+ if(state.currentIndex>=questions.length){showCompletion();return}
+ const q=currentQuestion(),letters=['A','B','C','D'];
+ if(q.type==='slider'){
+   const labels={spending:['Decrease spending','Increase spending'],taxes:['Lower taxes','Raise taxes'],securities:['Sell securities','Buy securities'],reserves:['Lower reserve requirement','Raise reserve requirement'],discount:['Lower discount rate','Raise discount rate']};
+   const [lowerLabel,upperLabel]=labels[q.tool];
+   const choices=q.sliderChoices||['Expansionary','Contractionary'];
+   $('questionCard').innerHTML=`<h2>${escapeHtml(q.topic)}</h2><p class="prompt">${escapeHtml(q.prompt)}</p><div class="slider-panel"><p class="slider-instructions">Explore the tool, then set it to the action you believe fits the scenario. Moving the slider unlocks the choices, but does NOT tell you whether it is correct. Your answer is checked only when you click Apply.</p><div class="vertical-slider-layout"><div class="vertical-slider-column"><div class="slider-end-label">${escapeHtml(upperLabel)} ↑</div><input id="policySlider" class="vertical-policy-slider" aria-label="${escapeHtml(q.tool)} policy adjustment" type="range" min="-100" max="100" step="1" value="0" orient="vertical"><div class="slider-end-label">${escapeHtml(lowerLabel)} ↓</div><div id="sliderValue" class="slider-value">0</div></div><div class="slider-box-column"><div id="economyBox" class="economy-box">${q.tool==='spending'||q.tool==='taxes'?'ECONOMIC ACTIVITY':'MONEY SUPPLY'}</div></div></div><p id="sliderDirection" aria-live="polite">Move the slider to explore the effect.</p><p class="slider-question">${escapeHtml(q.sliderQuestion||'Which policy is represented?')}</p><div class="policy-choices">${choices.map((c,i)=>`<button type="button" data-policy-choice="${i}" disabled>${escapeHtml(c)}</button>`).join('')}</div><button id="applyPolicy" class="apply-policy" type="button" disabled>Apply Policy</button></div><div id="feedback" class="feedback" role="status"></div><div class="source-box"><a href="${q.source}" target="_blank" rel="noopener">Open supporting source ↗</a><p><strong>Where to look:</strong> ${escapeHtml(q.where)}</p></div>`;
+   const slider=$('policySlider'),box=$('economyBox'),policyButtons=[...document.querySelectorAll('[data-policy-choice]')],apply=$('applyPolicy');
+   let selected=null;
+   slider.oninput=()=>{
+     const val=Number(slider.value),effect=val*(q.tool==='taxes'||q.tool==='reserves'||q.tool==='discount'?-1:1);
+     const size=Math.max(100,Math.min(240,160+effect*.7));
+     box.style.width=size+'px';box.style.height=size+'px';
+     $('sliderValue').textContent=val>0?'+'+val:String(val);
+     $('sliderDirection').textContent=val===0?'Move the slider to explore the effect.':'Choose your answer, then click Apply Policy.';
+     policyButtons.forEach(button=>button.disabled=val===0);
+     apply.disabled=val===0||selected===null;
+   };
+   policyButtons.forEach(b=>b.onclick=()=>{
+     if(advanceTimer||b.disabled)return;
+     selected=Number(b.dataset.policyChoice);
+     policyButtons.forEach(x=>x.classList.toggle('selected',x===b));
+     apply.disabled=Number(slider.value)===0;
+   });
+   apply.onclick=()=>{
+     if(advanceTimer||apply.disabled||selected===null)return;
+     const correctDirection=Math.sign(Number(slider.value))===q.direction;
+     const correctChoice=selected===(q.sliderAnswer??0);
+     answer(correctDirection&&correctChoice?0:1,apply,0);
+   };
+ }else{
+  const order=[0,1,2,3];const seed=(state.currentIndex+1)*7919+(state.sessions||1)*104729;let x=seed;for(let i=3;i>0;i--){x=(Math.imul(x,1664525)+1013904223)>>>0;const j=x%(i+1);[order[i],order[j]]=[order[j],order[i]]}
+  $('questionCard').innerHTML=`<h2>${escapeHtml(q.topic||q.cs)}</h2><p class="prompt">${escapeHtml(q.prompt)}</p><div class="choices">${order.map((original,i)=>`<button class="choice" data-choice="${original}"><span class="choice-letter">${letters[i]}.</span><span>${escapeHtml(q.choices[original])}</span></button>`).join('')}</div><div id="feedback" class="feedback" role="status"></div>${q.source?`<div class="source-box"><a href="${q.source}" target="_blank" rel="noopener">Open supporting source ↗</a><p><strong>Where to look:</strong> ${escapeHtml(q.where)}</p></div>`:''}`;
+  document.querySelectorAll('[data-choice]').forEach(b=>b.onclick=()=>answer(Number(b.dataset.choice),b));
+ }
+ updateStats();window.scrollTo({top:Math.max(0,$('workspace').offsetTop-12),behavior:'smooth'});
 }
-function answer(choice,button){
+function answer(choice,button,sliderCorrect=0){
   if(advanceTimer)return;const q=currentQuestion(),f=$("feedback");state.answers[q.id]=choice;state.attempts[q.id]=(state.attempts[q.id]||0)+1;
-  if(choice===q.answer){
-    state.correctChecks++;state.mastered[q.id]=true;button.classList.add("correct");document.querySelectorAll("[data-choice]").forEach(b=>b.disabled=true);
+  if(q.type==='slider'?choice===sliderCorrect:choice===q.answer){
+    state.correctChecks++;state.mastered[q.id]=true;button.classList.add("correct");document.querySelectorAll("[data-choice], [data-policy-choice], #applyPolicy").forEach(b=>b.disabled=true);const sl=$("policySlider");if(sl)sl.disabled=true;
     f.className="feedback good";f.innerHTML=`<strong>Correct.</strong> ${escapeHtml(q.explanation)}<span class="advance-note">Advancing to the next question…</span>`;
     state.events.push({type:"correct",question:q.id,attempt:state.attempts[q.id],at:new Date().toISOString()});saveLocal();updateStats();queueCloudSave();
     advanceTimer=setTimeout(()=>{advanceTimer=null;state.currentIndex++;while(state.currentIndex<questions.length&&state.mastered[questions[state.currentIndex].id])state.currentIndex++;renderQuestion()},4000);
