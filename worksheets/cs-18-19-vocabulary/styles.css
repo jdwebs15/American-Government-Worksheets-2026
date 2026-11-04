@@ -4,3 +4,9 @@
 
 /* CS 18–19 completion ticket */
 .result{max-width:1050px;margin:15px auto;padding:24px;background:#121d30;border:1px solid #34435d;border-radius:18px}.result h1{font-size:2rem}.ticket{padding:18px;border:2px solid #d5b96a;border-radius:12px;background:#182640;margin:18px 0}.ticket h2{margin-top:0}.stat{display:inline-block;padding:10px 14px;background:#182640;border:1px solid #597197;border-radius:10px;margin:4px}.btn{background:#203f6d;color:white;border:1px solid #6181b1;border-radius:9px;padding:12px 18px;font-weight:800}.btn.secondary{background:#192e4f}.feedback.show{display:block!important;font-size:1.1rem;padding:18px}.feedback.good{background:#143c31;color:#d6ffec;border:1px solid #4fc08a}.feedback.hint{background:#443416;color:#ffebba;border:1px solid #e7bf59}
+
+/* Vocabulary 2026 revision: accessible entry and answer spacing */
+.student-panel .fields{gap:18px;align-items:end}.student-panel input,.student-panel select{min-height:48px;width:100%;padding:12px}.student-panel .actions{gap:14px;flex-wrap:wrap}.hero{gap:28px}.hero h1{line-height:1.2}.feature-pills{gap:10px}.choice{min-height:64px;line-height:1.45;padding:15px 18px;white-space:normal;text-align:left}.prompt{line-height:1.55}.source-box{line-height:1.5}@media(max-width:700px){.hero{flex-direction:column}.student-panel .fields{grid-template-columns:1fr}.choice{padding:14px}}
+
+/* Vocabulary 2026 revision: accessible entry and answer spacing */
+.student-panel .fields{gap:18px;align-items:end}.student-panel input,.student-panel select{min-height:48px;width:100%;padding:12px}.student-panel .actions{gap:14px;flex-wrap:wrap}.hero{gap:28px}.hero h1{line-height:1.2}.feature-pills{gap:10px}.choice{min-height:64px;line-height:1.45;padding:15px 18px;white-space:normal;text-align:left}.prompt{line-height:1.55}.source-box{line-height:1.5}@media(max-width:700px){.hero{flex-direction:column}.student-panel .fields{grid-template-columns:1fr}.choice{padding:14px}}
