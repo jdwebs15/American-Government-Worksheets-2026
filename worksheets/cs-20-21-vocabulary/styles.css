@@ -10,3 +10,5 @@
 .choice{min-height:64px;line-height:1.5;text-align:left;padding:15px 20px;margin:8px 0;overflow-wrap:anywhere}
 .stem{font-size:1.24rem;line-height:1.55;margin:24px 0}
 @media(max-width:700px){.identity{grid-template-columns:1fr}.hero,.panel,.question,.result{padding:22px}.wrap{padding:15px}}
+
+.source-box{margin:20px 0 16px;padding:16px 18px;background:#172b49;border:1px solid #49658d;border-radius:14px;line-height:1.55}.source-box a{color:#b7d5ff;font-weight:700;text-decoration:underline;text-underline-offset:3px}.source-box p{margin:10px 0 0;color:#dbe7ff}.source-box strong{color:#fff}
