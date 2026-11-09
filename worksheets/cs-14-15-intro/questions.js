@@ -38,10 +38,10 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 14 • Intro",
     "prompt": "A newspaper investigates how a mayor spends public money. Which freedom protects this activity?",
     "choices": [
-      "Freedom to vote",
+      "Freedom to protest",
       "Freedom of the press",
-      "Freedom of religion",
-      "Freedom of assembly"
+      "Freedom to petition officials",
+      "Freedom to gather peacefully"
     ],
     "answer": 1,
     "source": "https://www.archives.gov/founding-docs/bill-of-rights/what-does-it-say",
@@ -134,10 +134,10 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 14 • Intro",
     "prompt": "Someone disagrees with a classmate’s political views but listens respectfully. Which responsibility is shown?",
     "choices": [
-      "Serving as a juror",
-      "Paying required taxes",
-      "Registering to vote",
-      "Practicing civil discourse"
+      "Refusing to listen",
+      "Ignoring opposing views",
+      "Shouting down speakers",
+      "Civil discussion"
     ],
     "answer": 3,
     "source": "https://www.archives.gov/founding-docs/bill-of-rights/what-does-it-say",
@@ -150,10 +150,10 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 14 • Intro",
     "prompt": "Why can government sometimes limit how people exercise their rights?",
     "choices": [
-      "To protect others’ rights and safety",
-      "To remove the need for laws",
-      "To prevent any public disagreement",
-      "To guarantee majority opinions win"
+      "To protect public safety",
+      "To prevent all criticism",
+      "To eliminate disagreement",
+      "To guarantee unlimited authority"
     ],
     "answer": 0,
     "source": "https://constitutioncenter.org/the-constitution/amendments/amendment-i",
@@ -214,10 +214,10 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 14 • Intro",
     "prompt": "Which action is an example of voluntary community service?",
     "choices": [
-      "Helping at a local food pantry",
-      "Responding to a jury summons",
-      "Paying required income taxes",
-      "Following speed limits"
+      "Helping at a food pantry",
+      "Voting in a local election",
+      "Petitioning city officials",
+      "Serving on a local jury"
     ],
     "answer": 0,
     "source": "https://www.uscis.gov/citizenship/learn-about-citizenship",
@@ -230,10 +230,10 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 14 • Intro",
     "prompt": "Which action most directly helps citizens influence public policy?",
     "choices": [
-      "Avoiding all community meetings",
-      "Letting others decide every issue",
-      "Contacting elected representatives",
-      "Ignoring proposed local rules"
+      "Ignoring public hearings",
+      "Refusing to discuss issues",
+      "Writing elected officials",
+      "Avoiding community meetings"
     ],
     "answer": 2,
     "source": "https://www.usa.gov/voting",
@@ -246,10 +246,10 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 14 • Intro",
     "prompt": "Why is it useful for citizens to evaluate information before sharing political claims?",
     "choices": [
-      "It replaces the need for elections",
-      "It eliminates differences in opinion",
-      "It guarantees every policy succeeds",
-      "It supports informed public discussion"
+      "It ends political disagreements",
+      "It guarantees unanimous votes",
+      "It replaces public elections",
+      "It informs public debate"
     ],
     "answer": 3,
     "source": "https://www.archives.gov/founding-docs/bill-of-rights/what-does-it-say",
@@ -278,10 +278,10 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 14 • Intro",
     "prompt": "A citizen disagrees with a court decision. Which response respects the rule of law?",
     "choices": [
-      "Threaten jurors until they agree",
-      "Ignore every court order immediately",
-      "Use lawful appeals or seek legal change",
-      "Declare all laws automatically void"
+      "Ignore the court order",
+      "Punish the opposing party",
+      "Use the appeals process",
+      "Disregard the legal system"
     ],
     "answer": 2,
     "source": "https://www.uscis.gov/citizenship/learn-about-citizenship",
@@ -294,10 +294,10 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 14 • Intro",
     "prompt": "Which activity is a political right rather than a legal duty?",
     "choices": [
-      "Seeking elected public office",
-      "Paying legally required taxes",
-      "Answering a jury summons",
-      "Obeying valid court orders"
+      "Running for public office",
+      "Serving on a criminal jury",
+      "Volunteering at a shelter",
+      "Writing to a representative"
     ],
     "answer": 0,
     "source": "https://www.usa.gov/voting",
@@ -327,9 +327,9 @@ window.BLOCK_QUESTIONS=[
     "prompt": "Which amendment states that states may not deny equal protection of the laws?",
     "choices": [
       "Fourteenth Amendment",
-      "Tenth Amendment",
-      "Twelfth Amendment",
-      "Second Amendment"
+      "Seventeenth Amendment",
+      "Nineteenth Amendment",
+      "Twenty-second Amendment"
     ],
     "answer": 0,
     "source": "https://constitutioncenter.org/the-constitution/amendments/amendment-xiv",
@@ -374,9 +374,9 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 15 • Intro",
     "prompt": "Which amendment barred poll taxes in federal elections?",
     "choices": [
-      "Fifteenth Amendment",
-      "Nineteenth Amendment",
-      "Twenty-fourth Amendment",
+      "Sixteenth Amendment",
+      "Seventeenth Amendment",
+      "24th Amendment",
       "Twenty-sixth Amendment"
     ],
     "answer": 2,
@@ -438,9 +438,9 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 15 • Intro",
     "prompt": "Congress passes a law prohibiting discrimination in public accommodations. Which branch took action?",
     "choices": [
-      "Executive branch",
       "Judicial branch",
-      "State courts only",
+      "Executive branch",
+      "Administrative agencies",
       "Legislative branch"
     ],
     "answer": 3,
@@ -470,10 +470,10 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 15 • Intro",
     "prompt": "What was a central goal of the Civil Rights Act of 1964?",
     "choices": [
-      "Prohibit major forms of discrimination",
-      "Create the federal income tax",
-      "Establish the Electoral College",
-      "Lower the voting age to eighteen"
+      "Ban major discrimination",
+      "Remove all voting requirements",
+      "Eliminate every state election",
+      "End judicial review of laws"
     ],
     "answer": 0,
     "source": "https://www.archives.gov/milestone-documents/civil-rights-act",
@@ -534,10 +534,10 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 15 • Intro",
     "prompt": "What does incorporation mean in constitutional law?",
     "choices": [
-      "Giving Congress all powers of state governments",
-      "Requiring every state to have identical laws",
-      "Applying most Bill of Rights protections to states",
-      "Replacing state courts with federal courts"
+      "Making federal rights apply to states",
+      "Ending all state government authority",
+      "Replacing the federal Bill of Rights",
+      "Allowing states to ignore amendments"
     ],
     "answer": 2,
     "source": "https://constitutioncenter.org/the-constitution/amendments/amendment-xiv",
@@ -550,9 +550,9 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 15 • Intro",
     "prompt": "Which amendment is the principal constitutional basis for incorporation?",
     "choices": [
-      "Twelfth Amendment",
-      "Third Amendment",
-      "Tenth Amendment",
+      "Fifteenth Amendment",
+      "Nineteenth Amendment",
+      "Twenty-sixth Amendment",
       "Fourteenth Amendment"
     ],
     "answer": 3,
