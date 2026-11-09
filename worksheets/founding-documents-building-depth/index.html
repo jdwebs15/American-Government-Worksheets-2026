@@ -1,18 +1,1 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Founding Documents Building Depth</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="wrap">
-<header class="hero"><div class="badge">AMERICAN<br>GOVERNMENT</div><div class="hero-text"><h1>Founding Documents Building Depth</h1><p>Research primary sources, analyze arguments, and explain how America’s founding documents shaped rights, government, and democracy.</p></div></header>
-<section class="panel"><div class="panel-heading">Student Information</div><div class="identity"><div><label for="studentName">Student Name</label><input id="studentName" autocomplete="name" placeholder="Type your full name"></div><div><label for="period">Period</label><input id="period" placeholder="Your period"></div><div><label for="email">School Email</label><input id="email" type="email" autocomplete="email" placeholder="Your school email address"></div></div><div class="actions"><button id="saveBtn" type="button">Save Progress</button><button id="retrieveBtn" class="secondary" type="button">Retrieve Previous Work</button></div><div id="saveStatus" class="status"></div><div class="notice"><b>Spelling does not have to be perfect.</b> Answer in your own words. The checker looks for the main idea rather than exact wording. Longer analysis questions are evaluated for a reasonable, substantive response.</div></section>
-<div class="progress"><span id="progressText">Loading assignment…</span><span id="cloudText">Cloud save not configured yet</span></div>
-<main id="assignment"></main>
-<section class="panel footer"><button id="finishBtn" class="finish" type="button">Finish / Submit Assignment</button><div id="finalResult"></div></section>
-</div>
-<script src="app.js"></script>
-</body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Founding Documents Building Depth</title><link rel="stylesheet" href="styles.css"></head><body><main class="shell"><section class="panel"><p class="muted">AMERICAN GOVERNMENT · INTRODUCTION</p><h1>Founding Documents Building Depth</h1><p>40 multiple-choice questions · Correct answers advance automatically · Sources and Where to Look included.</p></section><section id="setup" class="panel"><h2>Student information</h2><div class="grid"><div><label for="name">Student name</label><input id="name" autocomplete="name"></div><div><label for="period">Class period</label><select id="period"><option value="">Select period</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></div></div><label for="email">School email</label><input id="email" type="email"><p><button id="start">Start new attempt</button><button id="resume">Load previous progress</button></p></section><section id="game" class="panel hidden"><p id="progress" class="muted"></p><h2 id="question"></h2><div id="choices"></div><p id="feedback" aria-live="polite"></p><div class="sources"><strong>Where to look:</strong> <span id="where"></span><p><a id="source" href="#" target="_blank" rel="noopener noreferrer">Source</a></p></div><p><button id="save">Save progress</button><button id="reset">Reset</button></p></section><section id="finish" class="panel hidden"><h2>Completion Ticket</h2><div id="ticket" class="ticket"></div><p id="sendstatus" class="muted"></p><button onclick="window.print()">Print ticket</button></section></main><script src="app.js"></script></body></html>
