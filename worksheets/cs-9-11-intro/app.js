@@ -2,7 +2,7 @@ const APPS_SCRIPT_URL="https://script.google.com/macros/s/AKfycbxENUBm5pd966tRn1
 const questions=window.BLOCK_QUESTIONS.slice();
 const C=window.BLOCK_CONFIG;
 const $=id=>document.getElementById(id);
-const QUESTION_VERSION="20261002-CS911-24";
+const QUESTION_VERSION="20261109-CS911-AUDITED";
 const state={questionVersion:QUESTION_VERSION,questionOrder:[],choiceOrders:{},answers:{},mastered:{},attempts:{},firstAttempts:{},sourceClicks:{},runId:null,wrongTotal:0,correctChecks:0,currentIndex:0,firstStart:null,sessions:0,activeSeconds:0,awaySeconds:0,tabLeaves:0,events:[],questionSeconds:{},lastTick:Date.now(),status:"in progress"};
 let saveTimer=null,advanceTimer=null,started=false;
 function setSaveStatus(message){$("saveStatus").textContent=message;$("workSaveStatus").textContent=message;}
@@ -44,7 +44,7 @@ function answer(choice,button){
     state.events.push({type:"correct",question:q.id,attempt:state.attempts[q.id],at:new Date().toISOString()});saveLocal();updateStats();queueCloudSave();
     advanceTimer=setTimeout(()=>{advanceTimer=null;state.currentIndex++;while(state.currentIndex<questions.length&&state.mastered[questions[state.currentIndex].id])state.currentIndex++;renderQuestion()},4000);
   }else{
-    state.wrongTotal++;button.classList.add("wrong");setTimeout(()=>button.classList.remove("wrong"),550);f.className="feedback bad";f.innerHTML=`<strong>Not yet.</strong> ${escapeHtml(q.hint)}`;
+    state.wrongTotal++;button.disabled=true;button.classList.add("wrong");setTimeout(()=>button.classList.remove("wrong"),550);f.className="feedback bad";f.innerHTML=`<strong>Not yet.</strong> ${escapeHtml(q.hint)}`;
     state.events.push({type:"wrong",question:q.id,choice,at:new Date().toISOString()});saveLocal();updateStats();queueCloudSave();
   }
 }
@@ -100,7 +100,15 @@ function renderTicketDetails(){
   let detail=$("ticketDetails");
   if(!detail){detail=document.createElement("div");detail.id="ticketDetails";$("completionSummary").insertAdjacentElement("beforebegin",detail);}
   detail.replaceChildren();
-  const rows=[`Student: ${student().name}`,`Period: ${student().period}`,`Started: ${ticketTimestamp(state.firstStart)}`,`Stopped: ${ticketTimestamp(state.completedAt)}`];
+  const total=Object.values(state.attempts).reduce((a,b)=>a+(Number(b)||0),0);
+  const heading=document.createElement("div");heading.className="ticket-priority";
+  const name=document.createElement("div");name.className="ticket-name";name.textContent=student().name;
+  const attempts=document.createElement("div");attempts.className="ticket-attempts";attempts.textContent=`TOTAL ATTEMPTS: ${total}`;
+  heading.append(name,attempts);detail.append(heading);
+  const note=document.createElement("p");note.className=total>50?"ticket-over":"ticket-within";
+  note.textContent=total>50?"More than 50 attempts — redo required.":"50-attempt maximum: within limit.";detail.append(note);
+  const first=Object.values(state.firstAttempts).filter(Boolean).length;
+  const rows=[`First-attempt score: ${first}/${questions.length}`,`Mastery: ${questions.filter(q=>state.mastered[q.id]).length}/${questions.length}`,`Period: ${student().period}`,`Started: ${ticketTimestamp(state.firstStart)}`,`Finished: ${ticketTimestamp(state.completedAt)}`];
   for(const row of rows){const line=document.createElement("p");line.textContent=row;detail.appendChild(line);}
 }
 

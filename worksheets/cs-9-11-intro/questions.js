@@ -8,7 +8,7 @@ window.BLOCK_QUESTIONS=[
       "1st, 2nd, and 3rd Amendments",
       "12th, 22nd, and 25th Amendments",
       "19th, 24th, and 26th Amendments",
-      "13th, 14th, and 15th Amendments"
+      "13th, 14th, and 15th"
     ],
     "answer": 3,
     "source": "https://www.archives.gov/milestone-documents/13th-amendment",
@@ -43,7 +43,7 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 9 • Reconstruction Amendments",
     "prompt": "What exception appears in the Thirteenth Amendment?",
     "choices": [
-      "Involuntary servitude as punishment after conviction for a crime",
+      "Servitude after a criminal conviction",
       "Unpaid labor whenever a state needs workers",
       "Forced labor to repay any private debt",
       "Servitude ordered without a criminal conviction"
@@ -64,7 +64,7 @@ window.BLOCK_QUESTIONS=[
     "choices": [
       "Only people born to two U.S. citizens qualify",
       "Only people owning land in a state qualify",
-      "People born or naturalized in the U.S. and subject to its jurisdiction",
+      "Born or naturalized under U.S. jurisdiction",
       "Only people born in the United States qualify"
     ],
     "answer": 2,
@@ -84,7 +84,7 @@ window.BLOCK_QUESTIONS=[
       "A person’s eligibility to run for president",
       "A state’s number of presidential electors",
       "A citizen’s membership in a political party",
-      "Life, liberty, or property without due process of law"
+      "Deprivation of rights without due process"
     ],
     "answer": 3,
     "source": "https://www.archives.gov/milestone-documents/14th-amendment",
@@ -119,7 +119,7 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 9 • Reconstruction Amendments",
     "prompt": "Which voting discrimination does the Fifteenth Amendment prohibit?",
     "choices": [
-      "Denial of voting because of race, color, or previous servitude",
+      "Race or previous enslavement",
       "Denial of voting because of unpaid poll taxes",
       "Denial of voting because of a citizen’s sex",
       "Denial of voting because of being under 21"
@@ -139,7 +139,7 @@ window.BLOCK_QUESTIONS=[
     "prompt": "Why did the Reconstruction Amendments not create immediate equality?",
     "choices": [
       "The amendments applied only to federal elections",
-      "Discriminatory laws and practices continued despite constitutional changes",
+      "Discrimination persisted after ratification",
       "The amendments required continued segregation",
       "The amendments excluded formerly enslaved people"
     ],
@@ -159,7 +159,7 @@ window.BLOCK_QUESTIONS=[
     "choices": [
       "Federal laws requiring integrated public facilities",
       "State laws granting equal access to public schools",
-      "State and local laws enforcing racial segregation and inequality",
+      "State and local racial segregation laws",
       "Federal laws eliminating barriers to registration"
     ],
     "answer": 2,
@@ -236,7 +236,7 @@ window.BLOCK_QUESTIONS=[
       "The Nineteenth Amendment",
       "The Fifteenth Amendment",
       "The Twenty-sixth Amendment",
-      "The Twenty-fourth Amendment"
+      "The 24th Amendment"
     ],
     "answer": 3,
     "source": "https://www.archives.gov/founding-docs/amendments-11-27",
@@ -252,7 +252,7 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 10 • Suffrage",
     "prompt": "How did poll taxes restrict voting?",
     "choices": [
-      "They required payment, creating a barrier for people unable to afford it",
+      "Payment requirements excluded some voters",
       "They required voters to pass a citizenship exam",
       "They restricted voting to people owning land",
       "They excluded all voters younger than 21"
@@ -292,7 +292,7 @@ window.BLOCK_QUESTIONS=[
     "choices": [
       "They created identical election rules in every state",
       "They ended all discrimination without enforcement",
-      "They removed barriers based on race, sex, a poll tax, and age",
+      "They removed race, sex, tax, and age barriers",
       "They transferred voting authority to the president"
     ],
     "answer": 2,
@@ -309,7 +309,7 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 11 • Electoral College",
     "prompt": "How is each state’s number of electoral votes determined?",
     "choices": [
-      "The state’s House representatives plus its two senators",
+      "Its House delegation plus two senators",
       "Its House representatives without its senators",
       "Its senators without its House representatives",
       "Its state legislators plus its governor"
@@ -350,7 +350,7 @@ window.BLOCK_QUESTIONS=[
       "The president is elected by state governors alone",
       "Every state casts the same number of electoral votes",
       "Congress selects the president after every election",
-      "States are assigned electors who take part in choosing a national president"
+      "States appoint electors to choose the president"
     ],
     "answer": 3,
     "source": "https://www.archives.gov/electoral-college/about",
@@ -368,7 +368,7 @@ window.BLOCK_QUESTIONS=[
     "choices": [
       "Direct popular election of the vice president",
       "A two-term limit for presidential elections",
-      "Separate electoral votes for president and vice president",
+      "Separate votes for president and vice president",
       "Electoral votes for residents of Washington, D.C."
     ],
     "answer": 2,
@@ -445,7 +445,7 @@ window.BLOCK_QUESTIONS=[
       "The Senate alone selects the new vice president",
       "The Speaker automatically becomes vice president",
       "A national special election fills the vacancy",
-      "The president nominates a vice president and both houses of Congress confirm"
+      "President nominates; both houses confirm"
     ],
     "answer": 3,
     "source": "https://www.archives.gov/founding-docs/amendments-11-27",
@@ -496,7 +496,7 @@ window.BLOCK_QUESTIONS=[
       "The Thirteenth Amendment",
       "The Fifteenth Amendment",
       "The Nineteenth Amendment",
-      "The Fourteenth Amendment"
+      "The 14th Amendment"
     ],
     "answer": 3,
     "source": "https://www.archives.gov/milestone-documents/14th-amendment",
@@ -510,7 +510,7 @@ window.BLOCK_QUESTIONS=[
     "prompt": "After the Fifteenth Amendment, officials use literacy tests selectively to prevent African Americans from voting. What does this show?",
     "choices": [
       "The amendment required literacy tests for all voters",
-      "Discriminatory practices undermined constitutional rights",
+      "Discriminatory tests undermined voting rights",
       "The amendment applied only to presidential electors",
       "The amendment ended the need to enforce voting rights"
     ],
@@ -543,7 +543,7 @@ window.BLOCK_QUESTIONS=[
     "choices": [
       "States stopped controlling elections and public services",
       "African Americans lost citizenship under the amendments",
-      "Officials resisted enforcement and maintained discriminatory laws",
+      "Officials resisted enforcement of new protections",
       "The amendments made racial segregation mandatory"
     ],
     "answer": 2,
@@ -591,7 +591,7 @@ window.BLOCK_QUESTIONS=[
     "choices": [
       "The Fifteenth Amendment",
       "The Nineteenth Amendment",
-      "The Twenty-fourth Amendment",
+      "The 24th Amendment",
       "The Twenty-sixth Amendment"
     ],
     "answer": 2,
@@ -621,9 +621,9 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 11 • Electoral Allocation",
     "prompt": "A state has eight members in the U.S. House of Representatives. How many electoral votes does it have?",
     "choices": [
-      "6 electoral votes",
-      "8 electoral votes",
-      "16 electoral votes",
+      "6 votes in the Electoral College",
+      "8 votes in the Electoral College",
+      "16 votes in the Electoral College",
       "10 electoral votes"
     ],
     "answer": 3,
@@ -638,7 +638,7 @@ window.BLOCK_QUESTIONS=[
     "prompt": "In a hypothetical election with 538 appointed electors, a candidate receives 269 electoral votes. What does that total mean?",
     "choices": [
       "The candidate has a majority and wins automatically",
-      "The candidate has half, but lacks the required majority",
+      "Half is not a majority of the electors",
       "The candidate wins because half counts as a majority",
       "The candidate wins if more state governors approve"
     ],
@@ -672,7 +672,7 @@ window.BLOCK_QUESTIONS=[
       "The Twelfth Amendment",
       "The Twenty-third Amendment",
       "The Twenty-fifth Amendment",
-      "The Twenty-second Amendment"
+      "The 22nd Amendment"
     ],
     "answer": 3,
     "source": "https://www.archives.gov/founding-docs/amendments-11-27",
@@ -701,7 +701,7 @@ window.BLOCK_QUESTIONS=[
     "topic": "CS 11 • Presidential Disability",
     "prompt": "A president sends the required written declaration that surgery will temporarily prevent performance of presidential duties. What role does the vice president take?",
     "choices": [
-      "Acting president during the declared inability",
+      "Acting president during the stated inability",
       "President permanently for the rest of the term",
       "Vice president with no additional authority",
       "President only after a new national election"
