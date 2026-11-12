@@ -16,8 +16,11 @@ function shuffleQuestionBank(){
 }
 const C=window.BLOCK_CONFIG;
 const $=id=>document.getElementById(id);
-const state={firstAttempt:{},answers:{},mastered:{},attempts:{},wrongTotal:0,correctChecks:0,currentIndex:0,firstStart:new Date().toISOString(),sessions:1,activeSeconds:0,awaySeconds:0,tabLeaves:0,events:[],questionSeconds:{},lastTick:Date.now(),status:"in progress"};
-let saveTimer=null,advanceTimer=null,started=false;
+const makeRunId=()=> 'gov20-'+Date.now().toString(36)+'-'+(globalThis.crypto?.randomUUID?.()||Math.random().toString(36).slice(2));
+const state={trackingVersion:2,runId:makeRunId(),runCreatedAt:new Date().toISOString(),revision:0,firstAttempt:{},answers:{},mastered:{},attempts:{},wrongTotal:0,correctChecks:0,currentIndex:0,firstStart:new Date().toISOString(),sessions:1,activeSeconds:0,awaySeconds:0,tabLeaves:0,events:[],questionSeconds:{},lastTick:Date.now(),status:"in progress"};
+let saveTimer=null,advanceTimer=null,started=false,loadedEmail="";
+const initialState=JSON.parse(JSON.stringify(state));
+function clearRun(){for(const k of Object.keys(state))delete state[k];Object.assign(state,JSON.parse(JSON.stringify(initialState)),{runId:makeRunId(),runCreatedAt:new Date().toISOString(),firstStart:new Date().toISOString(),lastTick:Date.now()});}
 
 function init(){
   $("pageTitle").textContent=C.title;$("pageDescription").textContent=C.description;$("practiceText").textContent=C.practice;
@@ -34,7 +37,7 @@ function storageKey(){return `${C.assignmentKey}|${student().email}`}
 function resetAssignment(){
   if(!student().email){$("saveStatus").textContent="Enter the same school email used for this assignment, then select Reset Assignment.";return}
   if(!confirm("Restart this assignment at Question 1 on this device? Earlier teacher records will remain in the spreadsheet."))return;
-  localStorage.removeItem(storageKey());localStorage.removeItem(ORDER_KEY+"|"+student().email);
+  localStorage.setItem(storageKey()+"|resetAt",new Date().toISOString());localStorage.removeItem(storageKey());localStorage.removeItem(ORDER_KEY+"|"+student().email);
   location.reload();
 }
 function start(){if(!valid(true))return;shuffleQuestionBank();restoreLocal();started=true;state.lastTick=Date.now();state.sessions=Math.max(1,state.sessions||1);$("studentPanel").classList.add("hidden");$("workspace").classList.remove("hidden");goToFirstUnmastered();renderQuestion();updateStats();queueCloudSave()}
@@ -82,7 +85,7 @@ function renderQuestion(){
  updateStats();window.scrollTo({top:Math.max(0,$('workspace').offsetTop-12),behavior:'smooth'});
 }
 function answer(choice,button,sliderCorrect=0){
-  if(advanceTimer)return;const q=currentQuestion(),f=$("feedback");state.answers[q.id]=choice;state.attempts[q.id]=(state.attempts[q.id]||0)+1;const isCorrect=q.type==='slider'?choice===sliderCorrect:choice===q.answer;if(!(q.id in state.firstAttempt))state.firstAttempt[q.id]=isCorrect;
+  if(advanceTimer||!currentQuestion()||state.mastered[currentQuestion().id])return;const q=currentQuestion(),f=$("feedback");state.answers[q.id]=choice;state.attempts[q.id]=(state.attempts[q.id]||0)+1;const isCorrect=q.type==='slider'?choice===sliderCorrect:choice===q.answer;if(!(q.id in state.firstAttempt))state.firstAttempt[q.id]=isCorrect;
   if(isCorrect){
     state.correctChecks++;state.mastered[q.id]=true;button.classList.add("correct");document.querySelectorAll("[data-choice], [data-policy-choice], #applyPolicy").forEach(b=>b.disabled=true);const sl=$("policySlider");if(sl)sl.disabled=true;
     f.className="feedback good";f.innerHTML=`<strong>Correct.</strong> ${escapeHtml(q.explanation)}<span class="advance-note">Advancing to the next question…</span>`;
@@ -97,21 +100,42 @@ function updateStats(){const mastered=questions.filter(q=>state.mastered[q.id]).
 function formatTime(s){s=Math.max(0,Math.floor(s||0));const h=Math.floor(s/3600),m=Math.floor(s%3600/60),sec=s%60;return h?`${h}:${String(m).padStart(2,"0")}:${String(sec).padStart(2,"0")}`:`${m}:${String(sec).padStart(2,"0")}`}
 function tick(){const now=Date.now(),sec=Math.min(15,Math.max(0,(now-state.lastTick)/1000));if(started){if(document.hidden)state.awaySeconds+=sec;else state.activeSeconds+=sec;const q=currentQuestion();if(q)state.questionSeconds[q.id]=(state.questionSeconds[q.id]||0)+sec}state.lastTick=now}
 function showCompletion(){
- tick();started=false;state.status="completed";state.completedAt=state.completedAt||new Date().toISOString();
+ tick();started=false;state.status=state.submittedAt?"submitted":"completed";state.completedAt=state.completedAt||new Date().toISOString();
  $("workspace").classList.add("hidden");$("completion").classList.remove("hidden");
  const attempts=Object.values(state.attempts).reduce((a,b)=>a+(Number(b)||0),0),s=student(),first=Object.values(state.firstAttempt).filter(Boolean).length;
  $("ticketTitle").textContent=C.title;$("ticketName").textContent=s.name;$("ticketAttempts").textContent=attempts;
- $("ticketIdentity").textContent=`Period ${s.period} • ${s.email}`;
+ $("ticketIdentity").textContent=`Period ${s.period} • ${s.email} • Run ID: ${state.runId}`;
  $("completionSummary").textContent=`Mastery: ${questions.length}/${questions.length} (100%) • First attempt: ${first}/${questions.length} (${Math.round(first/questions.length*100)}%) • Answer accuracy: ${Math.round(questions.length/attempts*100)}% • Active time: ${formatTime(state.activeSeconds)}`;
  $("ticketDate").textContent='Completed: '+new Date(state.completedAt).toLocaleString();saveLocal();queueCloudSave();
 }
-function payload(){tick();const mastered=questions.filter(q=>state.mastered[q.id]).length;return{assignmentKey:C.assignmentKey,assignmentTitle:C.title,course:"Government",student:student(),state:{...state},answers:{...state.answers},mastered:{...state.mastered},firstAttemptScore:Object.values(state.firstAttempt).filter(Boolean).length,firstAttemptPercent:Math.round(Object.values(state.firstAttempt).filter(Boolean).length/questions.length*100),score:mastered,total:questions.length,percent:Math.round(mastered/questions.length*100),answerCount:Object.keys(state.answers).length,totalAttempts:Object.values(state.attempts).reduce((a,b)=>a+(Number(b)||0),0),wrongAttempts:state.wrongTotal,updatedAt:new Date().toISOString()}}
-function saveLocal(){if(!student().email)return;localStorage.setItem(storageKey(),JSON.stringify(payload()))}
-function restoreLocal(){if(!student().email)return;const raw=localStorage.getItem(storageKey());if(!raw)return;try{mergeDraft(JSON.parse(raw));$("saveStatus").textContent="Saved work restored on this device."}catch{}}
-function mergeDraft(d){if(!d)return;const s=d.state||d;Object.assign(state.firstAttempt,s.firstAttempt||{});Object.assign(state.answers,d.answers||s.answers||{});Object.assign(state.mastered,d.mastered||s.mastered||{});for(const[k,v]of Object.entries(s.attempts||{}))state.attempts[k]=Math.max(state.attempts[k]||0,Number(v)||0);state.wrongTotal=Math.max(state.wrongTotal||0,s.wrongTotal||d.wrongAttempts||0);state.correctChecks=Math.max(state.correctChecks||0,s.correctChecks||0);state.activeSeconds=Math.max(state.activeSeconds||0,s.activeSeconds||0);state.awaySeconds=Math.max(state.awaySeconds||0,s.awaySeconds||0);state.tabLeaves=Math.max(state.tabLeaves||0,s.tabLeaves||0);state.firstStart=s.firstStart||state.firstStart;state.completedAt=s.completedAt||state.completedAt;state.choiceOrders=Object.assign({},s.choiceOrders||{},state.choiceOrders||{});state.events=[...new Map([...(state.events||[]),...(s.events||[])].map(e=>[JSON.stringify(e),e])).values()].slice(-500);for(const[k,v]of Object.entries(s.questionSeconds||{}))state.questionSeconds[k]=Math.max(state.questionSeconds[k]||0,Number(v)||0);goToFirstUnmastered()}
+function payload(){tick();const mastered=questions.filter(q=>state.mastered[q.id]).length;return{trackingVersion:2,runId:state.runId,assignmentKey:C.assignmentKey,assignmentTitle:C.title,course:"Government",student:student(),state:{...state,firstAttempts:{...state.firstAttempt}},firstAttemptCorrect:Object.values(state.firstAttempt).filter(Boolean).length,answers:{...state.answers},mastered:{...state.mastered},firstAttemptScore:Object.values(state.firstAttempt).filter(Boolean).length,firstAttemptPercent:Math.round(Object.values(state.firstAttempt).filter(Boolean).length/questions.length*100),score:mastered,total:questions.length,percent:Math.round(mastered/questions.length*100),answerCount:Object.keys(state.answers).length,totalAttempts:Object.values(state.attempts).reduce((a,b)=>a+(Number(b)||0),0),wrongAttempts:state.wrongTotal,updatedAt:new Date().toISOString()}}
+function saveLocal(){if(!student().email)return;state.revision++;localStorage.setItem(storageKey(),JSON.stringify(payload()))}
+function restoreLocal(){
+ if(!student().email)return;
+ if(loadedEmail!==student().email){clearRun();loadedEmail=student().email;}
+ const raw=localStorage.getItem(storageKey());if(!raw)return;
+ try{if(mergeDraft(JSON.parse(raw)))$("saveStatus").textContent="Saved run restored on this device.";}catch{}
+}
+function mergeDraft(d){
+ if(!d)return false;const s=d.state||d;
+ if(s.trackingVersion!==2||!s.runId){$("saveStatus").textContent="Old tracking draft cannot be verified. Begin a new run.";return false;}
+ const resetAt=localStorage.getItem(storageKey()+"|resetAt");
+ if(resetAt&&Date.parse(s.runCreatedAt||0)<Date.parse(resetAt))return false;
+ if(Object.keys(state.attempts).length){
+  if(s.runId===state.runId&&Number(s.revision||0)<=Number(state.revision||0))return false;
+  if(s.runId!==state.runId&&Date.parse(s.runCreatedAt||0)<=Date.parse(state.runCreatedAt||0))return false;
+ }
+ // Replace one complete snapshot. Never combine question maxima or different runs.
+ const copy=JSON.parse(JSON.stringify(s));
+ for(const k of Object.keys(state))delete state[k];
+ Object.assign(state,copy,{lastTick:Date.now()});loadedEmail=student().email;
+ state.firstAttempt=state.firstAttempt||state.firstAttempts||{};
+ goToFirstUnmastered();return true;
+}
 function queueCloudSave(){clearTimeout(saveTimer);saveTimer=setTimeout(()=>cloudSave(false),750)}
 async function cloudSave(manual){if(!valid(false)||APPS_SCRIPT_URL.startsWith("PASTE_")){if(manual)$("saveStatus").textContent=APPS_SCRIPT_URL.startsWith("PASTE_")?"Saved on this device. Add the Apps Script web-app URL for teacher saving.":"Enter complete student information first.";return}saveLocal();try{await fetch(APPS_SCRIPT_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams({action:"save",payload:JSON.stringify(payload())})});$("saveStatus").textContent="Saved on this device. Teacher save request sent; receipt cannot be confirmed here."}catch{$("saveStatus").textContent="Saved on this device. Teacher save could not be confirmed."}}
 function loadCloud(){if(!valid(true)||APPS_SCRIPT_URL.startsWith("PASTE_")){if(APPS_SCRIPT_URL.startsWith("PASTE_"))$("saveStatus").textContent="Add the Apps Script web-app URL before loading teacher drafts.";return}const cb=`load_${Date.now()}`,script=document.createElement("script");window[cb]=r=>{try{if(r&&r.found)mergeDraft(r.payload);saveLocal();$("saveStatus").textContent=r&&r.found?"Previous work merged safely.":"No teacher draft was found."}finally{delete window[cb];script.remove()}};script.src=`${APPS_SCRIPT_URL}?action=load&assignmentKey=${encodeURIComponent(C.assignmentKey)}&email=${encodeURIComponent(student().email)}&callback=${cb}`;script.onerror=()=>{$("saveStatus").textContent="Could not load the teacher draft.";delete window[cb];script.remove()};document.body.appendChild(script)}
 async function submit(){if(!valid(true))return;state.status="submitted";state.submittedAt=new Date().toISOString();await cloudSave(true);$("submitStatus").textContent="100% mastery complete. Save request sent; attach a screenshot of this ticket in Google Classroom.";$("submitBtn").disabled=true}
 function escapeHtml(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
 init();
+
